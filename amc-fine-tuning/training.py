@@ -157,7 +157,7 @@ def main():
         save_total_limit=2,
         logging_steps=10,
         report_to="none",
-        max_seq_length=MAX_SEQ_LENGTH,
+        max_length=MAX_SEQ_LENGTH,
         dataset_text_field="text",
         completion_only_loss=True,  # compute loss on assistant responses only
     )
