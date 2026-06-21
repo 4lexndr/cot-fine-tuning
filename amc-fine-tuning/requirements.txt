@@ -1,0 +1,11 @@
+# Training
+torch==2.12.1
+transformers==5.12.1
+datasets==5.0.0
+peft==0.19.1
+trl==1.6.0
+accelerate==1.14.0
+bitsandbytes>=0.46.1
+
+# Dataset cleaning (cleaner.py)
+openai==2.43.0

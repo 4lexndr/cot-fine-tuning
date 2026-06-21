@@ -206,7 +206,7 @@ def run_benchmark(model: str, test_file: str = TEST_FILE) -> dict:
 
 def main():
     if not torch.cuda.is_available():
-        raise SystemExit("ERROR: No CUDA GPU found. Run this script on the external PC.")
+        raise SystemExit("ERROR: No CUDA GPU found.")
     try:
         import bitsandbytes  
     except ImportError:
