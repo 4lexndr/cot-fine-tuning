@@ -1,0 +1,1582 @@
+[
+  {
+    "year": 2017,
+    "contest": "A",
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to calculate the total time it takes for Minnie and Penny to complete their respective rides and then find the difference in time.\n\nFirst, let's calculate the time it takes for Minnie to complete her ride:\n- From town \\(A\\) to town \\(B\\): 10 km uphill at 5 kph.\n  \\[\n  \\text{Time} = \\frac{10 \\text{ km}}{5 \\text{ kph}} = 2 \\text{ hours}\n  \\]\n- From town \\(B\\) to town \\(C\\): 15 km downhill at 30 kph.\n  \\[\n  \\text{Time} = \\frac{15 \\text{ km}}{30 \\text{ kph}} = 0.5 \\text{ hours}\n  \\]\n- From town \\(C\\) to town \\(A\\): 20 km on the flat at 20 kph.\n  \\[\n  \\text{Time} = \\frac{20 \\text{ km}}{20 \\text{ kph}} = 1 \\text{ hour}\n  \\]\n\nAdding these times together:\n\\[\n2 \\text{ hours} + 0.5 \\text{ hours} + 1 \\text{ hour} = 3.5 \\text{ hours}\n\\]\n\nNext, let's calculate the time it takes for Penny to complete her ride:\n- From town \\(A\\) to town \\(B\\): 10 km flat at 30 kph.\n  \\[\n  \\text{Time} = \\frac{10 \\text{ km}}{30 \\text{ kph}} = \\frac{1}{3} \\text{ hours}\n  \\]\n- From town \\(B\\) to town \\(C\\): 15 km"
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we start with the given equation:\n\n\\[\n\\frac{M}{6} = \\frac{6}{N}\n\\]\n\nWe can cross-multiply to eliminate the fractions:\n\n\\[\nMN = 36\n\\]\n\nNext, we need to find all ordered pairs of positive integers \\((M, N)\\) that satisfy this equation. We do this by finding all factor pairs of 36.\n\nThe factors of 36 are:\n1, 2, 3, 4, 6, 9, 12, 18, and 36.\n\nWe pair these factors to form the ordered pairs \\((M, N)\\):\n\n\\[\n(1, 36), (2, 18), (3, 12), (4, 9), (6, 6), (9, 4), (12, 3), (18, 2), (36, 1)\n\\]\n\nEach pair is unique and satisfies the equation \\(MN = 36\\).\n\nCounting these pairs, we find there are 9 ordered pairs.\n\nTherefore, the number of ordered pairs of positive integers \\((M, N)\\) that satisfy the equation \\(\\frac{M}{6} = \\frac{6}{N}\\) is:\n\n\\[\n\\boxed{D}\n\\]"
+  },
+  {
+    "year": 2008,
+    "contest": "B",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the volume of water in a cylindrical tank that is lying on its side. The tank has a radius of 4 feet and a height of 9 feet. The tank is filled with water to a depth of 2 feet.\n\nFirst, let's visualize the cross-section of the cylinder, which is a circle with radius 4 feet. When the tank is lying on its side, the water forms a segment of this circle. We need to find the area of this segment and then multiply it by the length of the cylinder (which is 9 feet).\n\nThe depth of the water is 2 feet, so the vertical distance from the center of the circle to the top of the water is \\(4 - 1 = 3\\) feet (since the radius is 4 feet and the water is 2 feet deep, the distance from the center to the top of the water is half of the remaining height).\n\nThe area of the segment can be found using the formula for the area of a circular segment. The formula for the area of a circular segment is:\n\n\\[ A = r^2 \\cos^{-1} \\left( \\frac{h}{r} \\right) - h \\sqrt{r^2 - h^2} \\]\n\nwhere \\( r \\) is the rad"
+  },
+  {
+    "year": 2025,
+    "contest": "A",
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of 4-digit passcodes that satisfy the given conditions. The conditions are:\n1. Exactly one digit is even.\n2. Exactly one digit is prime.\n3. No digit is 0.\n\nLet's break down the problem step by step.\n\n### Step 1: Choose the Even Digit\nThe digits available for selection are 2, 4, 6, and 8 (since they are even and non-zero). We need to choose exactly one of these digits. The number of ways to choose one digit from four is given by:\n\\[ \\binom{4}{1} = 4 \\]\n\n### Step 2: Choose the Prime Digit\nThe digits available for selection are 2, 3, 5, and 7 (since they are prime and non-zero). We need to choose exactly one of these digits. The number of ways to choose one digit from four is given by:\n\\[ \\binom{4}{1} = 4 \\]\n\n### Step 3: Choose the Remaining Two Digits\nThe remaining two digits must be chosen from the digits 1, 2, 3, 4, 5, 6, 7, 8, and 9 (excluding 0). We need to ensure that these two digits are neither even nor prime. The digits that are neither even nor pr"
+  },
+  {
+    "year": 2006,
+    "contest": "B",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the possible outcomes after Alice and Bob each randomly select a ball from their respective bags and then swap them.\n\nInitially, both Bob and Alice have the same set of balls: one blue, one green, one orange, one red, and one violet. Let's denote the balls as B (blue), G (green), O (orange), R (red), and V (violet).\n\n### Step-by-Step Analysis\n\n1. **Alice selects a ball and puts it into Bob's bag:**\n   - Alice can choose any one of the 5 balls.\n   - After Alice's selection, Bob's bag will have 4 balls from his original set plus the ball chosen by Alice.\n\n2. **Bob selects a ball and puts it back into Alice's bag:**\n   - Bob now has 5 balls in his bag, including the one Alice chose.\n   - When Bob picks a ball to put back into Alice's bag, he can choose any of the 5 balls again.\n\n### Possible Outcomes\n\nWe need to determine the probability that after these two steps, the contents of both bags are identical. This means that the set of balls in each bag must be the same as "
+  },
+  {
+    "year": 2013,
+    "contest": "A",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the total runs scored by the opponents in each game based on the given conditions.\n\nFirst, let's summarize the information:\n- The softball team played 10 games and scored a unique number of runs from 1 to 10.\n- They lost by one run in exactly 5 games.\n- In the remaining 5 games, they scored twice as many runs as their opponents.\n\nLet's denote the runs scored by the team in each game as \\( t_1, t_2, \\ldots, t_{10} \\) where \\( t_i \\in \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\} \\).\n\n### Step-by-Step Solution:\n\n1. **Identify the games lost by one run:**\n   - Let \\( L_1, L_2, \\ldots, L_5 \\) be the games where the team lost by one run.\n   - In these games, if the opponent scored \\( x_i \\) runs, then the team scored \\( x_i + 1 \\) runs.\n\n2. **Identify the games won by twice as many runs:**\n   - Let \\( W_1, W_2, \\ldots, W_5 \\) be the games where the team scored twice as many runs as their opponents.\n   - In these games, if the opponent scored \\( y_i \\) runs, then the team scored \\( "
+  },
+  {
+    "year": 2015,
+    "contest": "A",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many 10-cent coins Claudia has given that she has 12 coins in total and there are exactly 17 different values that can be obtained as combinations of one or more of her coins.\n\nLet's denote the number of 5-cent coins by \\( x \\) and the number of 10-cent coins by \\( y \\). We know that:\n\n\\[ x + y = 12 \\]\n\nThe possible values that can be formed using these coins are sums of multiples of 5 and 10. The smallest value is 5 cents (using one 5-cent coin), and the largest value is 10y cents (using only 10-cent coins). The values form an arithmetic sequence with a common difference of 5.\n\nThe number of different values that can be formed is equal to the number of terms in this arithmetic sequence, which is \\( y + 1 \\) (since we include both the smallest and largest values in the sequence).\n\nWe are given that there are exactly 17 different values. Therefore:\n\n\\[ y + 1 = 17 \\]\n\nSolving for \\( y \\):\n\n\\[ y = 16 \\]\n\nHowever, this result seems incorrect because it implies Clau"
+  },
+  {
+    "year": 2024,
+    "contest": "B",
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine how many of the values \\(P(2022)\\), \\(P(2023)\\), \\(P(2024)\\), and \\(P(2025)\\) are integers, we first need to understand the polynomial \\(P(x)\\). The polynomial is given by:\n\n\\[ P(x) = \\frac{x^3 - 2x + 1}{x-1} \\]\n\nWe can simplify this expression using polynomial long division or synthetic division. Dividing \\(x^3 - 2x + 1\\) by \\(x-1\\), we get:\n\n\\[ x^3 - 2x + 1 = (x-1)(x^2 + x - 1) + 0 \\]\n\nThis means that:\n\n\\[ P(x) = x^2 + x - 1 \\]\n\nNow, we need to evaluate \\(P(x)\\) at \\(x = 2022\\), \\(x = 2023\\), \\(x = 2024\\), and \\(x = 2025\\) and check if the results are integers.\n\n1. For \\(x = 2022\\):\n\\[ P(2022) = 2022^2 + 2022 - 1 \\]\nSince \\(2022^2\\) is an integer, \\(2022^2 + 2022 - 1\\) is also an integer.\n\n2. For \\(x = 2023\\):\n\\[ P(2023) = 2023^2 + 2023 - 1 \\]\nSince \\(2023^2\\) is an integer, \\(2023^2 + 2023 - 1\\) is also an integer.\n\n3. For \\(x = 2024\\):\n\\[ P(2024) = 2024^2 + 2024 - 1 \\]\nSince \\(2024^2\\) is an integer, \\(2024^2 + 2024 - 1\\) is also an integer.\n\n4. For \\(x = 2025\\):\n\\[ P(2025) = 2025^2 + 2025 -"
+  },
+  {
+    "year": 2017,
+    "contest": "A",
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to compare the distances traveled by Jerry and Silvia. Let's assume the side length of the square field is \\( s \\).\n\n### Step 1: Calculate Jerry's Distance\nJerry walked due east and then due north. Therefore, he covered two sides of the square:\n\\[ \\text{Jerry's distance} = s + s = 2s \\]\n\n### Step 2: Calculate Silvia's Distance\nSilvia walked in a straight line from the southwest corner to the northeast corner. This path forms the diagonal of the square. The length of the diagonal \\( d \\) of a square with side length \\( s \\) can be found using the Pythagorean theorem:\n\\[ d = \\sqrt{s^2 + s^2} = \\sqrt{2s^2} = s\\sqrt{2} \\]\n\n### Step 3: Compare the Distances\nWe need to find how much shorter Silvia's trip was compared to Jerry's trip. We do this by calculating the difference in their distances and then expressing it as a percentage of Jerry's distance:\n\\[ \\text{Difference in distance} = 2s - s\\sqrt{2} \\]\n\n### Step 4: Simplify the Difference\nFirst, let's simplify the expression for the"
+  },
+  {
+    "year": 2010,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to compare the savings from each coupon and determine the range of prices for which Coupon A saves at least as much as Coupon B or Coupon C.\n\nLet's denote the listed price of the item by \\( P \\).\n\n### Coupon A:\nCoupon A gives a 15% discount on the listed price. The savings from Coupon A is:\n\\[ S_A = 0.15P \\]\n\n### Coupon B:\nCoupon B gives a flat $30 off the listed price. The savings from Coupon B is:\n\\[ S_B = 30 \\]\n\n### Coupon C:\nCoupon C gives a 25% discount on the amount by which the listed price exceeds $100. The savings from Coupon C is:\n\\[ S_C = 0.25(P - 100) \\]\n\nWe need to find the range of \\( P \\) for which Coupon A saves at least as much as Coupon B or Coupon C.\n\n#### Comparing Coupon A and Coupon B:\nSet up the inequality:\n\\[ 0.15P \\geq 30 \\]\nSolving for \\( P \\):\n\\[ P \\geq \\frac{30}{0.15} = 200 \\]\n\nSo, for \\( P \\geq 200 \\), Coupon A saves at least as much as Coupon B.\n\n#### Comparing Coupon A and Coupon C:\nSet up the inequality:\n\\[ 0.15P \\geq 0.25(P - 100) \\]\nSolving for"
+  },
+  {
+    "year": 2014,
+    "contest": "B",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to analyze the given addition problem step by step. The problem is:\n\n\\[ \\begin{array}{c@{}c@{}c}\n & A & B \\\\\n+ & C & D \\\\\n\\hline\n & E & F \\\\\n\\end{array} \\]\n\nHere, \\(A, B, C,\\) and \\(D\\) are distinct digits, and we need to determine how many different values are possible for \\(D\\).\n\nFirst, let's consider the units place. The sum of \\(B\\) and \\(D\\) must either be a single digit or a two-digit number where the last digit is \\(F\\) and the carryover is \\(1\\). This means:\n\n\\[ B + D = F \\text{ or } B + D = F + 10 \\]\n\nNext, let's consider the tens place. The sum of \\(A\\) and \\(C\\) plus any carryover from the units place must be a two-digit number where the last digit is \\(E\\) and the carryover is \\(1\\). This means:\n\n\\[ A + C + \\text{carry} = E \\text{ or } A + C + \\text{carry} = E + 10 \\]\n\nSince \\(A, B, C,\\) and \\(D\\) are distinct digits, let's analyze the possible values for \\(D\\).\n\n1. If \\(B + D < 10\\), then \\(F = B + D\\) and there is no carryover. This means \\(D\\) can be any digit fro"
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the area of the rectangle given that a circle of radius 5 is inscribed in it and the ratio of the length to the width of the rectangle is 2:1.\n\nFirst, let's understand the implications of the circle being inscribed in the rectangle. Since the circle is inscribed, the diameter of the circle is equal to the width of the rectangle. The diameter of the circle is twice the radius, so:\n\n\\[ \\text{Diameter} = 2 \\times 5 = 10 \\]\n\nThis means the width of the rectangle is 10. Given that the ratio of the length to the width of the rectangle is 2:1, we can express the length as:\n\n\\[ \\text{Length} = 2 \\times \\text{Width} = 2 \\times 10 = 20 \\]\n\nNow, we can calculate the area of the rectangle using the formula for the area of a rectangle, which is length times width:\n\n\\[ \\text{Area} = \\text{Length} \\times \\text{Width} = 20 \\times 10 = 200 \\]\n\nTherefore, the area of the rectangle is 200. The correct option is \\(\\boxed{\\text{E}}\\)."
+  },
+  {
+    "year": 2012,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the properties of the angles in a circle and the conditions given in the problem.\n\nFirst, recall that the sum of all central angles in a circle is \\(360^\\circ\\). The problem states that these angles form an arithmetic sequence. Let's denote the smallest angle by \\(a\\) and the common difference by \\(d\\). Since there are 12 sectors, the angles can be written as:\n\\[a, a+d, a+2d, \\ldots, a+11d.\\]\n\nThe sum of these angles is:\n\\[a + (a+d) + (a+2d) + \\cdots + (a+11d).\\]\n\nThis is an arithmetic series with 12 terms. The sum \\(S\\) of the first \\(n\\) terms of an arithmetic series is given by:\n\\[S = \\frac{n}{2} \\times (\\text{first term} + \\text{last term}).\\]\n\nIn our case, the first term is \\(a\\) and the last term is \\(a+11d\\), and there are 12 terms. So the sum of the angles is:\n\\[S = \\frac{12}{2} \\times (a + (a+11d)) = 6 \\times (2a + 11d) = 360.\\]\n\nThis simplifies to:\n\\[12a + 66d = 360.\\]\n\\[2a + 11d = 60.\\]\n\nWe need to find integer values of \\(a\\) and \\(d\\) that satisfy thi"
+  },
+  {
+    "year": 2022,
+    "contest": "A",
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine which of the given fractions is equal to \\(2 - \\frac{1}{6} = \\frac{11}{6}\\).\n\nFirst, let's convert each option into a decimal or fraction to compare it with \\(\\frac{11}{6}\\).\n\nOption (A): \\(\\frac{31}{10} = 3.1\\)\nOption (B): \\(\\frac{49}{15} \\approx 3.27\\)\nOption (C): \\(\\frac{33}{10} = 3.3\\)\nOption (D): \\(\\frac{109}{33} \\approx 3.27\\)\nOption (E): \\(\\frac{15}{4} = 3.75\\)\n\nNow, let's compare these values with \\(\\frac{11}{6} \\approx 1.8333\\).\n\nClearly, none of the options (A), (B), or (C) are equal to \\(\\frac{11}{6}\\). However, we need to check if any of the fractions can be simplified or if they are close to \\(\\frac{11}{6}\\).\n\nOption (D): \\(\\frac{109}{33} \\approx 3.27\\)\nOption (E): \\(\\frac{15}{4} = 3.75\\)\n\nSince \\(\\frac{109}{33}\\) is the closest to \\(\\frac{11}{6}\\), we can conclude that the correct answer is:\n\n\\(\\boxed{\\text{D}}\\)"
+  },
+  {
+    "year": 2023,
+    "contest": "B",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that Sonya the frog lands outside the square after her hops. Let's break down the problem step by step.\n\n1. **Understanding the Initial Position and Hops:**\n   - Sonya starts at a random point within the square \\([0, 6] \\times [6, 0]\\).\n   - She then chooses a distance uniformly at random from \\([0, 1]\\) and a direction uniformly at random from \\(\\{ \\text{north}, \\text{south}, \\text{east}, \\text{west} \\}\\).\n\n2. **Effect of Hops:**\n   - Each hop is exactly 1 unit in the chosen direction.\n   - The possible movements are:\n     - North: Moves up by 1 unit.\n     - South: Moves down by 1 unit.\n     - East: Moves right by 1 unit.\n     - West: Moves left by 1 unit.\n\n3. **Determining the Probability of Lying Outside the Square:**\n   - For Sonya to land outside the square, she must either move beyond the vertical boundaries \\(x = 0\\) or \\(x = 6\\) (east or west), or beyond the horizontal boundaries \\(y = 0\\) or \\(y = 6\\) (north or south).\n\n4. **Analyzing Each "
+  },
+  {
+    "year": 2016,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the number of positive integer divisors of \\(81n^4\\) given that \\(110n^3\\) has 110 positive integer divisors.\n\nFirst, let's factorize 110:\n\\[ 110 = 2 \\times 5 \\times 11 \\]\n\nLet \\( n = 2^a \\times 5^b \\times 11^c \\times k \\), where \\( k \\) is an integer not divisible by 2, 5, or 11. Then:\n\\[ 110n^3 = 2^{3a+1} \\times 5^{3b+1} \\times 11^{3c+1} \\times k^3 \\]\n\nThe number of divisors of \\( 110n^3 \\) is given by:\n\\[ (3a+2)(3b+2)(3c+d) \\times \\text{(number of divisors of } k^3\\text{)} \\]\nwhere \\( d \\) is the exponent of \\( k \\) in its prime factorization. Since \\( 110n^3 \\) has 110 divisors, we have:\n\\[ (3a+2)(3b+2)(3c+d) = 110 \\]\n\nWe need to find the possible values for \\( a, b, c, \\) and \\( d \\). The factorization of 110 is:\n\\[ 110 = 2 \\times 5 \\times 11 \\]\n\nPossible combinations are:\n1. \\( (3a+2) = 2, (3b+2) = 5, (3c+d) = 11 \\)\n2. \\( (3a+2) = 2, (3b+2) = 11, (3c+d) = 5 \\)\n3. \\( (3a+2) = 5, (3b+2) = 2, (3c+d) = 11 \\)\n4. \\( (3a+2) = 5, (3b+2) = 11, (3c+d) = 2 \\)\n5. \\( (3a+2"
+  },
+  {
+    "year": 2008,
+    "contest": "B",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find all the possible combinations of roses and carnations that add up to exactly $50. Let's denote the number of roses by \\( r \\) and the number of carnations by \\( c \\). The cost equation is:\n\n\\[ 3r + 2c = 50 \\]\n\nWe need to find all non-negative integer solutions to this equation. First, let's express \\( c \\) in terms of \\( r \\):\n\n\\[ c = \\frac{50 - 3r}{2} \\]\n\nFor \\( c \\) to be an integer, \\( 50 - 3r \\) must be even. Since 50 is even and 3 is odd, \\( 3r \\) must be even, which means \\( r \\) must be even. Let's list the possible values for \\( r \\):\n\n\\[ r = 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 \\]\n\nNow, let's calculate the corresponding values of \\( c \\) for each value of \\( r \\):\n\n- If \\( r = 0 \\), then \\( c = \\frac{50 - 3 \\cdot 0}{2} = 25 \\)\n- If \\( r = 2 \\), then \\( c = \\frac{50 - 3 \\cdot 2}{2} = 22 \\)\n- If \\( r = 4 \\), then \\( c = \\frac{50 - 3 \\cdot 4}{2} = 19 \\)\n- If \\( r = 6 \\), then \\( c = \\frac{50 - 3 \\cdot 6}{2} = 16 \\)\n- If \\( r = 8 \\), then \\( c = \\frac{50 - 3 \\cdot"
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the game dynamics and the winning strategy. The key insight is that a player can force a win if they can always leave the opponent in a losing position. A losing position is one where any move leaves the opponent in a winning position.\n\nLet's analyze the given options step by step:\n\n1. **Option (A): (6, 1, 1)**\n   - If Arjun removes 1 brick from the wall of size 6, Beth can remove the other 1 brick from that wall, leaving Arjun with two walls of size (5, 1). This is a winning position for Arjun.\n   - If Arjun removes both bricks from the wall of size 6, he leaves Beth with two walls of size (1, 1), which is a losing position for Beth.\n\n2. **Option (B): (6, 2, 1)**\n   - If Arjun removes 1 brick from the wall of size 6, Beth can remove both bricks from the wall of size 2, leaving Arjun with walls of sizes (5, 1). This is a winning position for Arjun.\n   - If Arjun removes both bricks from the wall of size 6, he leaves Beth with walls of sizes (4, 1), which is a winn"
+  },
+  {
+    "year": 2017,
+    "contest": "B",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo determine how many of the base-ten numerals for the positive integers less than or equal to \\(2017\\) contain the digit \\(0\\), we need to count the numbers that have at least one digit as \\(0\\). We will consider the range from \\(1\\) to \\(2017\\) and break it down into manageable parts.\n\n### Step 1: Counting numbers from \\(1\\) to \\(999\\)\n\nFirst, let's count the numbers from \\(1\\) to \\(999\\). These are all three-digit numbers (including leading zeros for numbers less than \\(100\\)).\n\nThe total number of three-digit numbers is \\(999\\). We need to count how many of these contain the digit \\(0\\).\n\n### Step 2: Counting numbers with at least one digit as \\(0\\) from \\(1\\) to \\(999\\)\n\nWe will use complementary counting. First, we count the total number of three-digit numbers and subtract the number of three-digit numbers that do not contain the digit \\(0\\).\n\n#### Total number of three-digit numbers:\n\\[ 999 \\]\n\n#### Three-digit numbers without the digit \\(0\\):\n- The first digit (hundreds place) can be any digit from \\"
+  },
+  {
+    "year": 2011,
+    "contest": "B",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine how much LeRoy must give to Bernardo so that they share the costs equally, we need to follow these steps:\n\n1. **Calculate the total cost of the trip:**\n   The total cost is the sum of the amounts paid by LeRoy and Bernardo:\n   \\[\n   \\text{Total cost} = A + B\n   \\]\n\n2. **Determine the fair share for each person:**\n   Since they agreed to share the costs equally, each person's fair share is half of the total cost:\n   \\[\n   \\text{Fair share for each} = \\frac{A + B}{2}\n   \\]\n\n3. **Calculate the amount LeRoy needs to give Bernardo:**\n   LeRoy paid \\( A \\) dollars, but his fair share is \\(\\frac{A + B}{2}\\). The amount he needs to give Bernardo is the difference between his fair share and what he actually paid:\n   \\[\n   \\text{Amount LeRoy gives} = \\frac{A + B}{2} - A\n   \\]\n\n4. **Simplify the expression:**\n   Simplify the expression to find the exact amount LeRoy needs to give Bernardo:\n   \\[\n   \\frac{A + B}{2} - A = \\frac{A + B - 2A}{2} = \\frac{B - A}{2}\n   \\]\n\nTherefore, LeRoy must give Bernardo \\(\\fr"
+  },
+  {
+    "year": 2014,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the length of the portion of the line segment \\(\\overline{XY}\\) that is contained within the cube with edge length 3. Let's break down the problem step by step.\n\n1. **Identify the coordinates of points \\(X\\) and \\(Y\\):**\n   - Point \\(X\\) is at the bottom-left corner of the bottom face of the cube with edge length 4, so its coordinates are \\((0, 0, 0)\\).\n   - Point \\(Y\\) is at the top-right corner of the top face of the cube with edge length 1, so its coordinates are \\((3, 2, 4)\\).\n\n2. **Determine the portion of \\(\\overline{XY}\\) within the cube with edge length 3:**\n   - The cube with edge length 3 is positioned such that it fits perfectly within the bottom face of the cube with edge length 4 and the top face of the cube with edge length 1.\n   - The line segment \\(\\overline{XY}\\) will intersect the cube with edge length 3 at some point. We need to find the coordinates of this intersection.\n\n3. **Find the intersection point:**\n   - The line segment \\(\\overline{XY}\\)"
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine for how many positive integers \\( n \\) less than or equal to 24, the factorial \\( n! \\) is evenly divisible by the sum of the first \\( n \\) positive integers, which is given by the formula:\n\n\\[ 1 + 2 + \\ldots + n = \\frac{n(n+1)}{2} \\]\n\nThis means that \\( n! \\) must be divisible by \\( \\frac{n(n+1)}{2} \\). For this to be true, \\( n! \\) must include all the prime factors of \\( \\frac{n(n+1)}{2} \\).\n\nLet's analyze the conditions under which \\( n! \\) is divisible by \\( \\frac{n(n+1)}{2} \\):\n\n1. **Divisibility by \\( n \\)**: Since \\( n! \\) already includes all numbers from 1 to \\( n \\), it is always divisible by \\( n \\).\n2. **Divisibility by \\( n+1 \\)**: For \\( n! \\) to be divisible by \\( n+1 \\), \\( n+1 \\) must be a factor of \\( n! \\). This is always true because \\( n! \\) includes all numbers from 1 to \\( n \\).\n3. **Divisibility by 2**: Since \\( n! \\) for \\( n \\geq 2 \\) is always even, it is divisible by 2.\n\nThe only condition that might fail is if \\( n+1 \\) is a prime numbe"
+  },
+  {
+    "year": 2015,
+    "contest": "A",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo find the volume of the tetrahedron \\(ABCD\\) with given edge lengths, we can use the Cayley-Menger determinant. The volume \\(V\\) of a tetrahedron with vertices \\(A, B, C, D\\) and edge lengths \\(AB = d_{12}\\), \\(AC = d_{13}\\), \\(AD = d_{14}\\), \\(BC = d_{23}\\), \\(BD = d_{24}\\), and \\(CD = d_{34}\\) is given by:\n\n\\[\n288 V^2 = \\begin{vmatrix}\n0 & 1 & 1 & 1 & 1 \\\\\n1 & 0 & d_{12}^2 & d_{13}^2 & d_{14}^2 \\\\\n1 & d_{12}^2 & 0 & d_{23}^2 & d_{24}^2 \\\\\n1 & d_{13}^2 & d_{23}^2 & 0 & d_{34}^2 \\\\\n1 & d_{14}^2 & d_{24}^2 & d_{34}^2 & 0\n\\end{vmatrix}\n\\]\n\nSubstituting the given edge lengths:\n- \\(AB = 5 \\Rightarrow d_{12} = 5\\)\n- \\(AC = 3 \\Rightarrow d_{13} = 3\\)\n- \\(AD = 3 \\Rightarrow d_{14} = 3\\)\n- \\(BC = 4 \\Rightarrow d_{23} = 4\\)\n- \\(BD = 4 \\Rightarrow d_{24} = 4\\)\n- \\(CD = \\frac{12}{5}\\sqrt{2} \\Rightarrow d_{34} = \\left(\\frac{12}{5}\\sqrt{2}\\right)^2 = \\frac{288}{25}\\)\n\nWe need to compute the determinant:\n\n\\[\n288 V^2 = \\begin{vmatrix}\n0 & 1 & 1 & 1 & 1 \\\\\n1 & 0 & 25 & 9 & 9 \\\\\n1 & 25 & 0 & 16 & \\frac{288}{25} \\\\\n1 & 9 & "
+  },
+  {
+    "year": 2022,
+    "contest": "B",
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo determine the number of values of \\( k \\) for which the polynomial \\( x^2 + kx + 36 \\) has two distinct integer roots, we start by expressing the polynomial in its factored form. If the polynomial has roots \\( p \\) and \\( q \\), then it can be written as:\n\n\\[ (x - p)(x - q) = x^2 - (p+q)x + pq \\]\n\nBy comparing this with the given polynomial \\( x^2 + kx + 36 \\), we identify that:\n\n\\[ pq = 36 \\]\n\\[ -(p+q) = k \\]\n\nSo, we need to find all pairs of integers \\( (p, q) \\) such that their product is 36. We list the factor pairs of 36:\n\n\\[ (1, 36), (-1, -36), (2, 18), (-2, -18), (3, 12), (-3, -12), (4, 9), (-4, -9), (6, 6), (-6, -6) \\]\n\nSince the roots must be distinct, we exclude the pair \\( (6, 6) \\) and \\( (-6, -6) \\). This leaves us with 8 pairs of positive factors and their corresponding negative pairs, giving us a total of 16 pairs.\n\nFor each pair \\( (p, q) \\), the value of \\( k \\) is given by:\n\n\\[ k = -(p+q) \\]\n\nSince each pair \\( (p, q) \\) corresponds to a unique value of \\( k \\) (because the roots are dist"
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to convert the given numerals from their respective bases to base 10 and then solve for \\( n \\) and \\( d \\).\n\nFirst, let's convert the numeral \\(\\underline{32d}\\) in base \\( n \\) to base 10. The value of \\(\\underline{32d}_n\\) is given by:\n\\[ 3n^2 + 2n + d = 263. \\]\n\nNext, let's convert the numeral \\(\\underline{324}_n\\) to base 10. The value of \\(\\underline{324}_n\\) is:\n\\[ 3n^2 + 2n + 4. \\]\n\nWe are also given that this value equals the value of the numeral \\(\\underline{11d1}_6\\). First, let's convert \\(\\underline{11d1}_6\\) to base 10. The value of \\(\\underline{11d1}_6\\) is:\n\\[ 1 \\cdot 6^3 + 1 \\cdot 6^2 + d \\cdot 6 + 1 = 216 + 36 + 6d + 1 = 253 + 6d. \\]\n\nSo, we have the equation:\n\\[ 3n^2 + 2n + 4 = 253 + 6d. \\]\nThis simplifies to:\n\\[ 3n^2 + 2n - 6d = 249. \\]\n\nNow we have two equations:\n1. \\( 3n^2 + 2n + d = 263, \\)\n2. \\( 3n^2 + 2n - 6d = 249. \\)\n\nWe can subtract the second equation from the first to eliminate \\( 3n^2 + 2n \\):\n\\[ (3n^2 + 2n + d) - (3n^2 + 2n - 6d) = 263 - 249, \\]\nw"
+  },
+  {
+    "year": 2014,
+    "contest": "B",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the radius of a circle that is tangent to all eight semicircles inside a square with side length 2. Let's break down the problem step by step.\n\n1. **Understanding the Geometry**:\n   - The square has a side length of 2.\n   - There are eight semicircles lining the inside of the square, each with a diameter equal to the side length of the square divided by 4 (since there are four semicircles along each side of the square).\n\n2. **Calculating the Radius of Each Semicircle**:\n   - The side length of the square is 2.\n   - There are four semicircles along each side, so the diameter of each semicircle is \\( \\frac{2}{4} = \\frac{1}{2} \\).\n   - Therefore, the radius of each semicircle is \\( \\frac{1}{4} \\).\n\n3. **Positioning the Circle**:\n   - The circle we are looking for is tangent to all eight semicircles.\n   - Let's denote the radius of this circle as \\( r \\).\n\n4. **Using the Geometry of Tangency**:\n   - The center of the circle will be equidistant from the centers of the s"
+  },
+  {
+    "year": 2006,
+    "contest": "B",
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the roots of the equation \\(x^2 - px + q = 0\\) where the roots are given by \\(a + \\frac{1}{b}\\) and \\(b + \\frac{1}{a}\\). We start with the information that \\(a\\) and \\(b\\) are the roots of the equation \\(x^2 - mx + 2 = 0\\), so by Vieta's formulas, we have:\n\n\\[a + b = m \\quad \\text{and} \\quad ab = 2.\\]\n\nFirst, we calculate the sum of the new roots:\n\n\\[a + \\frac{1}{b} + b + \\frac{1}{a} = (a + b) + \\left(\\frac{1}{b} + \\frac{1}{a}\\right) = a + b + \\frac{a + b}{ab} = a + b + \\frac{a + b}{2} = a + b + \\frac{m}{2} = m + \\frac{m}{2} = \\frac{3m}{2}.\\]\n\nSo, the sum of the roots \\(p\\) is:\n\n\\[p = \\frac{3m}{2}.\\]\n\nNext, we calculate the product of the new roots:\n\n\\[\\left(a + \\frac{1}{b}\\right)\\left(b + \\frac{1}{a}\\right) = ab + a \\cdot \\frac{1}{a} + b \\cdot \\frac{1}{b} + \\frac{1}{ab} = ab + 1 + 1 + \\frac{1}{ab} = 2 + 1 + 1 + \\frac{1}{2} = 4 + \\frac{1}{2} = \\frac{8}{2} + \\frac{1}{2} = \\frac{9}{2}.\\]\n\nSo, the product of the roots \\(q\\) is:\n\n\\[q = \\frac{9}{2}.\\]\n\nTherefore, the final an"
+  },
+  {
+    "year": 2019,
+    "contest": "A",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the area of the region inside the larger circle but outside all the smaller circles of radius 1. We will follow these steps:\n\n1. **Calculate the area of the larger circle:**\n   - The larger circle contains 13 smaller circles of radius 1.\n   - The centers of these smaller circles form a regular hexagon inscribed in the larger circle.\n   - The distance from the center of the larger circle to any vertex of this hexagon is equal to the radius of the larger circle.\n\n2. **Determine the side length of the hexagon:**\n   - Each smaller circle has a radius of 1, and they are tangent to each other.\n   - The distance between the centers of two adjacent smaller circles is \\(2 \\times 1 = 2\\).\n\n3. **Calculate the radius of the larger circle:**\n   - The side length of the hexagon is equal to the diameter of one smaller circle, which is 2.\n   - The radius of the larger circle is the distance from its center to any vertex of the hexagon.\n   - This distance is equal to twice the apot"
+  },
+  {
+    "year": 2022,
+    "contest": "B",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to analyze the given sequence and determine how many of its first ten numbers are prime.\n\nThe sequence is defined as follows:\n1. The first term is \\(121\\).\n2. Each subsequent term is formed by describing the previous term.\n\nLet's generate the first few terms of the sequence:\n\n1. The first term is \\(121\\).\n2. The second term is obtained by describing the first term: \"one 1, one 2, one 1\", which gives us \\(11211\\).\n3. The third term is described from the second term: \"two 1s, one 2, two 1s\", which gives us \\(1112111\\).\n\nWe can observe a pattern in the sequence:\n- The first term \\(121\\) is not a prime number.\n- The second term \\(11211\\) is not a prime number.\n- The third term \\(1112111\\) is not a prime number.\n\nTo confirm this, let's check if any of these numbers are prime:\n\n1. \\(121\\): This number is \\(11 \\times 11\\), so it is not a prime number.\n2. \\(11211\\): We need to check if it has any divisors other than 1 and itself. It turns out that \\(11211 = 3 \\times 3737\\), so it is no"
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine how many different telephone numbers David can have given the constraints. The telephone number has the form \\(555-abc-defg\\), where \\(a\\), \\(b\\), \\(c\\), \\(d\\), \\(e\\), \\(f\\), and \\(g\\) are distinct digits, in increasing order, and none is either 0 or 1.\n\nFirst, we identify the available digits. Since the digits cannot be 0 or 1, the available digits are 2, 3, 4, 5, 6, 7, 8, and 9. There are 8 available digits in total.\n\nWe need to choose 7 out of these 8 digits such that they are in increasing order. The number of ways to choose 7 digits out of 8 is given by the combination formula \\(\\binom{8}{7}\\), which is equal to 8. This is because choosing 7 digits out of 8 is equivalent to choosing which one digit to exclude, and there are 8 possible choices for which digit to exclude.\n\nTherefore, the number of different telephone numbers David can have is 8.\n\nThe correct option is \\(\\boxed{\\text{D}}\\)."
+  },
+  {
+    "year": 2011,
+    "contest": "A",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine what percent of the birds that were not swans were geese. Let's break it down step by step.\n\n1. Identify the percentage of birds that are not swans.\n   - The percentage of birds that are not swans is calculated by subtracting the percentage of swans from 100%.\n   \\[\n   100\\% - 25\\% = 75\\%\n   \\]\n   So, 75% of the birds are not swans.\n\n2. Determine the percentage of these non-swan birds that are geese.\n   - We know that 30% of all the birds are geese. To find out what percent of the non-swan birds are geese, we need to consider only the part of the geese population relative to the non-swan population.\n   \\[\n   \\text{Percentage of non-swan birds that are geese} = \\frac{\\text{Percentage of geese}}{\\text{Percentage of non-swan birds}} \\times 100\\%\n   \\]\n   Substituting the known values:\n   \\[\n   \\text{Percentage of non-swan birds that are geese} = \\frac{30\\%}{75\\%} \\times 100\\% = \\frac{30}{75} \\times 100\\% = 40\\%\n   \\]\n   So, 40% of the non-swan birds are geese.\n\nTheref"
+  },
+  {
+    "year": 2016,
+    "contest": "A",
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to consider the properties of a cube and the constraints given. A cube has 6 faces, and each face must have the same sum of the numbers at its vertices. Since there are 8 vertices and we are using the numbers 1 through 8 exactly once, the total sum of all the numbers is \\(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36\\). Each vertex is part of 3 faces, so each number contributes to 3 face sums. Therefore, the total sum of all the face sums is \\(3 \\times 36 = 108\\), and since there are 6 faces, the sum of the numbers on each face must be \\(108 / 6 = 18\\).\n\nNow, we need to find how many different ways we can arrange the numbers 1 through 8 on the vertices of the cube such that the sum of the numbers on each face is 18. We can use symmetry and combinatorial arguments to simplify this.\n\nFirst, let's consider one specific arrangement. If we place the number 1 at a vertex, then the three other numbers on the same face must sum to \\(18 - 1 = 17\\). The possible combinations of three numbers from 2"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the dimensions of Sola's rectangular garden based on the information given about the fence posts and their spacing.\n\nFirst, let's define the variables:\n- Let \\( l \\) be the length of the longer side of the garden.\n- Let \\( w \\) be the length of the shorter side of the garden.\n- The total number of fence posts is 20. Since there are one post at each corner and the rest are spaced evenly along the sides, we can express the total number of posts as:\n  \\[\n  4 + 2(l - 1) + 2(w - 1) = 20\n  \\]\n  Simplifying this equation, we get:\n  \\[\n  4 + 2l - 2 + 2w - 2 = 20 \\implies 2l + 2w = 20 \\implies l + w = 10\n  \\]\n\nWe are also given that the longer side has twice as many posts as the shorter side, including the corners. This means:\n- The longer side (which is \\( l \\)) has \\( l - 1 \\) segments of length 4 yards each.\n- The shorter side (which is \\( w \\)) has \\( w - 1 \\) segments of length 4 yards each.\n\nSince the number of posts on the longer side is twice the number of posts on "
+  },
+  {
+    "year": 2009,
+    "contest": "A",
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the percentage of non-swimmers who play soccer. Let's denote the total number of children at the camp as \\( N \\).\n\nFirst, let's find out how many children play soccer and how many swim:\n- The number of children who play soccer is \\( 0.60N \\).\n- The number of children who swim is \\( 0.30N \\).\n- The number of children who both play soccer and swim is \\( 0.40 \\times 0.60N = 0.24N \\).\n\nNext, we need to find the number of children who do not swim:\n- The number of children who do not swim is \\( N - 0.30N = 0.70N \\).\n\nNow, let's find out how many children do not swim and play soccer:\n- The number of children who do not swim and play soccer is \\( 0.60N - 0.24N = 0.36N \\).\n\nFinally, we need to find the percentage of non-swimmers who play soccer:\n- The percentage of non-swimmers who play soccer is \\( \\frac{0.36N}{0.70N} \\times 100\\% = \\frac{0.36}{0.70} \\times 100\\% = \\frac{36}{70} \\times 100\\% = \\frac{3600}{70}\\% \\approx 51.43\\% \\).\n\nRounding to the nearest whole percent, we"
+  },
+  {
+    "year": 2016,
+    "contest": "A",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to follow the sequence of transformations step by step and determine which transformation will return the triangle \\(\\triangle A''B''C''\\) to its original position \\(\\triangle ABC\\).\n\n1. **Reflect \\(\\triangle ABC\\) about the \\(x\\)-axis:**\n   - The coordinates of the vertices after reflection are:\n     - \\(A(0, 2) \\rightarrow A'(0, -2)\\)\n     - \\(B(-3, 2) \\rightarrow B'(-3, -2)\\)\n     - \\(C(-3, 0) \\rightarrow C'(-3, 0)\\)\n\n2. **Rotate \\(\\triangle A'B'C'\\) counterclockwise about the origin by \\(90^\\circ\\):**\n   - The rotation matrix for a \\(90^\\circ\\) counterclockwise rotation is:\n     \\[\n     \\begin{pmatrix}\n     x' \\\\\n     y'\n     \\end{pmatrix}\n     =\n     \\begin{pmatrix}\n     0 & -1 \\\\\n     1 & 0\n     \\end{pmatrix}\n     \\begin{pmatrix}\n     x \\\\\n     y\n     \\end{pmatrix}\n     \\]\n   - Applying this to each vertex:\n     - \\(A'(0, -2) \\rightarrow A''(2, 0)\\)\n     - \\(B'(-3, -2) \\rightarrow B''(-2, -3)\\)\n     - \\(C'(-3, 0) \\rightarrow C''(0, -3)\\)\n\n3. **Determine the transformation"
+  },
+  {
+    "year": 2025,
+    "contest": "A",
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the time at which Andy and Betsy will be exactly the same distance from their common starting point in Mathville. Let's denote the time after 2:30 PM when they are equidistant from the starting point as \\( t \\) hours.\n\nFirst, let's express the distances each has traveled in terms of \\( t \\).\n\n- Andy leaves at 1:30 PM and travels north at a speed of 8 miles per hour. By 2:30 PM, he has already traveled for 1 hour. Therefore, by 2:30 PM, Andy is \\( 8 \\times 1 = 8 \\) miles away from the starting point.\n- From 2:30 PM onward, Andy continues to travel north at 8 miles per hour. So, after \\( t \\) hours, he will have traveled an additional \\( 8t \\) miles north. Therefore, the total distance Andy is from the starting point at 4:30 PM is \\( 8t \\) miles.\n\n- Betsy leaves at 2:30 PM and travels east at a speed of 12 miles per hour. By 4:30 PM, she will have traveled for \\( t \\) hours. Therefore, the total distance Betsy is from the starting point at 4:30 PM is \\( 12t \\) miles."
+  },
+  {
+    "year": 2015,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the number of rearrangements of \\(abcd\\) where no two adjacent letters are also adjacent in the alphabet, we need to consider all possible permutations of the letters and check each one for the given condition.\n\nFirst, let's list all the permutations of the letters \\(abcd\\):\n\n1. abcd\n2. abdc\n3. acbd\n4. acdb\n5. adbc\n6. adcb\n7. bacd\n8. badc\n9. bcad\n10. bcda\n11. bdac\n12. bdc\n13. cabd\n14. cadb\n15. cbad\n16. cbda\n17. cdab\n18. cdb\n19. dabc\n20. dacb\n21. dbac\n22. dbca\n23. dcab\n24. dcba\n\nNow, we need to check each permutation to see if it contains any adjacent letters that are also adjacent in the alphabet.\n\n- **abcd**: No adjacent pairs are \\(ab\\), \\(bc\\), or \\(cd\\).\n- **abd c**: No adjacent pairs are \\(ab\\) or \\(bd\\).\n- **acbd**: The pair \\(ac\\) is not adjacent, but \\(cb\\) and \\(bd\\) are.\n- **acdb**: The pair \\(ad\\) is not adjacent, but \\(cd\\) is.\n- **adbc**: The pair \\(ad\\) is not adjacent, but \\(db\\) is.\n- **ad cb**: No adjacent pairs are \\(ad\\), \\(dc\\), or \\(cb\\).\n- **b acd**: No a"
+  },
+  {
+    "year": 2024,
+    "contest": "B",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of ways to partition a group of 16 people into 4 indistinguishable committees of 4 people each, and then assign chairpeople and secretary positions within each committee.\n\n### Step 1: Partitioning the Group\nFirst, we calculate the number of ways to partition 16 people into 4 groups of 4. This is a classic problem of dividing a set into equal subsets, which can be done using the multinomial coefficient:\n\n\\[\n\\frac{16!}{(4!)^4}\n\\]\n\n### Step 2: Assigning Positions within Each Committee\nEach committee of 4 people needs to have one chairperson and one secretary. The number of ways to choose a chairperson and a secretary from 4 people is given by:\n\n\\[\n4 \\times 3 = 12\n\\]\n\nSince there are 4 committees, the total number of ways to assign chairpeople and secretary positions across all committees is:\n\n\\[\n(12)^4\n\\]\n\n### Step 3: Combining Both Steps\nThe total number of ways to partition the group and assign positions is the product of the two results from steps 1 and "
+  },
+  {
+    "year": 2017,
+    "contest": "A",
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the expression \\( (2(2(2(2(2(2+1)+1)+1)+1)+1)+1) \\), we will evaluate it step by step from the innermost parentheses outward.\n\nFirst, evaluate the innermost expression:\n\\[ 2 + 1 = 3 \\]\n\nNext, substitute this result into the next set of parentheses:\n\\[ 2(3) + 1 = 6 + 1 = 7 \\]\n\nNow, substitute this result into the next set of parentheses:\n\\[ 2(7) + 1 = 14 + 1 = 15 \\]\n\nNext, substitute this result into the next set of parentheses:\n\\[ 2(15) + 1 = 30 + 1 = 31 \\]\n\nNow, substitute this result into the next set of parentheses:\n\\[ 2(31) + 1 = 62 + 1 = 63 \\]\n\nFinally, substitute this result into the outermost expression:\n\\[ 2(63) + 1 = 126 + 1 = 127 \\]\n\nTherefore, the value of the expression \\( (2(2(2(2(2(2+1)+1)+1)+1)+1)+1) \\) is \\( 127 \\).\n\nThe correct option is \\(\\boxed{\\text{C}}\\)."
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of ways to assign six tourists to two guides such that each guide gets at least one tourist. Let's break down the solution step by step.\n\n1. **Total Ways to Assign Tourists**: \n   Each of the 6 tourists can choose between 2 guides. Therefore, the total number of ways to assign the tourists without any restrictions is:\n   \\[\n   2^6 = 64\n   \\]\n\n2. **Subtracting Invalid Cases**:\n   We need to subtract the cases where one or both guides have no tourists assigned. There are two such invalid cases:\n   - All tourists choose the first guide.\n   - All tourists choose the second guide.\n\n   Each of these cases occurs once, so we have:\n   \\[\n   2 \\text{ (all tourists with the first guide and all tourists with the second guide)}\n   \\]\n\n3. **Calculating Valid Groupings**:\n   The number of valid groupings is the total number of ways to assign the tourists minus the invalid cases:\n   \\[\n   64 - 2 = 62\n   \\]\n\nTherefore, the number of different groupings of guides and tou"
+  },
+  {
+    "year": 2009,
+    "contest": "B",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the total weight of the bucket when it is full of water in terms of \\(a\\) and \\(b\\).\n\nLet's denote:\n- \\(W\\) as the weight of the empty bucket.\n- \\(w\\) as the weight of the water when the bucket is full.\n\nGiven:\n1. When the bucket is two-thirds full, the total weight is \\(a\\) kilograms.\n2. When the bucket is one-half full, the total weight is \\(b\\) kilograms.\n\nWe can set up the following equations based on the given information:\n\n\\[ \\frac{2}{3}w + W = a \\]\n\\[ \\frac{1}{2}w + W = b \\]\n\nWe need to find the total weight when the bucket is full, which is \\(w + W\\).\n\nFirst, let's solve for \\(W\\) in terms of \\(a\\) and \\(b\\). We can subtract the second equation from the first equation to eliminate \\(W\\):\n\n\\[ \\left( \\frac{2}{3}w + W \\right) - \\left( \\frac{1}{2}w + W \\right) = a - b \\]\n\nSimplify the left-hand side:\n\n\\[ \\frac{2}{3}w - \\frac{1}{2}w = a - b \\]\n\nTo combine the fractions, find a common denominator (which is 6):\n\n\\[ \\frac{4}{6}w - \\frac{3}{6}w = a - b \\]\n\\[ \\frac{1"
+  },
+  {
+    "year": 2018,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that \\( m^n \\) has a units digit of 1 for a randomly selected \\( m \\) from the set \\(\\{11, 13, 15, 17, 19\\}\\) and a randomly selected \\( n \\) from the set \\(\\{1999, 2000, 2001, \\ldots, 2018\\}\\).\n\nFirst, let's analyze the units digit of \\( m^n \\) for each possible value of \\( m \\):\n\n1. **For \\( m = 11 \\):**\n   - The units digit of \\( 11^n \\) is always 1 because the units digit of 11 is 1 and any power of a number ending in 1 will also end in 1.\n\n2. **For \\( m = 13 \\):**\n   - The units digits of powers of 13 cycle every 4 terms: \\( 13, 169, 13, 169, \\ldots \\). The units digit is 1 for every odd power.\n   - Since \\( n \\) ranges from 1999 to 2018 (inclusive), there are 20 numbers in this range. Half of these will be odd and half will be even. Therefore, the probability that \\( m^n \\) has a units digit of 1 is \\( \\frac{1}{2} \\).\n\n3. **For \\( m = 15 \\):**\n   - The units digits of powers of 15 cycle every 4 terms: \\( 15, 225, 375, 625, 9375, \\ldots \\). The"
+  },
+  {
+    "year": 2025,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the pattern in the construction of the array. The first row is given as:\n\\[ -1, 3, 1 \\]\n\nEach subsequent row is formed by summing adjacent pairs from the previous row. Let's construct the next few rows to identify any patterns.\n\n### Row 1:\n\\[ -1, 3, 1 \\]\n\n### Row 2:\nSum adjacent pairs:\n\\[ (-1 + 3), (3 + 1) \\]\n\\[ 2, 4 \\]\n\nSo, Row 2 is:\n\\[ 2, 4 \\]\n\n### Row 3:\nSum adjacent pairs:\n\\[ (2 + 4) \\]\n\\[ 6 \\]\n\nSo, Row 3 is:\n\\[ 6 \\]\n\n### Row 4:\nSum adjacent pairs:\n\\[ (6) \\]\n\nSince the pattern in the sums is not immediately clear, let's consider the general form. Each row starts with \\(-1\\) and ends with \\(1\\). The sum of each pair in the next row is the sum of two numbers from the previous row.\n\nLet's denote the elements of the rows as follows:\n\\[ R_n = (a_1, a_2, a_3, \\ldots, a_{n-1}, 1) \\]\n\nThe sum of each row can be calculated by observing the pattern in the sums. Notice that each element in the next row is the sum of two adjacent elements from the previous row.\n\n### Sum o"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to evaluate the expressions \\(6@2\\) and \\(6\\#2\\) using the given definitions of the operations @ and #.\n\nFirst, let's evaluate \\(6@2\\):\n\\[ a@b = ab - b^2 \\]\nSubstituting \\(a = 6\\) and \\(b = 2\\), we get:\n\\[ 6@2 = 6 \\cdot 2 - 2^2 = 12 - 4 = 8 \\]\n\nNext, let's evaluate \\(6\\#2\\):\n\\[ a\\#b = a + b - ab^2 \\]\nSubstituting \\(a = 6\\) and \\(b = 2\\), we get:\n\\[ 6\\#2 = 6 + 2 - 6 \\cdot 2^2 = 6 + 2 - 6 \\cdot 4 = 6 + 2 - 24 = 8 - 24 = -16 \\]\n\nNow, we need to find the value of \\(\\frac{6@2}{6\\#2}\\):\n\\[ \\frac{6@2}{6\\#2} = \\frac{8}{-16} = -\\frac{1}{2} \\]\n\nTherefore, the correct option is \\(\\boxed{\\text{A}}\\)."
+  },
+  {
+    "year": 2010,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine the year in which Marvin's birthday, May 27, falls on a Saturday again, we need to understand how the days of the week shift over the years. Each non-leap year, the day of the week advances by one day, and each leap year, the day of the week advances by two days.\n\nFirst, let's calculate the number of days in the years between 2008 and 2011:\n- From May 27, 2008 to May 26, 2012, we need to count the days in each year:\n  - 2008: A leap year, so it advances by 2 days.\n  - 2009: Not a leap year, so it advances by 1 day.\n  - 2010: Not a leap year, so it advances by 1 day.\n  - 2011: Not a leap year, so it advances by 1 day.\n  - 2012: A leap year, so it advances by 2 days.\n\nAdding these up:\n\\[ 2 + 1 + 1 + 1 + 2 = 7 \\text{ days} \\]\n\nSince 7 days is exactly one week, the day of the week will be the same as the starting day. Therefore, May 27, 2012, will fall on a Saturday.\n\nThus, the correct option is \\(\\boxed{\\text{B}}\\)."
+  },
+  {
+    "year": 2021,
+    "contest": "A",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine the median of the numbers in the list, we need to understand the structure of the list and find the middle value(s).\n\nThe list is constructed such that:\n- The number 1 appears 1 time,\n- The number 2 appears 2 times,\n- The number 3 appears 3 times,\n- ...\n- The number 200 appears 200 times.\n\nFirst, let's calculate the total number of elements in the list. The total number of elements is the sum of the first 200 positive integers:\n\n\\[\n1 + 2 + 3 + \\cdots + 200\n\\]\n\nThis sum can be calculated using the formula for the sum of the first \\( n \\) positive integers:\n\n\\[\nS = \\frac{n(n+1)}{2}\n\\]\n\nFor \\( n = 200 \\):\n\n\\[\nS = \\frac{200 \\times 201}{2} = 20100\n\\]\n\nSo, the list contains 20100 numbers.\n\nSince the total number of elements is even (20100), the median will be the average of the 10050th and 10051st numbers in the ordered list.\n\nNext, we need to determine which numbers these positions correspond to. We need to find the cumulative count of numbers up to a certain point and see where the 10050th and 10051"
+  },
+  {
+    "year": 2021,
+    "contest": "A",
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to place 3 indistinguishable red chips, 3 indistinguishable blue chips, and 3 indistinguishable green chips in a \\(3 \\times 3\\) grid such that no two chips of the same color are directly adjacent to each other (vertically or horizontally).\n\nFirst, let's consider the possible placements for one color. We need to place 3 red chips in a \\(3 \\times 3\\) grid such that no two red chips are adjacent. One valid arrangement is:\n\n\\[\n\\begin{array}{|c|c|c|}\n\\hline\nR &   & R \\\\\n\\hline\n  & R &   \\\\\n\\hline\nR &   & R \\\\\n\\hline\n\\end{array}\n\\]\n\nThis arrangement ensures that no two red chips are adjacent. Now, we need to place the blue and green chips in the remaining spaces such that they do not violate the same condition.\n\nLet's consider the possible placements for the blue chips. If we place the blue chips in the positions where the red chips are fixed, we can see that there are no conflicts with the red chips' positions. For example, if we place the blue chips in the following arrangement:\n\n\\"
+  },
+  {
+    "year": 2013,
+    "contest": "A",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem \\(\\frac{2^{2014} + 2^{2012}}{2^{2014} - 2^{2012}}\\), we can start by factoring out the common term in both the numerator and the denominator.\n\nFirst, let's factor out \\(2^{2012}\\) from both the numerator and the denominator:\n\n\\[ \\frac{2^{2014} + 2^{2012}}{2^{2014} - 2^{2012}} = \\frac{2^{2012}(2^2 + 1)}{2^{2012}(2^2 - 1)} \\]\n\nNext, simplify the expression inside the parentheses:\n\n\\[ 2^2 = 4 \\]\n\\[ 2^2 + 1 = 4 + 1 = 5 \\]\n\\[ 2^2 - 1 = 4 - 1 = 3 \\]\n\nSo, the expression becomes:\n\n\\[ \\frac{2^{2012} \\cdot 5}{2^{2012} \\cdot 3} \\]\n\nSince \\(2^{2012}\\) is a common factor in both the numerator and the denominator, it cancels out:\n\n\\[ \\frac{5}{3} \\]\n\nTherefore, the value of the given expression is \\(\\frac{5}{3}\\).\n\nThe correct option is \\(\\boxed{\\text{C}}\\)."
+  },
+  {
+    "year": 2018,
+    "contest": "B",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many of the first 2018 numbers in the sequence \\(101, 1001, 10001, 100001, \\dots\\) are divisible by 101.\n\nThe given sequence can be written as:\n\\[ a_n = 10^n + 1 \\]\nwhere \\( n \\) starts from 2 (since the first term is 101).\n\nWe need to find how many terms in this sequence up to \\( a_{2018} \\) are divisible by 101. This means we need to solve:\n\\[ 10^n + 1 \\equiv 0 \\pmod{101} \\]\nwhich simplifies to:\n\\[ 10^n \\equiv -1 \\pmod{101} \\]\n\nTo find the smallest \\( n \\) such that \\( 10^n \\equiv -1 \\pmod{101} \\), we need to check the powers of 10 modulo 101. We can use Fermat's Little Theorem, which states:\n\\[ a^{p-1} \\equiv 1 \\pmod{p} \\]\nfor any integer \\( a \\) not divisible by a prime \\( p \\). Here, \\( p = 101 \\), so:\n\\[ 10^{100} \\equiv 1 \\pmod{101} \\]\n\nWe need to find the smallest \\( n \\) such that:\n\\[ 10^n \\equiv -1 \\pmod{101} \\]\nThis means we are looking for a power of 10 that is congruent to -1 modulo 101. We can check the powers of 10 up to 100 (since \\( 10^{100} \\equ"
+  },
+  {
+    "year": 2013,
+    "contest": "B",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the combined rate of miles per gallon of gasoline for Ray's and Tom's cars, we need to consider the following:\n\n1. **Define Variables:**\n   - Let \\( D \\) be the number of miles each person drives.\n   - Ray's car averages 40 miles per gallon.\n   - Tom's car averages 10 miles per gallon.\n\n2. **Calculate Gallons Used:**\n   - The number of gallons used by Ray for driving \\( D \\) miles is:\n     \\[\n     \\text{Gallons used by Ray} = \\frac{D}{40}\n     \\]\n   - The number of gallons used by Tom for driving \\( D \\) miles is:\n     \\[\n     \\text{Gallons used by Tom} = \\frac{D}{10}\n     \\]\n\n3. **Total Gallons Used:**\n   - The total number of gallons used by both cars combined is:\n     \\[\n     \\text{Total gallons used} = \\frac{D}{40} + \\frac{D}{10}\n     \\]\n   - To add these fractions, find a common denominator. The least common multiple of 40 and 10 is 40.\n     \\[\n     \\frac{D}{40} + \\frac{D}{10} = \\frac{D}{40} + \\frac{4D}{40} = \\frac{5D}{40} = \\frac{D}{8}\n     \\]\n\n4. **Combined Rate of Mile"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, let's denote the two consecutive odd integers. Let the smaller integer be \\( x \\). Since the integers are consecutive and odd, the larger integer will be \\( x + 2 \\).\n\nAccording to the problem, the larger integer is three times the smaller integer. Therefore, we can write the equation:\n\n\\[ x + 2 = 3x \\]\n\nNow, let's solve this equation step by step.\n\n1. Subtract \\( x \\) from both sides of the equation:\n   \\[ x + 2 - x = 3x - x \\]\n   \\[ 2 = 2x \\]\n\n2. Divide both sides by 2:\n   \\[ \\frac{2}{2} = \\frac{2x}{2} \\]\n   \\[ 1 = x \\]\n\nSo, the smaller integer \\( x \\) is 1. The larger integer is then \\( x + 2 = 1 + 2 = 3 \\).\n\nThe sum of these two integers is:\n\\[ 1 + 3 = 4 \\]\n\nTherefore, the correct option is \\(\\boxed{\\text{A}}\\)."
+  },
+  {
+    "year": 2023,
+    "contest": "A",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the relationship between the Fahrenheit scale and the Breadus scale. We know two points on this linear function:\n\n1. \\(110\\) degrees Fahrenheit corresponds to \\(0\\) degrees on the Breadus scale.\n2. \\(350\\) degrees Fahrenheit corresponds to \\(100\\) degrees on the Breadus scale.\n\nFirst, let's find the slope of the linear function. The slope \\(m\\) is given by the formula:\n\n\\[ m = \\frac{y_2 - y_1}{x_2 - x_1} \\]\n\nHere, \\((x_1, y_1) = (110, 0)\\) and \\((x_2, y_2) = (350, 100)\\). Plugging these values into the formula, we get:\n\n\\[ m = \\frac{100 - 0}{350 - 110} = \\frac{100}{240} = \\frac{5}{12} \\]\n\nNow that we have the slope, we can write the equation of the line in the form \\(y = mx + b\\), where \\(m\\) is the slope and \\(b\\) is the y-intercept. We already know \\(m = \\frac{5}{12}\\) and one point on the line is \\((110, 0)\\). Using this point to find \\(b\\):\n\n\\[ 0 = \\frac{5}{12} \\cdot 110 + b \\]\n\nSolving for \\(b\\):\n\n\\[ 0 = \\frac{550}{12} + b \\]\n\\[ b = -\\frac{550}{12} \\]\n\nSo, the"
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the product of the numbers on the top faces of twelve fair dice is a prime number.\n\nFirst, let's understand what it means for the product of the numbers on the dice to be prime. A prime number has exactly two distinct positive divisors: 1 and itself. Therefore, for the product of the numbers on the dice to be prime, one of the dice must show a prime number (2, 3, or 5), and all the other dice must show the number 1.\n\nLet's break this down step by step:\n\n1. **Identify the prime numbers on a die:**\n   The possible outcomes when rolling a fair six-sided die are 1, 2, 3, 4, 5, and 6. Among these, the prime numbers are 2, 3, and 5.\n\n2. **Probability of rolling a prime number:**\n   There are 3 prime numbers (2, 3, and 5) out of 6 possible outcomes. Therefore, the probability of rolling a prime number on a single die is:\n   \\[\n   P(\\text{prime}) = \\frac{3}{6} = \\frac{1}{2}\n   \\]\n\n3. **Probability of rolling a non-prime number:**\n   The remaining numbe"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the structure of a cube and how the products of the numbers on its faces relate to the sum of the products at each vertex.\n\nA cube has 8 vertices, and each vertex is defined by the product of the numbers on the three faces that meet at that vertex. If we label the faces of the cube with the numbers \\(a, b, c, d, e, f\\), then the eight products are:\n\n\\[abc, abf, aec, aef, dbc, dbf, dec, def\\]\n\nWe can see that each face number appears in exactly 4 of these products. Therefore, the sum of all eight products is:\n\n\\[4(abc + abf + aec + aef + dbc + dbf + dec + def)\\]\n\nThis can be factored as:\n\n\\[4( (ab)(c+f) + (ae)(c+f) + (db)(e+f) + (de)(c+f) ) = 4((a+d)(b+e)(c+f))\\]\n\nTo maximize this sum, we need to maximize the product \\((a+d)(b+e)(c+f)\\). The best way to do this is to pair the largest and smallest numbers together, then the next largest and next smallest, and so on. So, we can pair 7 with 2, 6 with 3, and 5 with 4. This gives us:\n\n\\[(7+2)(6+3)(5+4) = 9 \\cdot 9 \\cdot"
+  },
+  {
+    "year": 2024,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to understand the properties of a geometric sequence. In a geometric sequence, each term after the first is found by multiplying the previous term by a constant ratio \\( r \\). Given that the first three terms are \\( a \\), \\( 720 \\), and \\( b \\), we can express these terms as follows:\n\n\\[ a = a \\]\n\\[ 720 = ar \\]\n\\[ b = ar^2 \\]\n\nFrom the second equation, we can solve for \\( r \\):\n\n\\[ r = \\frac{720}{a} \\]\n\nSubstituting this value of \\( r \\) into the third equation, we get:\n\n\\[ b = a \\left( \\frac{720}{a} \\right)^2 = a \\cdot \\frac{720^2}{a^2} = \\frac{720^2}{a} \\]\n\nTo find the least possible value of \\( b \\), we need to choose the largest possible integer value for \\( a \\) that is less than 720. The largest integer less than 720 is 719. Let's check if 719 works:\n\n\\[ r = \\frac{720}{719} \\]\n\\[ b = \\frac{720^2}{719} = \\frac{518400}{719} \\approx 720.36 \\]\n\nSince \\( b \\) must be an integer, we need to check the next possible value for \\( a \\), which is 360 (since \\( 720/2 = 360 \\)):\n\n\\[ r "
+  },
+  {
+    "year": 2024,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the behavior of the operation on the number \\( n \\). The operation is defined as follows:\n- If \\( n \\) is a multiple of 3, replace \\( n \\) by \\( \\frac{n}{3} \\).\n- If \\( n \\) is not a multiple of 3, replace \\( n \\) by \\( n + 10 \\).\n\nWe start with \\( n = 100 \\). Since 100 is not a multiple of 3, we apply the second rule:\n\\[ 100 \\to 110. \\]\n\nNext, 110 is also not a multiple of 3, so we apply the second rule again:\n\\[ 110 \\to 120. \\]\n\nNow, 120 is a multiple of 3, so we apply the first rule:\n\\[ 120 \\to 40. \\]\n\nNext, 40 is not a multiple of 3, so we apply the second rule:\n\\[ 40 \\to 50. \\]\n\nNow, 50 is not a multiple of 3, so we apply the second rule again:\n\\[ 50 \\to 60. \\]\n\nFinally, 60 is a multiple of 3, so we apply the first rule:\n\\[ 60 \\to 20. \\]\n\nWe have performed the operation 4 times and obtained the sequence: \\( 100 \\to 110 \\to 120 \\to 40 \\to 50 \\to 60 \\to 20 \\).\n\nTo find the value after 100 operations, we need to observe the pattern in the sequence. Notice that e"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to set up a system of equations based on the given information. Let's define the variables as follows:\n\n- \\( t \\) = number of sets of twins\n- \\( tr \\) = number of sets of triplets\n- \\( q \\) = number of sets of quadruplets\n\nFrom the problem, we know the following relationships:\n\n1. The total number of babies born is 1000.\n2. There were four times as many sets of triplets as sets of quadruplets.\n3. There was three times as many sets of twins as sets of triplets.\n\nWe can express these relationships with the following equations:\n\n\\[ t + tr + q = 1000 \\]\n\\[ tr = 4q \\]\n\\[ t = 3tr \\]\n\nFirst, we substitute \\( tr \\) and \\( t \\) in terms of \\( q \\) into the first equation. From \\( tr = 4q \\), we get:\n\n\\[ t = 3(4q) = 12q \\]\n\nNow, substitute \\( t \\) and \\( tr \\) in terms of \\( q \\) into the first equation:\n\n\\[ 12q + 4q + q = 1000 \\]\n\\[ 17q = 1000 \\]\n\\[ q = \\frac{1000}{17} \\approx 58.82 \\]\n\nSince \\( q \\) must be a whole number, we need to re-evaluate the problem to ensure all values are int"
+  },
+  {
+    "year": 2009,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the relationship between the circumferences of the two circles. When circle \\( B \\) rolls around the circumference of circle \\( A \\), it must cover a distance equal to the circumference of circle \\( A \\). Since circle \\( B \\) is internally tangent to circle \\( A \\) and has the same points of tangency at the beginning and end of its trip, the distance covered by circle \\( B \\) is exactly the circumference of circle \\( A \\).\n\nThe circumference of circle \\( A \\) is given by:\n\\[ 2\\pi \\times 100 = 200\\pi. \\]\n\nThe circumference of circle \\( B \\) is given by:\n\\[ 2\\pi r. \\]\n\nSince circle \\( B \\) rolls around the circumference of circle \\( A \\), the distance it covers is equal to the circumference of circle \\( A \\). Therefore, we have:\n\\[ 200\\pi = n \\times 2\\pi r, \\]\nwhere \\( n \\) is the number of times circle \\( B \\) rotates as it rolls around circle \\( A \\). Simplifying this equation, we get:\n\\[ 100 = n \\times r. \\]\n\nThis means that \\( r \\) must be a divisor of 100. The "
+  },
+  {
+    "year": 2016,
+    "contest": "A",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the radius of the scrap cookie formed from the leftover dough after cutting out seven cookies of radius 1 inch each.\n\nFirst, let's calculate the area of one cookie. The area \\(A\\) of a circle with radius \\(r\\) is given by the formula:\n\\[ A = \\pi r^2 \\]\nFor a cookie with radius 1 inch, the area is:\n\\[ A = \\pi \\times 1^2 = \\pi \\text{ square inches} \\]\n\nSince there are seven cookies, the total area of the dough used is:\n\\[ 7 \\times \\pi = 7\\pi \\text{ square inches} \\]\n\nNext, we need to determine the radius of the original circle of cookie dough. The center cookie is surrounded by six other cookies, each tangent to its neighbors and to the edge of the dough. This arrangement forms a hexagon with each side equal to the diameter of one cookie, which is 2 inches.\n\nThe distance from the center of the central cookie to the center of any surrounding cookie is the radius of the central cookie plus the radius of one of the surrounding cookies, which is 1 inch. Therefore, the di"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine the probability that \\(ad - bc\\) is even, we need to analyze the parity (odd or even nature) of the terms involved. The expression \\(ad - bc\\) will be even if both \\(ad\\) and \\(bc\\) are either both even or both odd.\n\nFirst, let's consider the parity of \\(a\\), \\(b\\), \\(c\\), and \\(d\\). Each of these integers can be either even or odd. There are two possibilities for each integer: even (E) or odd (O).\n\nFor \\(ad\\) to be even, at least one of \\(a\\) or \\(d\\) must be even. Similarly, for \\(bc\\) to be even, at least one of \\(b\\) or \\(c\\) must be even.\n\nWe will calculate the probability that both \\(ad\\) and \\(bc\\) are either both even or both odd. We can do this by considering the complementary event: the probability that \\(ad\\) is odd and \\(bc\\) is odd.\n\nFor \\(ad\\) to be odd, both \\(a\\) and \\(d\\) must be odd. The probability of choosing an odd number from 0 to 2007 is \\(\\frac{1004}{2008} = \\frac{1}{2}\\). Therefore, the probability that both \\(a\\) and \\(d\\) are odd is:\n\\[\n\\left(\\frac{1}{2}\\right) \\times "
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of marbles left over when Ringo and Paul pool their marbles together and place them into bags with 6 marbles per bag.\n\nFirst, let's define the variables:\n- Let \\( R \\) be the number of marbles Ringo has.\n- Let \\( P \\) be the number of marbles Paul has.\n\nFrom the problem, we know:\n1. When Ringo places his marbles into bags with 6 marbles per bag, he has 4 marbles left over. This can be expressed as:\n   \\[\n   R \\equiv 4 \\pmod{6}\n   \\]\n2. When Paul does the same with his marbles, he has 3 marbles left over. This can be expressed as:\n   \\[\n   P \\equiv 3 \\pmod{6}\n   \\]\n\nWe need to find the number of marbles left over when Ringo and Paul pool their marbles together and place them into bags with 6 marbles per bag. This is equivalent to finding \\( (R + P) \\mod 6 \\).\n\nFirst, let's add the congruences:\n\\[\nR + P \\equiv 4 + 3 \\pmod{6}\n\\]\n\\[\nR + P \\equiv 7 \\pmod{6}\n\\]\n\nNext, we simplify \\( 7 \\mod 6 \\):\n\\[\n7 \\div 6 = 1 \\text{ remainder } 1\n\\]\nSo,\n\\[\n7 \\equiv 1 \\pmod{6"
+  },
+  {
+    "year": 2012,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the sum of all possible values of \\( n \\) such that the sum of the first \\( m \\) positive odd integers is 212 more than the sum of the first \\( n \\) positive even integers.\n\nFirst, let's recall the formulas for the sums of the first \\( m \\) positive odd and even integers:\n\n1. The sum of the first \\( m \\) positive odd integers:\n\\[ S_{\\text{odd}} = 1 + 3 + 5 + \\cdots + (2m-1) = m^2 \\]\n\n2. The sum of the first \\( n \\) positive even integers:\n\\[ S_{\\text{even}} = 2 + 4 + 6 + \\cdots + 2n = 2(1 + 2 + 3 + \\cdots + n) = 2 \\left( \\frac{n(n+1)}{2} \\right) = n(n+1) \\]\n\nAccording to the problem, the sum of the first \\( m \\) positive odd integers is 212 more than the sum of the first \\( n \\) positive even integers:\n\\[ m^2 = n(n+1) + 212 \\]\n\nWe need to find all possible values of \\( n \\) that satisfy this equation. Let's solve for \\( m^2 \\):\n\\[ m^2 = n^2 + n + 212 \\]\n\nSince \\( m^2 \\) must be a perfect square, we need to check the values of \\( n \\) such that \\( n^2 + n + 212 \\) is a pe"
+  },
+  {
+    "year": 2022,
+    "contest": "B",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the area of rhombus \\(ABCD\\) given that point \\(P\\) lies on segment \\(\\overline{AD}\\) such that \\(\\overline{BP} \\perp \\overline{AD}\\), \\(AP = 3\\), and \\(PD = 2\\).\n\nFirst, let's find the length of \\(AD\\). Since \\(P\\) is a point on \\(AD\\) such that \\(AP = 3\\) and \\(PD = 2\\), we have:\n\\[ AD = AP + PD = 3 + 2 = 5. \\]\n\nNext, since \\(ABCD\\) is a rhombus, all sides are equal in length. Let the side length of the rhombus be \\(s\\). Therefore, \\(AB = BC = CD = DA = s\\).\n\nSince \\(\\overline{BP} \\perp \\overline{AD}\\), \\(BP\\) is the height of the rhombus when \\(AD\\) is considered as the base. The area \\(A\\) of a rhombus can be calculated using the formula:\n\\[ A = \\text{base} \\times \\text{height}. \\]\nHere, the base is \\(AD = 5\\) and the height is the length of \\(BP\\).\n\nTo find \\(BP\\), we use the Pythagorean theorem in triangle \\(ABP\\). Since \\(AB = s\\) and \\(AP = 3\\), we have:\n\\[ BP^2 + AP^2 = AB^2 \\]\n\\[ BP^2 + 3^2 = s^2 \\]\n\\[ BP^2 + 9 = s^2 \\]\n\\[ BP^2 = s^2 - 9. \\]\n\nThe area of t"
+  },
+  {
+    "year": 2009,
+    "contest": "B",
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to track the amount of millet and other seeds in the feeder over each day. Let's start by analyzing the first few days.\n\n**Day 1:**\n- Millie adds 1 quart of seeds.\n- 25% of these seeds are millet, so there is \\(0.25\\) quarts of millet and \\(0.75\\) quarts of other seeds in the feeder.\n- The birds eat 25% of the millet, so they eat \\(0.25 \\times 0.25 = 0.0625\\) quarts of millet.\n- Therefore, the amount of millet left is \\(0.25 - 0.0625 = 0.1875\\) quarts.\n- The amount of other seeds is \\(0.75\\) quarts.\n\nSo, at the end of Day 1, the feeder has:\n- Millet: \\(0.1875\\) quarts\n- Other seeds: \\(0.75\\) quarts\n\n**Day 2:**\n- Millie adds another quart of seeds.\n- The total amount of seeds in the feeder is now \\(2\\) quarts.\n- 25% of these seeds are millet, so there is \\(0.25 \\times 1 = 0.25\\) quarts of millet and \\(0.75\\) quarts of other seeds in the feeder.\n- The birds eat 25% of the millet, so they eat \\(0.25 \\times 0.1875 = 0.046875\\) quarts of millet.\n- Therefore, the amount of millet lef"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to evaluate the expression \\(\\frac{2\\heartsuit 4}{4\\heartsuit 2}\\) using the given operation \\(n \\heartsuit m = n^3 m^2\\).\n\nFirst, let's calculate \\(2 \\heartsuit 4\\):\n\\[2 \\heartsuit 4 = 2^3 \\cdot 4^2 = 8 \\cdot 16 = 128.\\]\n\nNext, let's calculate \\(4 \\heartsuit 2\\):\n\\[4 \\heartsuit 2 = 4^3 \\cdot 2^2 = 64 \\cdot 4 = 256.\\]\n\nNow, we need to find the value of \\(\\frac{2 \\heartsuit 4}{4 \\heartsuit 2}\\):\n\\[\\frac{2 \\heartsuit 4}{4 \\heartsuit 2} = \\frac{128}{256} = \\frac{1}{2}.\\]\n\nTherefore, the correct option is \\(\\boxed{\\text{B}}\\)."
+  },
+  {
+    "year": 2006,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine how many real values of \\( x \\) make \\(\\sqrt{120 - \\sqrt{x}}\\) an integer, we need to analyze the expression step by step.\n\nLet's denote \\(\\sqrt{120 - \\sqrt{x}}\\) by \\( k \\), where \\( k \\) is a non-negative integer. Then we have:\n\\[ \\sqrt{120 - \\sqrt{x}} = k \\]\nSquaring both sides, we get:\n\\[ 120 - \\sqrt{x} = k^2 \\]\nRearranging the equation to solve for \\(\\sqrt{x}\\), we get:\n\\[ \\sqrt{x} = 120 - k^2 \\]\nSince \\(\\sqrt{x}\\) must be a non-negative real number, \\( 120 - k^2 \\geq 0 \\). This implies:\n\\[ k^2 \\leq 120 \\]\nThe possible integer values for \\( k \\) are the integers from 0 to 10 (since \\( 10^2 = 100 \\leq 120 \\), but \\( 11^2 = 121 > 120 \\)). Therefore, \\( k \\) can take any of the values 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, or 10. This gives us 11 possible values for \\( k \\).\n\nFor each value of \\( k \\), there is a corresponding value of \\( x \\) given by:\n\\[ x = (120 - k^2)^2 \\]\nSince \\( k \\) can take 11 different values, there are 11 different real values of \\( x \\) that satisfy the condition.\n\nTherefor"
+  },
+  {
+    "year": 2006,
+    "contest": "B",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo determine the smallest possible area of the square that can contain both a \\(2 \\times 3\\) rectangle and a \\(3 \\times 4\\) rectangle without overlapping, we need to consider the different ways these rectangles can be arranged within the square.\n\nFirst, let's consider the dimensions of the two rectangles:\n- The \\(2 \\times 3\\) rectangle has dimensions 2 units by 3 units.\n- The \\(3 \\times 4\\) rectangle has dimensions 3 units by 4 units.\n\nWe need to find a square that can fit both rectangles without overlapping. Let's analyze the possible arrangements:\n\n1. **Arrangement 1:**\n   - Place the \\(2 \\times 3\\) rectangle horizontally.\n   - Place the \\(3 \\times 4\\) rectangle vertically, such that it overlaps with the \\(2 \\times 3\\) rectangle.\n\nIn this arrangement, the total height of the rectangles is \\(3 + 4 = 7\\) units, and the total width is \\(2 + 3 = 5\\) units. Since the square must be able to contain both rectangles without overlapping, the side length of the square must be at least 7 units (the maximum dimension "
+  },
+  {
+    "year": 2006,
+    "contest": "B",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the greatest possible perimeter of a triangle with integer side lengths where one side is three times as long as another side and the third side has a length of 15. Let's denote the sides of the triangle as \\(a\\), \\(b\\), and 15, where \\(a = 3b\\) or \\(b = 3a\\).\n\n### Case 1: \\(a = 3b\\)\nIn this case, the side lengths are \\(3b\\), \\(b\\), and 15. For these to form a triangle, they must satisfy the triangle inequality conditions:\n1. \\(3b + b > 15 \\implies 4b > 15 \\implies b > \\frac{15}{4} = 3.75\\)\n2. \\(3b + 15 > b \\implies 2b + 15 > 0\\) (always true for positive \\(b\\))\n3. \\(b + 15 > 3b \\implies 15 > 2b \\implies b < \\frac{15}{2} = 7.5\\)\n\nSince \\(b\\) must be an integer, the possible values for \\(b\\) are 4, 5, 6, and 7.\n\n- If \\(b = 4\\), then \\(a = 3b = 12\\). The side lengths are 12, 4, and 15. Check the triangle inequality:\n  - \\(12 + 4 > 15\\) (true)\n  - \\(12 + 15 > 4\\) (true)\n  - \\(4 + 15 > 12\\) (true)\n\n  The side lengths 12, 4, and 15 form a valid triangle. The perimeter i"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of the shaded region \\(ECODF\\). This region is composed of a rectangle and two segments of circles.\n\nFirst, let's determine the length of \\(AB\\). Since \\(O\\) is the midpoint of \\(\\overline{AB}\\) and \\(OA = 2\\sqrt{2}\\), we have:\n\\[ AB = 2 \\times OA = 2 \\times 2\\sqrt{2} = 4\\sqrt{2}. \\]\n\nThe segments \\(OC\\) and \\(OD\\) are tangent to the circles centered at \\(A\\) and \\(B\\) respectively. Since the radius of each circle is 2, the lengths \\(AC\\) and \\(BD\\) are both equal to the radius of the circles, which is 2. Therefore, the length of \\(CD\\) is:\n\\[ CD = AB - AC - BD = 4\\sqrt{2} - 2 - 2 = 4\\sqrt{2} - 4. \\]\n\nThe area of the rectangle \\(ECODF\\) is given by the product of its width and height. The width is the length of \\(CD\\), which we calculated as \\(4\\sqrt{2} - 4\\). The height is the radius of the circles, which is 2. Therefore, the area of the rectangle is:\n\\[ \\text{Area of the rectangle} = (4\\sqrt{2} - 4) \\times 2 = 8\\sqrt{2} - 8. \\]\n\nNext, we need to subtract the a"
+  },
+  {
+    "year": 2011,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the cost of a pencil in cents given the conditions provided. Let's break down the problem step by step.\n\n1. **Identify the variables and constraints:**\n   - Let \\( n \\) be the number of students who bought pencils.\n   - Let \\( p \\) be the number of pencils each student bought.\n   - The cost of a pencil is \\( c \\) cents.\n   - We know that \\( n > 15 \\) (since a majority of the 30 students bought pencils), \\( p > 1 \\), and \\( c > p \\).\n   - The total cost of all the pencils is $17.71, which is equivalent to 1771 cents.\n\n2. **Set up the equation:**\n   The total number of pencils bought is \\( n \\times p \\). The total cost is given by the product of the number of pencils and the cost per pencil:\n   \\[\n   n \\times p \\times c = 1771\n   \\]\n\n3. **Factorize 1771:**\n   We need to find factors of 1771 that satisfy the conditions \\( n > 15 \\), \\( p > 1 \\), and \\( c > p \\).\n   - First, factorize 1771:\n     \\[\n     1771 = 7 \\times 253\n     \\]\n     \\[\n     253 = 11 \\times 23\n     \\"
+  },
+  {
+    "year": 2018,
+    "contest": "A",
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine the day on which Yasin's unit of blood expires, we need to calculate the total number of seconds in \\(10!\\) (10 factorial) and then convert that into days.\n\nFirst, let's calculate \\(10!\\):\n\n\\[\n10! = 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1\n\\]\n\nCalculating step-by-step:\n\n\\[\n10 \\times 9 = 90\n\\]\n\\[\n90 \\times 8 = 720\n\\]\n\\[\n720 \\times 7 = 5040\n\\]\n\\[\n5040 \\times 6 = 30240\n\\]\n\\[\n30240 \\times 5 = 151200\n\\]\n\\[\n151200 \\times 4 = 604800\n\\]\n\\[\n604800 \\times 3 = 1814400\n\\]\n\\[\n1814400 \\times 2 = 3628800\n\\]\n\nSo, \\(10! = 3628800\\) seconds.\n\nNext, we need to convert these seconds into days. We know that:\n\n\\[\n1 \\text{ day} = 24 \\text{ hours}\n\\]\n\\[\n1 \\text{ hour} = 60 \\text{ minutes}\n\\]\n\\[\n1 \\text{ minute} = 60 \\text{ seconds}\n\\]\n\nThus, the total number of seconds in one day is:\n\n\\[\n24 \\times 60 \\times 60 = 86400 \\text{ seconds/day}\n\\]\n\nNow, we divide the total number of seconds by the number of seconds in a day to find out how many days \\(3628800\\) seconds correspond to:"
+  },
+  {
+    "year": 2013,
+    "contest": "A",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the number of three-digit numbers that satisfy the following conditions:\n1. The first digit is equal to the third digit.\n2. The digits sum to less than 20.\n3. The number is not divisible by 5.\n\nLet's denote the three-digit number as \\( \\overline{aba} \\), where \\( a \\) and \\( b \\) are its digits. Since the first and third digits are equal, we have \\( a = c \\).\n\n### Step-by-Step Solution:\n\n1. **Determine the range for \\( a \\):**\n   - The digit \\( a \\) must be between 1 and 9 (since it is a three-digit number).\n   - Therefore, \\( a \\) can take any value from 1 to 9.\n\n2. **Sum of digits condition:**\n   - The sum of the digits is \\( a + b + a = 2a + b \\).\n   - We need \\( 2a + b < 20 \\).\n\n3. **Divisibility by 5 condition:**\n   - For the number \\( \\overline{aba} \\) to not be divisible by 5, the last digit \\( a \\) must not be 0 or 5.\n\n4. **Count valid combinations for each \\( a \\):**\n   - We will consider each possible value of \\( a \\) from 1 to 9, excluding 5.\n   - For each \\("
+  },
+  {
+    "year": 2019,
+    "contest": "B",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the common point through which all lines of the form \\(ax + by = c\\) pass, given that \\(a\\), \\(b\\), and \\(c\\) form an arithmetic progression.\n\nAn arithmetic progression means that the difference between consecutive terms is constant. Let's denote this common difference by \\(d\\). Therefore, we can write:\n\\[ b = a + d \\]\n\\[ c = a + 2d \\]\n\nSubstituting these into the line equation \\(ax + by = c\\), we get:\n\\[ ax + (a + d)y = a + 2d \\]\n\nRearranging the terms, we have:\n\\[ ax + ay + dy = a + 2d \\]\n\\[ a(x + y) + dy = a + 2d \\]\n\nTo find the common point, we need to solve this equation for \\(x\\) and \\(y\\). Let's assume there is a common point \\((h, k)\\) that satisfies the equation for all values of \\(a\\), \\(b\\), and \\(c\\). Substituting \\(x = h\\) and \\(y = k\\) into the equation, we get:\n\\[ ah + ak + dk = a + 2d \\]\n\nThis must hold for all values of \\(a\\), so let's separate the terms involving \\(a\\) and those that do not:\n\\[ a(h + k) + d(k - 1) = 0 \\]\n\nFor this equation to hold "
+  },
+  {
+    "year": 2018,
+    "contest": "A",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the constraints of symmetry for the scanning code. The grid is symmetric under rotations by \\(90^\\circ\\), reflections across the diagonals, and midpoints of sides. This means that each square in the grid must be equivalent to some other squares under these transformations.\n\nLet's analyze the grid structure:\n- There are 16 squares that are fixed under all symmetries (the center square and the four corner squares).\n- There are 8 pairs of squares that are symmetrically opposite to each other (e.g., top-left and bottom-right, top-right and bottom-left).\n\nThus, we can consider these 24 squares as forming a single \"super-square\" for counting purposes. The remaining 1 square (the center square) is also fixed under all symmetries.\n\nSo, we have 25 independent positions to fill with either black or white squares. Each of these 25 positions can be either black or white, giving us \\(2^{25}\\) possible configurations. However, we need to exclude the two cases where all squares "
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the perimeter of triangle \\( \\triangle AEC' \\). Let's start by understanding the folding and the given conditions.\n\n1. **Identify the coordinates of the points:**\n   - The square has vertices \\( A(0, 0) \\), \\( B(1, 0) \\), \\( C(1, 1) \\), and \\( D(0, 1) \\).\n   - When vertex \\( C \\) is folded to meet edge \\( \\overline{AD} \\) at point \\( C' \\), the distance from \\( C' \\) to \\( D \\) is given as \\( C'D = \\frac{1}{3} \\).\n\n2. **Determine the coordinates of \\( C' \\):**\n   - Since \\( C' \\) lies on \\( \\overline{AD} \\), its y-coordinate is 0. Let the x-coordinate of \\( C' \\) be \\( x \\).\n   - The distance from \\( C' \\) to \\( D \\) is given by the distance formula:\n     \\[\n     \\sqrt{(x - 0)^2 + (0 - 1)^2} = \\frac{1}{3}\n     \\]\n   - Simplifying, we get:\n     \\[\n     \\sqrt{x^2 + 1} = \\frac{1}{3}\n     \\]\n   - Squaring both sides:\n     \\[\n     x^2 + 1 = \\left(\\frac{1}{3}\\right)^2\n     \\]\n     \\[\n     x^2 + 1 = \\frac{1}{9}\n     \\]\n     \\[\n     x^2 = \\frac{1}{9} - 1\n     \\]\n     \\[\n  "
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo determine how many integer values of \\( x \\) satisfy the inequality \\( |x| < 3\\pi \\), we first need to find the range of \\( x \\).\n\nThe absolute value function \\( |x| \\) is defined as:\n\\[ |x| = \\begin{cases} \nx & \\text{if } x \\geq 0 \\\\\n-x & \\text{if } x < 0 \n\\end{cases} \\]\n\nGiven the inequality \\( |x| < 3\\pi \\), we can rewrite it as:\n\\[ -3\\pi < x < 3\\pi \\]\n\nNext, we need to find the numerical values of \\( -3\\pi \\) and \\( 3\\pi \\). Using the approximation \\( \\pi \\approx 3.14 \\), we get:\n\\[ -3\\pi \\approx -3 \\times 3.14 = -9.42 \\]\n\\[ 3\\pi \\approx 3 \\times 3.14 = 9.42 \\]\n\nThus, the inequality \\( -9.42 < x < 9.42 \\) means that \\( x \\) must be an integer between \\(-9\\) and \\(9\\), inclusive. The integers in this range are:\n\\[ -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \\]\n\nTo find the total number of integers in this list, we count them. There are 9 negative integers, 0, and 9 positive integers, which gives us:\n\\[ 9 + 1 + 9 = 19 \\]\n\nTherefore, there are 19 integer values of \\( x \\) that satisf"
+  },
+  {
+    "year": 2013,
+    "contest": "B",
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the set of points \\((x, y)\\) for which \\(x \\clubsuit y = y \\clubsuit x\\) given the operation \\(a \\clubsuit b = a^2b - ab^2\\).\n\nFirst, let's compute \\(x \\clubsuit y\\) and \\(y \\clubsuit x\\):\n\n\\[ x \\clubsuit y = x^2 y - xy^2 \\]\n\\[ y \\clubsuit x = y^2 x - yx^2 \\]\n\nWe need to find the points \\((x, y)\\) such that:\n\n\\[ x^2 y - xy^2 = y^2 x - yx^2 \\]\n\nLet's simplify this equation step by step. First, rewrite the equation:\n\n\\[ x^2 y - xy^2 = y^2 x - yx^2 \\]\n\nNotice that both sides of the equation are identical, so we can simplify it to:\n\n\\[ x^2 y - xy^2 = y^2 x - yx^2 \\]\n\nThis simplifies to:\n\n\\[ x^2 y - xy^2 = y^2 x - yx^2 \\]\n\nSince both sides are the same, this equation is always true. Therefore, the set of points \\((x, y)\\) for which \\(x \\clubsuit y = y \\clubsuit x\\) is the entire set of real numbers.\n\nHowever, we need to determine the nature of the set of points that satisfy this condition. Since the equation simplifies to a tautology (always true), it does not restrict \\"
+  },
+  {
+    "year": 2010,
+    "contest": "A",
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to use the Angle Bisector Theorem. The theorem states that if a line segment bisects an angle of a triangle, then it divides the opposite side into segments that are proportional to the adjacent sides. In this case, since \\( \\overline{BD} \\) is the angle bisector of \\( \\angle ABC \\), we have:\n\n\\[\n\\frac{AB}{BC} = \\frac{AD}{DC}\n\\]\n\nGiven that \\( AD = 3 \\) and \\( DC = 8 \\), we can substitute these values into the proportion:\n\n\\[\n\\frac{AB}{BC} = \\frac{3}{8}\n\\]\n\nLet's denote \\( AB = x \\) and \\( BC = y \\). Then, from the proportion, we have:\n\n\\[\nx = \\frac{3}{8}y\n\\]\n\nSince \\( x \\) and \\( y \\) are integers, \\( y \\) must be a multiple of 8. Let's express \\( y \\) as \\( 8k \\), where \\( k \\) is an integer. Then:\n\n\\[\nx = \\frac{3}{8} \\cdot 8k = 3k\n\\]\n\nNow, we need to find the smallest possible value of the perimeter of \\( \\triangle ABC \\). The perimeter \\( P \\) is given by:\n\n\\[\nP = AB + BC + AC = x + y + AC\n\\]\n\nWe know that \\( AC = AD + DC = 3 + 8 = 11 \\). So, we have:\n\n\\[\nP = 3k + 8k + 11 ="
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the original cost of Anna's dinner before tax and tip. Let's denote the original cost of her meal by \\( x \\) dollars.\n\nFirst, let's calculate the sales tax on the meal:\n\\[ \\text{Sales tax} = 0.10x \\]\n\nNext, we calculate the tip based on the pre-tax amount:\n\\[ \\text{Tip} = 0.15x \\]\n\nThe total cost Anna pays includes the original cost of the meal, the sales tax, and the tip:\n\\[ \\text{Total cost} = x + 0.10x + 0.15x \\]\n\nCombining these terms, we get:\n\\[ \\text{Total cost} = x(1 + 0.10 + 0.15) = x(1.25) \\]\n\nWe know that Anna spends a total of $27.50. Therefore, we can set up the equation:\n\\[ 1.25x = 27.50 \\]\n\nTo find \\( x \\), we solve for \\( x \\) by dividing both sides of the equation by 1.25:\n\\[ x = \\frac{27.50}{1.25} \\]\n\\[ x = 22 \\]\n\nThus, the cost of Anna's dinner without tax or tip is $22.\n\nThe correct option is \\(\\boxed{\\text{D}}\\)."
+  },
+  {
+    "year": 2010,
+    "contest": "A",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the side lengths and areas of the equiangular hexagon \\(ABCDEF\\) with given conditions.\n\nFirstly, since the hexagon is equiangular, each internal angle is \\(120^\\circ\\). We can use this property to determine the coordinates of the vertices if we place the hexagon in a coordinate system. However, for simplicity, let's use geometric properties and known formulas.\n\nGiven:\n- Side lengths: \\(AB = CD = EF = 1\\) and \\(BC = DE = FA = r\\).\n- The area of \\(\\triangle ACE\\) is \\(70\\%\\) of the total area of the hexagon.\n\nLet's denote the area of the hexagon by \\(A_{\\text{hex}}\\). Then, the area of \\(\\triangle ACE\\) is \\(0.7 A_{\\text{hex}}\\).\n\nThe key insight here is that for an equiangular hexagon, the area can be calculated using a specific formula or geometric properties. However, we need to find the relationship between the side lengths and the area.\n\nFor an equiangular hexagon with alternating sides of 1 and \\(r\\), the total area can be derived from known results in geometry. Th"
+  },
+  {
+    "year": 2013,
+    "contest": "A",
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the length of \\( BE \\) given that the area of \\(\\triangle ABE\\) is 40 and the side length of square \\(ABCD\\) is 10.\n\nFirst, let's denote the coordinates of the vertices of the square:\n- \\( A = (0, 0) \\)\n- \\( B = (10, 0) \\)\n- \\( C = (10, 10) \\)\n- \\( D = (0, 10) \\)\n\nPoint \\( E \\) is on segment \\( BC \\), so its coordinates can be written as \\( E = (10, y) \\) where \\( 0 \\leq y \\leq 10 \\).\n\nThe area of \\(\\triangle ABE\\) can be calculated using the formula for the area of a triangle with vertices at \\((x_1, y_1)\\), \\((x_2, y_2)\\), and \\((x_3, y_3)\\):\n\n\\[\n\\text{Area} = \\frac{1}{2} \\left| x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2) \\right|\n\\]\n\nSubstituting the coordinates of \\( A = (0, 0) \\), \\( B = (10, 0) \\), and \\( E = (10, y) \\):\n\n\\[\n\\text{Area} = \\frac{1}{2} \\left| 0(0 - y) + 10(y - 0) + 10(0 - 0) \\right|\n\\]\n\nSimplify the expression inside the absolute value:\n\n\\[\n\\text{Area} = \\frac{1}{2} \\left| 0 + 10y + 0 \\right| = \\frac{1}{2} \\left| 10y \\right| = \\frac{1}{2} \\c"
+  },
+  {
+    "year": 2025,
+    "contest": "A",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the value of \\( g \\) such that the line of sight between MacDonald and McGregor is tangent to the silo. Let's start by setting up the coordinates and the geometry of the situation.\n\nThe center of the silo is at the origin \\((0, 0)\\). The radius of the silo is 10 meters (since the diameter is 20 meters).\n\nMcDonald is located 20 meters west and 15 meters south of the center of the silo, so his coordinates are \\((-20, -15)\\).\n\n McGregor is located 20 meters east and \\( g \\) meters south of the center of the silo, so his coordinates are \\((20, -g)\\).\n\nThe line of sight between McDonald and McGregor is tangent to the silo. The slope of the line passing through points \\((-20, -15)\\) and \\((20, -g)\\) is given by:\n\\[\nm = \\frac{-g + 15}{20 + 20} = \\frac{-g + 15}{40}\n\\]\nThe equation of the line in point-slope form is:\n\\[\ny + 15 = \\frac{-g + 15}{40}(x + 20)\n\\]\nSimplifying, we get:\n\\[\ny + 15 = \\frac{-g + 15}{40}x + \\frac{-g + 15}{40} \\cdot 20\n\\]\n\\[\ny + 15 = \\frac{-g + 15}{40}x"
+  },
+  {
+    "year": 2012,
+    "contest": "A",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the total number of cats and kittens received by the Smallville Animal Shelter last year. Let's break down the information given and calculate step by step.\n\n1. **Total Number of Adult Cats:**\n   - There were \\(100\\) adult cats.\n   - Half of these cats were female, so the number of female cats is:\n     \\[\n     \\frac{100}{2} = 50\n     \\]\n\n2. **Number of Female Cats Comprising Litter of Kittens:**\n   - Half of the adult female cats were accompanied by a litter of kittens.\n   - Therefore, the number of female cats with a litter is:\n     \\[\n     \\frac{50}{2} = 25\n     \\]\n\n3. **Average Number of Kittens per Litter:**\n   - The average number of kittens per litter is \\(4\\).\n\n4. **Total Number of Kittens:**\n   - Each of the \\(25\\) female cats with a litter brought in \\(4\\) kittens.\n   - Therefore, the total number of kittens is:\n     \\[\n     25 \\times 4 = 100\n     \\]\n\n5. **Total Number of Cats and Kittens:**\n   - The total number of cats and kittens received by the shelter"
+  },
+  {
+    "year": 2017,
+    "contest": "B",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nLet's denote the number of blueberry jelly beans Camilla originally had as \\( B \\) and the number of cherry jelly beans she originally had as \\( C \\). According to the problem, we have the following relationships:\n\n1. Camilla had twice as many blueberry jelly beans as cherry jelly beans:\n\\[ B = 2C \\]\n\n2. After eating 10 pieces of each kind, she now has three times as many blueberry jelly beans as cherry jelly beans:\n\\[ B - 10 = 3(C - 10) \\]\n\nFirst, we substitute \\( B = 2C \\) into the second equation:\n\\[ 2C - 10 = 3(C - 10) \\]\n\\[ 2C - 10 = 3C - 30 \\]\nNext, we solve for \\( C \\):\n\\[ 2C - 3C = -30 + 10 \\]\n\\[ -C = -20 \\]\n\\[ C = 20 \\]\n\nNow that we know \\( C = 20 \\), we can find \\( B \\) using the first equation:\n\\[ B = 2C = 2 \\times 20 = 40 \\]\n\nTherefore, Camilla originally had 40 blueberry jelly beans. The correct option is \\(\\boxed{\\text{D}}\\)."
+  },
+  {
+    "year": 2011,
+    "contest": "B",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine which of the given distributive laws hold for the \"averaged with\" operation \\( a @ b = \\frac{a + b}{2} \\), we need to analyze each of the three statements.\n\n### Statement I: \\( x @ (y + z) = (x @ y) + (x @ z) \\)\n\nFirst, let's compute both sides of the equation:\n\n1. **Left-hand side (LHS):**\n   \\[\n   x @ (y + z) = \\frac{x + (y + z)}{2} = \\frac{x + y + z}{2}\n   \\]\n\n2. **Right-hand side (RHS):**\n   \\[\n   (x @ y) + (x @ z) = \\left( \\frac{x + y}{2} \\right) + \\left( \\frac{x + z}{2} \\right)\n   \\]\n   Simplify the RHS:\n   \\[\n   \\frac{x + y}{2} + \\frac{x + z}{2} = \\frac{(x + y) + (x + z)}{2} = \\frac{2x + y + z}{2}\n   \\]\n\nComparing LHS and RHS:\n\\[\n\\frac{x + y + z}{2} \\neq \\frac{2x + y + z}{2}\n\\]\nThus, Statement I does not hold.\n\n### Statement II: \\( x @ (y @ z) = (x @ y) @ (x @ z) \\)\n\nFirst, let's compute both sides of the equation:\n\n1. **Left-hand side (LHS):**\n   \\[\n   y @ z = \\frac{y + z}{2}\n   \\]\n   Then,\n   \\[\n   x @ (y @ z) = x @ \\left( \\frac{y + z}{2} \\right) = \\frac{x + \\frac{y + z}{2}}{2} = \\frac{"
+  },
+  {
+    "year": 2011,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to consider the constraints given: each vertex of the convex pentagon \\(ABCDE\\) must be assigned a color from 6 available colors, and the ends of each diagonal must have different colors. However, since a pentagon has no diagonals that connect non-adjacent vertices, this constraint is automatically satisfied by any coloring of the pentagon's vertices.\n\nThus, we only need to determine the number of ways to color the vertices of the pentagon with 6 colors. Since each of the 5 vertices can be colored independently from any of the 6 colors, the total number of colorings is given by:\n\n\\[ 6 \\times 6 \\times 6 \\times 6 \\times 6 = 6^5 \\]\n\nCalculating \\(6^5\\):\n\n\\[ 6^5 = 6 \\times 6 \\times 6 \\times 6 \\times 6 = 7776 \\]\n\nHowever, we need to check if this number matches any of the given options. The correct option is:\n\n\\(\\boxed{3120}\\)\n\nThis indicates that there might be a misunderstanding in the problem interpretation or constraints, but based on the standard interpretation and the given op"
+  },
+  {
+    "year": 2013,
+    "contest": "B",
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find how many three-digit positive integers \\( N \\) satisfy the condition that the last two digits of the sum \\( S \\) of its base-5 and base-6 representations are the same as the last two digits of \\( 2N \\).\n\nFirst, let's denote the base-5 representation of \\( N \\) as \\( a_2a_1a_0 \\) and the base-6 representation of \\( N \\) as \\( b_2b_1b_0 \\). The base-10 value of the base-5 number is \\( 5^2a_2 + 5a_1 + a_0 \\), and the base-10 value of the base-6 number is \\( 6^2b_2 + 6b_1 + b_0 \\). The sum \\( S \\) is then given by:\n\\[ S = (5^2a_2 + 5a_1 + a_0) + (6^2b_2 + 6b_1 + b_0) \\]\n\nWe need to find the last two digits of \\( S \\) and compare them with the last two digits of \\( 2N \\). The last two digits of a number are equivalent to the number modulo 100. Therefore, we need to check when:\n\\[ (5^2a_2 + 5a_1 + a_0 + 6^2b_2 + 6b_1 + b_0) \\equiv 2N \\pmod{100} \\]\n\nLet's express \\( N \\) in terms of its digits in base-10. If the base-5 representation is \\( a_2a_1a_0 \\), then:\n\\[ N = 25a_2 + 5a"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo determine between which two consecutive years there was the largest percentage increase in the number of students taking the AMC 10, we need to calculate the percentage increase for each pair of consecutive years.\n\nThe formula for the percentage increase from year \\( n \\) to year \\( n+1 \\) is:\n\\[ \\text{Percentage Increase} = \\left( \\frac{\\text{Number in year } (n+1) - \\text{Number in year } n}{\\text{Number in year } n} \\right) \\times 100 \\]\n\nLet's calculate the percentage increase for each pair of consecutive years:\n\n1. From 2002 to 2003:\n\\[ \\text{Percentage Increase} = \\left( \\frac{66 - 60}{60} \\right) \\times 100 = \\left( \\frac{6}{60} \\right) \\times 100 = 10\\% \\]\n\n2. From 2003 to 2004:\n\\[ \\text{Percentage Increase} = \\left( \\frac{70 - 66}{66} \\right) \\times 100 = \\left( \\frac{4}{66} \\right) \\times 100 \\approx 6.06\\% \\]\n\n3. From 2004 to 2005:\n\\[ \\text{Percentage Increase} = \\left( \\frac{76 - 70}{70} \\right) \\times 100 = \\left( \\frac{6}{70} \\right) \\times 100 \\approx 8.57\\% \\]\n\n4. From 2005 to 2006:\n\\[ \\te"
+  },
+  {
+    "year": 2016,
+    "contest": "A",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to compare the sum of the numbers listed by Ximena and Emilio. Ximena lists the whole numbers from 1 to 30, while Emilio copies Ximena's list but replaces each occurrence of the digit 2 with the digit 1.\n\nFirst, let's calculate the sum of the numbers listed by Ximena. The sum of the first 30 natural numbers is given by the formula for the sum of an arithmetic series:\n\n\\[ S = \\frac{n(n+1)}{2} \\]\n\nwhere \\( n = 30 \\). Plugging in the value, we get:\n\n\\[ S = \\frac{30 \\cdot 31}{2} = 465 \\]\n\nNext, let's consider Emilio's list. We need to count how many times each digit appears in Ximena's list and then adjust for the changes made by Emilio.\n\n### Counting the occurrences of digits from 1 to 30:\n\n- **Units place:**\n  - The digit 2 appears in the units place at positions: 2, 12, 22.\n  - There are 3 occurrences of the digit 2 in the units place.\n\n- **Tens place:**\n  - The digit 2 does not appear in the tens place within the range of 1 to 30.\n\nNow, let's adjust Emilio's list by replacing ea"
+  },
+  {
+    "year": 2010,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of triangles formed by the chords connecting every pair of points on a circle, where each vertex of the triangle lies inside the circle. This is equivalent to finding the number of ways to choose 4 points out of the 8 points on the circle, because any set of 4 points will form exactly one triangle whose vertices are the intersection points of the chords.\n\nHere's the step-by-step reasoning:\n\n1. **Identify the problem in terms of combinations**: We need to find the number of ways to choose 4 points out of 8. This is a combination problem, specifically \\( \\binom{8}{4} \\), which represents the number of ways to choose 4 points from 8 without regard to order.\n\n2. **Calculate the combination**: The formula for combinations is given by:\n   \\[\n   \\binom{n}{r} = \\frac{n!}{r!(n-r)!}\n   \\]\n   For our problem, \\( n = 8 \\) and \\( r = 4 \\), so we have:\n   \\[\n   \\binom{8}{4} = \\frac{8!}{4!4!} = \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1} = 70\n   \\"
+  },
+  {
+    "year": 2005,
+    "contest": "A",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo determine how much Dave and Doug will save by purchasing the windows together rather than separately, we need to calculate the cost of the windows in both scenarios.\n\nFirst, let's calculate the cost if Dave purchases the windows separately:\n- Dave needs 7 windows. According to the store's offer, for every 4 windows purchased, he gets 1 free. So, Dave can get 1 free window for purchasing 6 windows.\n- Therefore, Dave only needs to pay for 6 windows.\n- The cost for Dave is \\(6 \\times 100 = 600\\) dollars.\n\nNext, let's calculate the cost if Doug purchases the windows separately:\n- Doug needs 8 windows. According to the store's offer, for every 4 windows purchased, he gets 1 free. So, Doug can get 1 free window for purchasing 7 windows.\n- Therefore, Doug only needs to pay for 7 windows.\n- The cost for Doug is \\(7 \\times 100 = 700\\) dollars.\n\nNow, let's calculate the total cost if they purchase the windows separately:\n- The total cost for Dave and Doug is \\(600 + 700 = 1300\\) dollars.\n\nNext, let's calculate the "
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the behavior of the sequence defined by the rule that each term is the sum of the cubes of the digits of the previous term. Let's start with the first term and compute the next few terms to identify any patterns.\n\nThe first term is \\(2005\\). The second term is the sum of the cubes of the digits of \\(2005\\):\n\\[2^3 + 0^3 + 0^3 + 5^3 = 8 + 0 + 0 + 125 = 133.\\]\nThe third term is the sum of the cubes of the digits of \\(133\\):\n\\[1^3 + 3^3 + 3^3 = 1 + 27 + 27 = 55.\\]\nThe fourth term is the sum of the cubes of the digits of \\(55\\):\n\\[5^3 + 5^3 = 125 + 125 = 250.\\]\nThe fifth term is the sum of the cubes of the digits of \\(250\\):\n\\[2^3 + 5^3 + 0^3 = 8 + 125 + 0 = 133.\\]\nNotice that we have returned to the second term, which means the sequence will now repeat. The sequence is:\n\\[2005, 133, 55, 250, 133, 55, 250, \\ldots\\]\nThis is a repeating cycle of length 3: \\(133, 55, 250\\).\n\nTo find the \\(2005^{\\text{th}}\\) term, we need to determine the position of \\(2005\\) within this r"
+  },
+  {
+    "year": 2006,
+    "contest": "A",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the probability that among six distinct positive integers chosen from the set \\(\\{1, 2, \\ldots, 2006\\}\\), there exists at least one pair of integers whose difference is a multiple of 5.\n\nFirst, let's consider the remainders when these integers are divided by 5. The possible remainders are 0, 1, 2, 3, and 4. This means that each integer can be classified into one of these five categories based on its remainder when divided by 5.\n\nIf we have six integers, and there are only five possible remainders, by the pigeonhole principle, at least two of these integers must have the same remainder when divided by 5. Let's denote these two integers as \\(a\\) and \\(b\\). Then, the difference \\(a - b\\) is a multiple of 5 because they have the same remainder when divided by 5.\n\nTherefore, the probability that some pair of these six integers has a difference that is a multiple of 5 is 1 (since it is guaranteed to happen).\n\nThe correct option is \\(\\boxed{\\text{E}}\\)."
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to analyze the equation \\(x^2 + y^2 = |x| + |y|\\) and determine the area of the region it encloses.\n\nFirst, let's consider the equation in different quadrants by analyzing the absolute values. The equation can be broken down into four cases based on the signs of \\(x\\) and \\(y\\):\n\n1. For \\(x \\geq 0\\) and \\(y \\geq 0\\):\n   \\[\n   x^2 + y^2 = x + y\n   \\]\n   Rearranging, we get:\n   \\[\n   x^2 - x + y^2 - y = 0\n   \\]\n   Completing the square for both \\(x\\) and \\(y\\), we have:\n   \\[\n   \\left(x - \\frac{1}{2}\\right)^2 + \\left(y - \\frac{1}{2}\\right)^2 = \\frac{1}{2}\n   \\]\n   This represents a circle with radius \\(\\frac{1}{\\sqrt{2}}\\) centered at \\(\\left(\\frac{1}{2}, \\frac{1}{2}\\right)\\).\n\n2. For \\(x \\geq 0\\) and \\(y \\leq 0\\):\n   \\[\n   x^2 + y^2 = x - y\n   \\]\n   Rearranging, we get:\n   \\[\n   x^2 - x + y^2 + y = 0\n   \\]\n   Completing the square for both \\(x\\) and \\(y\\), we have:\n   \\[\n   \\left(x - \\frac{1}{2}\\right)^2 + \\left(y + \\frac{1}{2}\\right)^2 = \\frac{1}{2}\n   \\]\n   This represents a ci"
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find four distinct single-digit positive integers whose ages multiply in pairs to give the products 24 and 30. Let's denote these four ages as \\(a, b, c,\\) and \\(d\\).\n\nFirst, let's list the factor pairs of 24:\n\\[ 1 \\times 24, \\quad 2 \\times 12, \\quad 3 \\times 8, \\quad 4 \\times 6 \\]\n\nNext, let's list the factor pairs of 30:\n\\[ 1 \\times 30, \\quad 2 \\times 15, \\quad 3 \\times 10, \\quad 5 \\times 6 \\]\n\nSince we are looking for distinct single-digit positive integers, we can ignore any pairs that include numbers outside the single-digit range. This leaves us with:\n\\[ 4 \\times 6 \\text{ for 24} \\]\nand\n\\[ 5 \\times 6 \\text{ for 30} \\]\n\nNotice that both factorizations involve the numbers 4, 6, and 5. We need to find a way to assign these numbers such that all four cousins have distinct ages.\n\nLet's try assigning the numbers:\n- One pair is \\(4\\) and \\(6\\), which multiply to 24.\n- The other pair is \\(5\\) and \\(6\\), which multiply to 30.\n\nHowever, we see that 6 is repeated in both pairs. T"
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of different dessert menus possible for a week, given the constraints. Let's break down the problem step by step.\n\n### Step 1: Identify the Constraints\n1. The dessert each day is either cake, pie, ice cream, or pudding.\n2. The same dessert may not be served two days in a row.\n3. There must be cake on Friday due to a birthday.\n\n### Step 2: Calculate the Number of Choices for Each Day\n- **Friday**: Since cake must be served on Friday, there is only 1 choice (cake).\n- **Saturday**: The dessert can be any of the remaining three options (pie, ice cream, pudding), so there are 3 choices.\n- **Sunday to Thursday**: For each of these days, the dessert can be any of the three options except the one served the previous day. Therefore, there are 3 choices for each of these days.\n\n### Step 3: Calculate the Total Number of Dessert menus\n- **Friday**: 1 choice (cake)\n- **Saturday**: 3 choices\n- **Sunday**: 3 choices\n- **Monday**: 3 choices\n- **Tuesday**: 3 choices\n- **"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the number of positive integers \\( n \\) such that \\( n + S(n) + S(S(n)) = 2007 \\). Let's break down the problem step by step.\n\nFirst, let's consider the range of possible values for \\( n \\). Since \\( S(n) \\) and \\( S(S(n)) \\) are both sums of digits, they are relatively small compared to \\( n \\). Specifically, if \\( n \\) is a four-digit number, then \\( S(n) \\leq 36 \\) (since the maximum sum of the digits of a three-digit number is \\( 9 + 9 + 9 = 27 \\), and adding one more digit can add at most 9). Similarly, \\( S(S(n)) \\leq 18 \\) (since the maximum value of \\( S(n) \\) is 36).\n\nGiven that \\( n + S(n) + S(S(n)) = 2007 \\), we can estimate the range of \\( n \\). If \\( S(n) \\) and \\( S(S(n)) \\) are both at their maximum values, then:\n\\[ n + 36 + 18 = 2007 \\]\n\\[ n + 54 = 2007 \\]\n\\[ n = 1953 \\]\n\nThis means that \\( n \\) must be a four-digit number between 1953 and 2007. Let's check the possible values of \\( n \\) in this range.\n\nFor each \\( n \\) in this range, we need to calculate"
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nLet's denote the greatest integer in the set \\( S \\) as \\( G \\), the least integer in the set \\( S \\) as \\( L \\), and the sum of all integers in the set \\( S \\) as \\( \\sigma \\). The number of elements in the set \\( S \\) is denoted by \\( n \\).\n\nFrom the problem, we know the following:\n1. If the greatest integer \\( G \\) is removed from \\( S \\), the average value of the remaining integers is 32. This gives us the equation:\n   \\[\n   \\frac{\\sigma - G}{n-1} = 32\n   \\]\n   which simplifies to:\n   \\[\n   \\sigma - G = 32(n-1)\n   \\]\n\n2. If the least integer \\( L \\) is removed from \\( S \\), the average value of the remaining integers is 35. This gives us the equation:\n   \\[\n   \\frac{\\sigma - L}{n-1} = 35\n   \\]\n   which simplifies to:\n   \\[\n   \\sigma - L = 35(n-1)\n   \\]\n\n3. If the greatest integer \\( G \\) is returned to the set, the average value of the integers becomes 40. This gives us the equation:\n   \\[\n   \\frac{\\sigma}{n} = 40\n   \\]\n   which simplifies to:\n   \\[\n   \\sigma = 40n\n   \\]\n\nWe now have three equations:\n1. "
+  },
+  {
+    "year": 2009,
+    "contest": "B",
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many different values can be obtained by inserting parentheses into the expression \\(1 + 2 \\times 3 - 4\\).\n\nFirst, let's evaluate the expression without any parentheses:\n\\[1 + 2 \\times 3 - 4 = 1 + 6 - 4 = 3.\\]\n\nNow, we will consider all possible ways to insert parentheses into the expression and evaluate each case:\n\n1. \\( (1 + 2) \\times (3 - 4) \\):\n   \\[ (1 + 2) \\times (3 - 4) = 3 \\times (-1) = -3. \\]\n\n2. \\( (1 + 2 \\times 3) - 4 \\):\n   \\[ (1 + 2 \\times 3) - 4 = (1 + 6) - 4 = 7 - 4 = 3. \\]\n\n3. \\( 1 + (2 \\times 3 - 4) \\):\n   \\[ 1 + (2 \\times 3 - 4) = 1 + (6 - 4) = 1 + 2 = 3. \\]\n\n4. \\( 1 + 2 \\times (3 - 4) \\):\n   \\[ 1 + 2 \\times (3 - 4) = 1 + 2 \\times (-1) = 1 - 2 = -1. \\]\n\n5. \\( 1 + 2 \\times 3 - 4 \\):\n   \\[ 1 + 2 \\times 3 - 4 = 1 + 6 - 4 = 3. \\]\n\n6. \\( 1 + (2 \\times 3 - 4) \\):\n   \\[ 1 + (2 \\times 3 - 4) = 1 + (6 - 4) = 1 + 2 = 3. \\]\n\nFrom the above evaluations, we see that the possible values obtained are \\(-3\\), \\(3\\), and \\(-1\\). Therefore, there are three diff"
+  },
+  {
+    "year": 2024,
+    "contest": "B",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine which of the given entries in the table will allow a nonvertical line with the specified slope to pass through the given number of lattice points. Let's analyze each entry step by step.\n\nThe general equation of a nonvertical line is \\(y = mx + c\\), where \\(m\\) is the slope and \\(c\\) is the y-intercept. The number of lattice points that this line passes through can be determined by considering the behavior of the line in terms of its intercepts with the x-axis and y-axis, as well as any integer coordinates it might pass through.\n\nLet's go through each entry:\n\n1. **Slope = 2**: A line with slope 2 will pass through lattice points at regular intervals along the x-axis. For example, if the line passes through (0, c), it will also pass through (1, c+2), (2, c+4), etc. The number of lattice points it passes through depends on its intercepts and the slope. If the y-intercept is an integer, the line will pass through at least 3 lattice points (including the origin if \\(c\\)"
+  },
+  {
+    "year": 2011,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find four integers \\( w > x > y > z \\) whose sum is 44 and whose pairwise positive differences are 1, 3, 4, 5, 6, and 9. Let's denote the differences as follows:\n\n\\[ w - x = a, \\quad w - y = b, \\quad w - z = c, \\quad x - y = d, \\quad x - z = e, \\quad y - z = f \\]\n\nGiven that \\( a, b, c, d, e, f \\) are 1, 3, 4, 5, 6, and 9 in some order, we can start by expressing the differences in terms of \\( w \\):\n\n\\[ a + b + c = (w - x) + (w - y) + (w - z) = 3w - (x + y + z) \\]\n\\[ d + e + f = (x - y) + (x - z) + (y - z) = 2(x + y + z - z) = 2(x + y + z - z) = x + y + z - z = w - z \\]\n\nSince the sum of all pairwise differences is:\n\n\\[ a + b + c + d + e + f = 1 + 3 + 4 + 5 + 6 + 9 = 28 \\]\n\nWe also know that:\n\n\\[ (w - x) + (w - y) + (w - z) + (x - y) + (x - z) + (y - z) = w + w + w - x - y - z - x - y - z = 3w - (x + y + z) \\]\n\nSince the sum of all pairwise differences is 28, we have:\n\n\\[ 3w - (x + y + z) = 44 - z \\]\n\nNow, let's consider the possible values for \\( a, b, c, d, e, f \\). Since \\"
+  },
+  {
+    "year": 2007,
+    "contest": "B",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine how many of the first 22 problems Sarah must solve correctly to score at least 100 points, we need to consider the scoring system and the number of unanswered questions.\n\nSarah will attempt the first 22 problems and leave the last 3 unanswered. The scoring system is as follows:\n- 6 points for each correct answer\n- 0 points for each incorrect answer\n- 1.5 points for each unanswered question\n\nFirst, let's calculate the total points she will earn from leaving the last 3 questions unanswered:\n\\[ 3 \\times 1.5 = 4.5 \\text{ points} \\]\n\nNext, we need to determine how many points she needs from the first 22 problems to reach a total of at least 100 points. Let \\( x \\) be the number of correct answers out of the first 22 problems. Then, the number of incorrect answers is \\( 22 - x \\). The points from the correct answers are:\n\\[ 6x \\text{ points} \\]\n\nThe points from the incorrect answers are:\n\\[ 0 \\text{ points} \\]\n\nThe total points Sarah will have after attempting the first 22 problems and leaving the las"
+  },
+  {
+    "year": 2023,
+    "contest": "A",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find the coordinates of points \\(P\\) and \\(Q\\) such that all sides of triangles \\(\\triangle ABP\\), \\(\\triangle PCQ\\), and \\(\\triangle QDA\\) have integer lengths. Let's start by placing the rectangle \\(ABCD\\) on a coordinate plane with \\(A = (0, 28)\\), \\(B = (30, 28)\\), \\(C = (30, 0)\\), and \\(D = (0, 0)\\).\n\nLet \\(P = (30, y_1)\\) and \\(Q = (x_2, 0)\\). Since \\(P\\) is on \\(\\overline{BC}\\), the x-coordinate of \\(P\\) is 30. Similarly, since \\(Q\\) is on \\(\\overline{CD}\\), the y-coordinate of \\(Q\\) is 0.\n\nFirst, we need to ensure that all sides of \\(\\triangle ABP\\), \\(\\triangle PCQ\\), and \\(\\triangle QDA\\) have integer lengths. The side lengths of \\(\\triangle ABP\\) are:\n- \\(AB = 30\\)\n- \\(AP = \\sqrt{30^2 + (28 - y_1)^2} = \\sqrt{900 + (28 - y_1)^2}\\)\n- \\(BP = 28 - y_1\\)\n\nThe side lengths of \\(\\triangle PCQ\\) are:\n- \\(PC = \\sqrt{(30 - x_2)^2 + 28^2} = \\sqrt{(30 - x_2)^2 + 784}\\)\n- \\(PQ = x_2\\)\n- \\(QC = \\sqrt{30^2 + (x_2 - 30)^2} = \\sqrt{900 + (x_2 - 30)^2}\\)\n\nThe side lengths of \\(\\tri"
+  },
+  {
+    "year": 2024,
+    "contest": "B",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem \\(10! - 7! \\cdot 6!\\), we need to evaluate each factorial and then perform the arithmetic operations.\n\nFirst, let's calculate the factorials:\n\n\\[ 10! = 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n\\[ 7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 \\]\n\nNow, let's compute the values:\n\n\\[ 7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 5040 \\]\n\n\\[ 6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720 \\]\n\nNext, we need to calculate \\(7! \\cdot 6!\\):\n\n\\[ 7! \\cdot 6! = 5040 \\times 720 \\]\n\nTo simplify this calculation, let's break it down:\n\n\\[ 5040 \\times 720 = 5040 \\times (700 + 20) = 5040 \\times 700 + 5040 \\times 20 \\]\n\n\\[ 5040 \\times 700 = 3528000 \\]\n\n\\[ 5040 \\times 20 = 100800 \\]\n\nAdding these together:\n\n\\[ 3528000 + 100800 = 3628800 \\]\n\nNow, we need to subtract this result from \\(10!\\):\n\n\\[ 10! = 3628800 \\]\n\nSo, the expression becomes:\n\n\\[ 10! - 7! \\cdot 6! ="
+  },
+  {
+    "year": 2007,
+    "contest": "B",
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to set up and solve a system of equations based on the information given.\n\nLet's denote Tom's current age as \\( T \\) and the ages of his three children as \\( a \\), \\( b \\), and \\( c \\). According to the problem, the sum of the ages of the three children is equal to Tom's age:\n\n\\[ a + b + c = T \\]\n\nWe are also given that \\( N \\) years ago, Tom's age was twice the sum of his children's ages at that time. So, \\( N \\) years ago, Tom's age was \\( T - N \\), and the sum of the ages of his children was \\( (a - N) + (b - N) + (c - N) = a + b + c - 3N \\). According to the problem, Tom's age \\( N \\) years ago was twice the sum of his children's ages then:\n\n\\[ T - N = 2(a + b + c - 3N) \\]\n\nSince we know that \\( a + b + c = T \\), we can substitute \\( T \\) for \\( a + b + c \\) in the equation:\n\n\\[ T - N = 2(T - 3N) \\]\n\nNow, let's solve this equation step by step. First, expand the right side of the equation:\n\n\\[ T - N = 2T - 6N \\]\n\nNext, isolate \\( T \\) on one side of the equation by subtracti"
+  },
+  {
+    "year": 2025,
+    "contest": "B",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the sum of the series and express it as a fraction in its simplest form. The series is given by:\n\n\\[ S = \\frac{1}{1} + \\frac{1}{2} + \\frac{1}{3} + \\cdots + \\frac{1}{100} \\]\n\nThis is the 100th harmonic number, denoted as \\( H_{100} \\). The harmonic number \\( H_n \\) is defined as:\n\n\\[ H_n = \\sum_{k=1}^n \\frac{1}{k} \\]\n\nFor \\( n = 100 \\), we have:\n\n\\[ H_{100} = \\sum_{k=1}^{100} \\frac{1}{k} \\]\n\nTo find the sum, we need to express \\( H_{100} \\) as a single fraction. The denominator of this fraction will be the least common multiple (LCM) of the numbers from 1 to 100. Let's denote this LCM by \\( L \\).\n\nThe LCM of the first 100 positive integers is a large number, but we don't need to calculate it explicitly. Instead, we need to find the sum of the series in the form of a fraction and then simplify it to find the values of \\( a \\) and \\( b \\) such that \\( \\frac{a}{b} \\) is in its simplest form.\n\nThe sum \\( S = H_{100} \\) can be written as:\n\n\\[ S = \\frac{\\text{sum of numerators}"
+  },
+  {
+    "year": 2023,
+    "contest": "A",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the polynomial \\( P(x) \\) that satisfies all the given conditions and then find its roots. Let's analyze each condition step by step.\n\n1. **Leading coefficient is 1**: This means \\( P(x) \\) is a monic polynomial.\n2. **Roots of \\( P(x) - 1 \\)**: Since 1 is a root of \\( P(x) - 1 \\), we have \\( P(1) = 1 \\).\n3. **Root of \\( P(x-2) \\)**: Since 2 is a root of \\( P(x-2) \\), we have \\( P(0) = 0 \\).\n4. **Root of \\( P(3x) \\)**: Since 3 is a root of \\( P(3x) \\), we have \\( P(1) = 0 \\). However, this contradicts the first condition that \\( P(1) = 1 \\). This suggests that there might be an error in interpreting this condition. Instead, let's consider the polynomial form and the conditions together.\n5. **Root of \\( 4P(x) \\)**: Since 4 is a root of \\( 4P(x) \\), we have \\( P\\left(\\frac{1}{4}\\right) = 0 \\).\n\nGiven these conditions, let's assume \\( P(x) \\) is a polynomial of minimal degree. The simplest form that satisfies all the conditions is a quadratic polynomial. Let's denote \\"
+  },
+  {
+    "year": 2017,
+    "contest": "B",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of triangle \\(ABC\\) where \\(A\\) and \\(B\\) are endpoints of the diameter of a circle with radius 2, \\(D\\) is a point outside the circle such that \\(BD = 3\\), \\(E\\) is a point such that \\(ED = 5\\) and \\(ED\\) is perpendicular to \\(AD\\), and \\(C\\) is the intersection of segment \\(AE\\) with the circle.\n\nFirst, let's determine the coordinates of the points. Place the center of the circle at the origin \\((0,0)\\). Then, the coordinates of \\(A\\) are \\((-2, 0)\\) and the coordinates of \\(B\\) are \\((2, 0)\\).\n\nSince \\(D\\) is on the extension of \\(AB\\) and \\(BD = 3\\), the coordinates of \\(D\\) can be found by extending the line segment \\(AB\\) to a point such that the distance from \\(B\\) to \\(D\\) is 3. The direction vector from \\(A\\) to \\(B\\) is \\((4, 0)\\), so the coordinates of \\(D\\) are \\((-2 + 4, 0) = (1, 0)\\).\n\nNext, we need to find the coordinates of \\(E\\). Since \\(ED = 5\\) and \\(ED\\) is perpendicular to \\(AD\\), the line \\(AD\\) has a slope of 0 (since it is horizontal), so"
+  },
+  {
+    "year": 2015,
+    "contest": "B",
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo find the area of the shark's fin falcata, we need to calculate the areas of the relevant parts of the circles and subtract the appropriate segments.\n\n1. **Area of the larger quarter-circle:**\n   The radius of the larger circle is 3. The area of a full circle with radius 3 is:\n   \\[\n   \\pi \\times 3^2 = 9\\pi\n   \\]\n   Since we are only interested in the first quadrant, the area of the quarter-circle is:\n   \\[\n   \\frac{1}{4} \\times 9\\pi = \\frac{9\\pi}{4}\n   \\]\n\n2. **Area of the smaller quarter-circle:**\n   The radius of the smaller circle is \\(\\frac{3}{2}\\). The area of a full circle with radius \\(\\frac{3}{2}\\) is:\n   \\[\n   \\pi \\times \\left(\\frac{3}{2}\\right)^2 = \\pi \\times \\frac{9}{4} = \\frac{9\\pi}{4}\n   \\]\n   Since we are only interested in the first quadrant, the area of the quarter-circle is:\n   \\[\n   \\frac{1}{4} \\times \\frac{9\\pi}{4} = \\frac{9\\pi}{16}\n   \\]\n\n3. **Area of the falcata:**\n   The area of the falcata is the area of the larger quarter-circle minus the area of the smaller quarter-circle:\n   \\[\n "
+  },
+  {
+    "year": 2006,
+    "contest": "A",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine how many times Odell and Kershaw pass each other during their 30-minute run, we need to calculate the number of times they meet based on their relative positions and speeds.\n\nFirst, let's find the circumference of the inner and outer lanes:\n- The radius of the inner lane is 50 meters, so its circumference is \\(2 \\pi \\times 50 = 100\\pi\\) meters.\n- The radius of the outer lane is 60 meters, so its circumference is \\(2 \\pi \\times 60 = 120\\pi\\) meters.\n\nNext, we calculate their speeds in terms of laps per minute:\n- Odell runs at 250 m/min. His speed in terms of laps is \\(\\frac{250}{100\\pi} = \\frac{2.5}{\\pi}\\) laps per minute.\n- Kershaw runs at 300 m/min. His speed in terms of laps is \\(\\frac{300}{120\\pi} = \\frac{2.5}{\\pi}\\) laps per minute.\n\nSince both runners have the same effective speed ( despite running on different lanes), they will meet each other every time one completes a lap more than the other, which is effectively every time one completes a full cycle of their relative positions.\n\nThe rel"
+  },
+  {
+    "year": 2023,
+    "contest": "B",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the area of the region defined by the given constraints. However, the problem statement does not provide any specific constraints or equations. Therefore, I will assume that the problem is referring to a common geometric shape or a standard problem from a typical AMC exam.\n\nGiven the options, let's consider a common problem type: finding the area of a rectangle. The area of a rectangle is given by the formula:\n\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nLet's assume the problem is asking for the area of a rectangle with a length of 4 units and a width of 2 units. Then the area would be:\n\n\\[ \\text{Area} = 4 \\times 2 = 8 \\]\n\nTherefore, the correct answer is:\n\n\\(\\boxed{\\text{B}}\\)"
+  },
+  {
+    "year": 2020,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine how many positive integers \\( n \\leq 1000 \\) are not divisible by 3. We will use the floor function and properties of divisibility.\n\nFirst, let's find the total number of positive integers less than or equal to 1000. This is simply 1000.\n\nNext, we need to count how many of these numbers are divisible by 3. A number \\( n \\) is divisible by 3 if and only if \\( n = 3k \\) for some integer \\( k \\). The largest multiple of 3 that is less than or equal to 1000 is 999, which is \\( 3 \\times 333 \\). Therefore, the multiples of 3 from 1 to 1000 are \\( 3, 6, 9, \\ldots, 999 \\), which form an arithmetic sequence with the first term 3 and the common difference 3. The number of terms in this sequence is given by:\n\n\\[ k = \\left\\lfloor \\frac{1000}{3} \\right\\rfloor = 333 \\]\n\nSo, there are 333 positive integers less than or equal to 1000 that are divisible by 3.\n\nTo find the number of positive integers less than or equal to 1000 that are not divisible by 3, we subtract the number of mu"
+  },
+  {
+    "year": 2025,
+    "contest": "B",
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the ones digit of the sum involving the greatest integer function and fractional part. The expression given is:\n\n\\[ \\left\\lfloor \\frac{1}{2} \\right\\rfloor + \\left\\lfloor \\frac{2}{3} \\right\\rfloor + \\left\\lfloor \\frac{3}{4} \\right\\rfloor + \\cdots + \\left\\lfloor \\frac{99}{100} \\right\\rfloor \\]\n\nLet's analyze each term in the sum:\n\n1. For \\( n = 1 \\):\n   \\[ \\left\\lfloor \\frac{1}{2} \\right\\rfloor = 0 \\]\n   because \\( \\frac{1}{2} = 0.5 \\) and the greatest integer less than or equal to 0.5 is 0.\n\n2. For \\( n = 2 \\):\n   \\[ \\left\\lfloor \\frac{2}{3} \\right\\rfloor = 0 \\]\n   because \\( \\frac{2}{3} \\approx 0.6667 \\) and the greatest integer less than or equal to 0.6667 is 0.\n\n3. For \\( n = 3 \\):\n   \\[ \\left\\lfloor \\frac{3}{4} \\right\\rfloor = 0 \\]\n   because \\( \\frac{3}{4} = 0.75 \\) and the greatest integer less than or equal to 0.75 is 0.\n\n4. For \\( n = 4 \\):\n   \\[ \\left\\lfloor \\frac{4}{5} \\right\\rfloor = 0 \\]\n   because \\( \\frac{4}{5} = 0.8 \\) and the greatest integer less tha"
+  },
+  {
+    "year": 2024,
+    "contest": "B",
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the product of all positive integer divisors of \\(42\\) and determine its units digit.\n\nFirst, let's list all the positive divisors of \\(42\\). The prime factorization of \\(42\\) is:\n\\[ 42 = 2 \\times 3 \\times 7 \\]\n\nThe divisors of \\(42\\) are:\n\\[ 1, 2, 3, 6, 7, 14, 21, 42 \\]\n\nNext, we need to find the product of these divisors. Let's denote the product of all positive integer divisors of a number \\(n\\) as \\(P(n)\\). For any integer \\(n\\) with \\(d\\) divisors, the product of the divisors is given by:\n\\[ P(n) = n^{d/2} \\]\n\nFirst, we need to determine the number of divisors of \\(42\\). The formula for the number of divisors of a number \\(n = p_1^{e_1} \\times p_2^{e_2} \\times \\cdots \\times p_k^{e_k}\\) is:\n\\[ (e_1 + 1)(e_2 + 1) \\cdots (e_k + 1) \\]\n\nFor \\(42 = 2^1 \\times 3^1 \\times 7^1\\), the number of divisors is:\n\\[ (1+1)(1+1)(1+1) = 2 \\times 2 \\times 2 = 8 \\]\n\nSo, \\(42\\) has \\(8\\) divisors. Using the formula for the product of the divisors:\n\\[ P(42) = 42^{8/2} = 42^4 \\]\n\nNow, we n"
+  },
+  {
+    "year": 2019,
+    "contest": "B",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the probability that the red ball is tossed into a higher-numbered bin than the green ball. Let's denote the bin number of the red ball by \\( R \\) and the bin number of the green ball by \\( G \\). We are interested in the probability that \\( R > G \\).\n\nFirst, let's consider the possible values for \\( R \\) and \\( G \\). Since each ball is tossed into a bin with probabilities \\( 2^{-k} \\), the probability that a ball lands in any specific bin \\( k \\) is \\( 2^{-k} \\).\n\nThe key insight here is to recognize that the events where the red ball lands in a higher-numbered bin than the green ball, and vice versa, are symmetric. This means that the probability that the red ball lands in a higher-numbered bin than the green ball is the same as the probability that the green ball lands in a higher-numbered bin than the red ball. Additionally, there is also a non-zero probability that the red ball and the green ball land in the same bin.\n\nLet's denote the total probability by \\( P"
+  },
+  {
+    "year": 2023,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of different combinations of $20$, $50$, and $100$ bills that add up to $800, with at least one bill of each denomination.\n\nLet's denote:\n- \\( x \\) as the number of $20$ bills,\n- \\( y \\) as the number of $50$ bills,\n- \\( z \\) as the number of $100$ bills.\n\nWe need to satisfy the equation:\n\\[ 20x + 50y + 100z = 800 \\]\nwith the constraints:\n\\[ x \\geq 1, \\quad y \\geq 1, \\quad z \\geq 1. \\]\n\nFirst, we simplify the equation by dividing everything by $10$:\n\\[ 2x + 5y + 10z = 80. \\]\n\nNext, we need to find all possible non-negative integer solutions for \\( x, y, \\) and \\( z \\) that satisfy this equation and the constraints.\n\nWe will use a systematic approach to count the valid combinations:\n\n### Step-by-Step Analysis\n\n1. **Fix \\( z = 1 \\):**\n   \\[ 2x + 5y + 10(1) = 80 \\]\n   \\[ 2x + 5y = 70 \\]\n\n   We need to find non-negative integer solutions for \\( x \\) and \\( y \\):\n   - For \\( y = 0 \\): \\( 2x = 70 \\Rightarrow x = 35 \\)\n   - For \\( y = 1 \\): \\( 2x + 5(1) = 70 \\R"
+  },
+  {
+    "year": 2015,
+    "contest": "B",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to consider the structure of a cube and the constraints given. A cube has 8 vertices (corners) and 12 edges. Erin starts at one corner and crawls along exactly 7 edges, visiting each of the other 7 corners exactly once. This means she must end up at a corner that is diagonally opposite to her starting point, because if she were to return along an edge to her starting point, she would have to traverse another set of 6 edges, which is not possible since she has already used 7 edges.\n\nLet's label the corners of the cube as follows:\n- Start at corner \\(A\\).\n- The diagonally opposite corner is \\(E\\).\n\nErin must visit all other 6 corners (B, C, D, F, G, H) exactly once and end at either \\(C\\) or \\(G\\) (the other diagonal corner from \\(A\\)). We will count the number of paths that lead to each of these endpoints.\n\n### Paths ending at \\(C\\):\n1. Erin can start at \\(A\\) and move to any of the 3 adjacent corners (B, D, or F).\n2. From there, she has 2 choices for the next move (one of the t"
+  },
+  {
+    "year": 2011,
+    "contest": "B",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the ratio of the largest element in the set \\(\\{1, 10, 10^2, 10^3, \\ldots, 10^{10}\\}\\) to the sum of the other ten elements in the set.\n\nFirst, identify the largest element in the set. The largest element is \\(10^{10}\\).\n\nNext, calculate the sum of the other ten elements in the set. These elements are \\(1, 10, 10^2, 10^3, \\ldots, 10^9\\). This is a geometric series with the first term \\(a = 1\\) and common ratio \\(r = 10\\).\n\nThe sum of the first \\(n\\) terms of a geometric series is given by:\n\\[ S_n = a \\frac{r^n - 1}{r - 1} \\]\n\nFor our series, \\(a = 1\\), \\(r = 10\\), and \\(n = 10\\):\n\\[ S_{10} = 1 \\cdot \\frac{10^{10} - 1}{10 - 1} = \\frac{10^{10} - 1}{9} \\]\n\nNow, we need to find the ratio of the largest element \\(10^{10}\\) to the sum of the other ten elements \\(S_{10}\\):\n\\[ \\text{Ratio} = \\frac{10^{10}}{\\frac{10^{10} - 1}{9}} \\]\n\nSimplify the expression:\n\\[ \\text{Ratio} = \\frac{10^{10} \\cdot 9}{10^{10} - 1} \\]\n\nSince \\(10^{10}\\) is much larger than 1, we can approximate the d"
+  },
+  {
+    "year": 2021,
+    "contest": "A",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine which of the given options is equivalent to \\(3^{127} + 2^{127}\\).\n\nLet's analyze each option step by step:\n\n**Option (A):** \\(3^{127} + 2^{127}\\)\n\nThis option is exactly the same as the expression we are given. However, it does not simplify further in a way that makes it obviously equivalent to any of the other options.\n\n**Option (B):** \\(3^{127} + 2^{127} + 2 \\cdot 3^{63} + 3 \\cdot 2^{63}\\)\n\nThis option includes additional terms compared to the original expression. Let's see if we can simplify it:\n\n\\[3^{127} + 2^{127} + 2 \\cdot 3^{63} + 3 \\cdot 2^{63}\\]\n\nWe can group and factor some terms, but it doesn't immediately suggest a simple equivalence to \\(3^{127} + 2^{127}\\).\n\n**Option (C):** \\(3^{128} - 2^{128}\\)\n\nThis option involves powers of 3 and 2, but with different exponents. It's not clear how this relates to \\(3^{127} + 2^{127}\\).\n\n**Option (D):** \\(3^{128} + 2^{128}\\)\n\nThis option has the same structure as the original expression but with one exponent being "
+  },
+  {
+    "year": 2022,
+    "contest": "A",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine which expression is equal to \\(a^2 + 2a + 1\\) for \\(a < 0\\).\n\nFirst, let's simplify the given expression:\n\n\\[ a^2 + 2a + 1 \\]\n\nNotice that this expression can be factored as a perfect square:\n\n\\[ a^2 + 2a + 1 = (a + 1)^2 \\]\n\nNext, we need to evaluate this expression for \\(a < 0\\). Since \\(a\\) is negative, let's consider some specific values of \\(a\\) to understand the behavior of the expression.\n\n1. If \\(a = -1\\):\n   \\[ (a + 1)^2 = (-1 + 1)^2 = 0^2 = 0 \\]\n\n2. If \\(a = -2\\):\n   \\[ (a + 1)^2 = (-2 + 1)^2 = (-1)^2 = 1 \\]\n\n3. If \\(a = -3\\):\n   \\[ (a + 1)^2 = (-3 + 1)^2 = (-2)^2 = 4 \\]\n\nFrom these examples, we can see that as \\(a\\) becomes more negative, the value of \\((a + 1)^2\\) increases. However, the key point is to recognize that for any \\(a < 0\\), the expression \\((a + 1)^2\\) will always be positive.\n\nNow, let's compare this with the given options:\n\n- \\(\\textbf{(A) } 3 - 2a\\)\n- \\(\\textbf{(B) } 1 - a\\)\n- \\(\\textbf{(C) } 1\\)\n- \\(\\textbf{(D) } a + 1\\)\n- \\(\\textbf{(E) }"
+  },
+  {
+    "year": 2007,
+    "contest": "A",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we start with the given equation:\n\n\\[ 4 = a + a^{-1} \\]\n\nWe need to find the value of \\( a^4 + a^{-4} \\). To do this, we will first square both sides of the given equation to find an expression for \\( a^2 + a^{-2} \\).\n\nSquare both sides of the equation:\n\n\\[ (a + a^{-1})^2 = 4^2 \\]\n\nThis expands to:\n\n\\[ a^2 + 2 + a^{-2} = 16 \\]\n\nSubtract 2 from both sides to isolate \\( a^2 + a^{-2} \\):\n\n\\[ a^2 + a^{-2} = 14 \\]\n\nNext, we need to find \\( a^4 + a^{-4} \\). We do this by squaring the expression for \\( a^2 + a^{-2} \\):\n\n\\[ (a^2 + a^{-2})^2 = 14^2 \\]\n\nThis expands to:\n\n\\[ a^4 + 2 + a^{-4} = 196 \\]\n\nSubtract 2 from both sides to isolate \\( a^4 + a^{-4} \\):\n\n\\[ a^4 + a^{-4} = 194 \\]\n\nTherefore, the value of \\( a^4 + a^{-4} \\) is \\( 194 \\).\n\nThe correct option is \\(\\boxed{\\text{D}}\\)."
+  },
+  {
+    "year": 2023,
+    "contest": "B",
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to analyze the sequence \\( L_1, L_2, L_3, \\ldots \\) defined by the recurrence relation \\( L_{n+2} = L_{n+1} + L_n \\) with initial conditions \\( L_1 = 1 \\) and \\( L_2 = 3 \\). We will determine the parity (odd or even nature) of each term in the sequence.\n\nFirst, let's compute the first few terms of the sequence:\n\\[\nL_1 = 1 \\quad (\\text{odd})\n\\]\n\\[\nL_2 = 3 \\quad (\\text{odd})\n\\]\n\\[\nL_3 = L_2 + L_1 = 3 + 1 = 4 \\quad (\\text{even})\n\\]\n\\[\nL_4 = L_3 + L_2 = 4 + 3 = 7 \\quad (\\text{odd})\n\\]\n\\[\nL_5 = L_4 + L_3 = 7 + 4 = 11 \\quad (\\text{odd})\n\\]\n\\[\nL_6 = L_5 + L_4 = 11 + 7 = 18 \\quad (\\text{even})\n\\]\n\nWe observe that the sequence alternates between odd and even terms starting from \\( L_3 \\). Specifically, \\( L_3 \\) is even, and then \\( L_4 \\) and \\( L_5 \\) are odd. This pattern continues because each term is the sum of the two preceding terms, and the parity of the sum depends on the parities of the two preceding terms.\n\nTo confirm this pattern, let's look at the sequence in terms of their "
+  },
+  {
+    "year": 2022,
+    "contest": "B",
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine how many three-digit positive integers have an odd number of even digits, we need to consider the possible configurations of such numbers. A three-digit number can have either one or three even digits (since two even digits would result in an even count).\n\n### Case 1: One Even Digit\nFor a three-digit number to have exactly one even digit, it must be structured as follows:\n- The first digit (hundreds place) must be odd.\n- The second and third digits (tens and units places) must include exactly one even digit.\n\nLet's break this down:\n\n#### Subcase 1.1: First Digit is Even\nThis case is not possible because the first digit of a three-digit number cannot be even (it must be between 1 and 9).\n\n#### Subcase 1.2: First Digit is Odd\n- The first digit can be any of the odd digits: 1, 3, 5, 7, or 9. There are 5 choices.\n- The second and third digits must include exactly one even digit. An even digit can be 0, 2, 4, 6, or 8. There are 5 choices for each of these positions.\n\nThe number of valid combinations "
+  },
+  {
+    "year": 2011,
+    "contest": "A",
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the area of a circle is less than its circumference when the diameter is determined by rolling a pair of standard 6-sided fair dice.\n\nFirst, let's denote the sum of the numbers rolled on the two dice as \\( d \\). The possible values for \\( d \\) range from 2 to 12. The formula for the area \\( A \\) of a circle with radius \\( r \\) is given by:\n\n\\[ A = \\pi r^2 \\]\n\nThe formula for the circumference \\( C \\) of a circle with diameter \\( d \\) is given by:\n\n\\[ C = \\pi d \\]\n\nWe need to find the condition under which the area is less than the circumference:\n\n\\[ \\pi r^2 < \\pi d \\]\n\nDividing both sides by \\(\\pi\\):\n\n\\[ r^2 < d \\]\n\nSince the radius \\( r \\) is half of the diameter \\( d \\), we have:\n\n\\[ \\left( \\frac{d}{2} \\right)^2 < d \\]\n\nSimplifying this inequality:\n\n\\[ \\frac{d^2}{4} < d \\]\n\nMultiplying both sides by 4:\n\n\\[ d^2 < 4d \\]\n\nDividing both sides by \\( d \\) (assuming \\( d \\neq 0 \\)):\n\n\\[ d < 4 \\]\n\nSo, the diameter \\( d \\) must be less than 4 for the "
+  },
+  {
+    "year": 2023,
+    "contest": "B",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nLet's denote the original list of numbers on the blackboard as \\(a_1, a_2, \\ldots, a_n\\).\n\nMaddy adds 3 to each number in the list and finds that the sum of her new numbers is 45. This can be written as:\n\\[ (a_1 + 3) + (a_2 + 3) + \\cdots + (a_n + 3) = 45. \\]\nThis simplifies to:\n\\[ (a_1 + a_2 + \\cdots + a_n) + 3n = 45. \\]\nLet's call the sum of the original numbers \\(S\\), so we have:\n\\[ S + 3n = 45. \\tag{1} \\]\n\nLara multiplies each number in the list by 3 and finds that the sum of her new numbers is also 45. This can be written as:\n\\[ 3a_1 + 3a_2 + \\cdots + 3a_n = 45. \\]\nThis simplifies to:\n\\[ 3(a_1 + a_2 + \\cdots + a_n) = 45. \\]\nLet's call the sum of the original numbers \\(S\\), so we have:\n\\[ 3S = 45. \\]\nFrom this, we can solve for \\(S\\):\n\\[ S = 15. \\tag{2} \\]\n\nNow we substitute \\(S = 15\\) into equation (1):\n\\[ 15 + 3n = 45. \\]\nSubtracting 15 from both sides gives:\n\\[ 3n = 30. \\]\nDividing both sides by 3 gives:\n\\[ n = 10. \\]\n\nTherefore, the number of numbers written on the blackboard is \\(10\\).\n\nThe correct o"
+  },
+  {
+    "year": 2013,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find two non-decreasing sequences of nonnegative integers with different first terms, such that each term beginning with the third is the sum of the previous two terms, and the seventh term of each sequence is \\(N\\).\n\nLet's denote the first terms of the two sequences as \\(a\\) and \\(b\\) respectively. The general form of the sequences can be written as:\n\\[ a, a_2, a_3, \\ldots, N \\]\n\\[ b, b_2, b_3, \\ldots, N \\]\n\nGiven that each term is the sum of the previous two terms, we can express the sequences in terms of \\(a\\) and \\(b\\):\n\\[ a_3 = a + a_2 \\]\n\\[ a_4 = a_2 + a_3 = a_2 + (a + a_2) = a + 2a_2 \\]\n\\[ a_5 = a_3 + a_4 = (a + a_2) + (a + 2a_2) = 2a + 3a_2 \\]\n\\[ a_6 = a_4 + a_5 = (a + 2a_2) + (2a + 3a_2) = 3a + 5a_2 \\]\n\\[ a_7 = a_5 + a_6 = (2a + 3a_2) + (3a + 5a_2) = 5a + 8a_2 \\]\n\nSimilarly, for the second sequence:\n\\[ b_3 = b + b_2 \\]\n\\[ b_4 = b_2 + b_3 = b_2 + (b + b_2) = b + 2b_2 \\]\n\\[ b_5 = b_3 + b_4 = (b + b_2) + (b + 2b_2) = 2b + 3b_2 \\]\n\\[ b_6 = b_4 + b_5 = (b + 2b_2) + (2b +"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the properties of a dilation (or size transformation) in the plane. A dilation scales all distances from a fixed center by a positive scale factor \\( k \\). The general form of a dilation centered at point \\( A(a, b) \\) with scale factor \\( k \\) is given by:\n\n\\[ A' = (a + k(x - a), b + k(y - b)) \\]\n\nwhere \\( (x, y) \\) are the coordinates of any point in the plane before the transformation.\n\nGiven:\n- The original circle has radius 2 and center at \\( A(2, 2) \\).\n- After the dilation, this circle is transformed into a circle with radius 3 and center at \\( A'(5, 6) \\).\n\nFirst, we need to determine the scale factor \\( k \\). Since the radius of the original circle is 2 and the radius of the transformed circle is 3, the scale factor \\( k \\) can be calculated as:\n\n\\[ k = \\frac{\\text{new radius}}{\\text{original radius}} = \\frac{3}{2} = 1.5 \\]\n\nNext, we need to verify that the center of dilation \\( A(2, 2) \\) is correctly mapped to \\( A'(5, 6) \\). Using the dilation formula:"
+  },
+  {
+    "year": 2010,
+    "contest": "A",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the smallest possible value of \\(a\\) for the polynomial \\(x^3 - ax^2 + bx - 2010\\) with three positive integer roots. Let's denote the roots by \\(p\\), \\(q\\), and \\(r\\). According to Vieta's formulas, the polynomial can be written as:\n\n\\[ (x-p)(x-q)(x-r) = x^3 - (p+q+r)x^2 + (pq+qr+rp)x - pqr \\]\n\nFrom this, we can see that the constant term \\(pqr\\) is equal to 2010. Therefore, we need to find three positive integers \\(p\\), \\(q\\), and \\(r\\) such that their product is 2010 and the sum \\(p+q+r\\) is minimized.\n\nFirst, let's factorize 2010:\n\n\\[ 2010 = 2 \\times 3 \\times 5 \\times 67 \\]\n\nWe need to group these factors into three numbers such that their product is 2010 and their sum is minimized. Let's try different combinations:\n\n1. \\(p = 2\\), \\(q = 3\\), \\(r = 335\\) (since \\(2 \\times 3 \\times 335 = 2010\\))\n   \\[ p+q+r = 2 + 3 + 335 = 340 \\]\n\n2. \\(p = 2\\), \\(q = 5\\), \\(r = 201\\) (since \\(2 \\times 5 \\times 201 = 2010\\))\n   \\[ p+q+r = 2 + 5 + 201 = 208 \\]\n\n3. \\(p = 2\\), \\(q = 67\\), "
+  },
+  {
+    "year": 2019,
+    "contest": "A",
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine the greatest number of consecutive integers whose sum is 45, we need to consider the properties of the sum of consecutive integers.\n\nLet's denote the number of consecutive integers by \\( n \\) and the first integer in the sequence by \\( a \\). The sum of \\( n \\) consecutive integers starting from \\( a \\) can be expressed as:\n\n\\[ S = a + (a+1) + (a+2) + \\cdots + (a+n-1) \\]\n\nThis is an arithmetic series with the first term \\( a \\) and the last term \\( a+n-1 \\). The sum of this series can be calculated using the formula for the sum of an arithmetic series:\n\n\\[ S = \\frac{n}{2} \\times (\\text{first term} + \\text{last term}) \\]\n\nSubstituting the first term \\( a \\) and the last term \\( a+n-1 \\):\n\n\\[ S = \\frac{n}{2} \\times (a + (a+n-1)) \\]\n\\[ S = \\frac{n}{2} \\times (2a + n - 1) \\]\n\nWe are given that the sum \\( S \\) is 45:\n\n\\[ 45 = \\frac{n}{2} \\times (2a + n - 1) \\]\n\nTo find the greatest number of consecutive integers, we need to maximize \\( n \\). Let's test different values of \\( n \\) and solve for \\( a \\)"
+  },
+  {
+    "year": 2008,
+    "contest": "A",
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the length of the hypotenuse of a right triangle given its perimeter and area. Let's denote the sides of the right triangle as \\(a\\), \\(b\\), and \\(c\\) (where \\(c\\) is the hypotenuse). We are given:\n\n1. The perimeter of the triangle: \\(a + b + c = 32\\)\n2. The area of the triangle: \\(\\frac{1}{2}ab = 20\\)\n\nFrom the area equation, we can express \\(ab\\) as:\n\\[ ab = 40 \\]\n\nWe also know from the Pythagorean theorem that:\n\\[ a^2 + b^2 = c^2 \\]\n\nFirst, let's solve for \\(a\\) and \\(b\\) using the perimeter and area equations. We have two equations involving \\(a\\) and \\(b\\):\n\n1. \\(a + b + c = 32\\)\n2. \\(ab = 40\\)\n\nWe can express \\(c\\) in terms of \\(a\\) and \\(b\\):\n\\[ c = 32 - a - b \\]\n\nSubstitute this into the Pythagorean theorem:\n\\[ a^2 + b^2 = (32 - a - b)^2 \\]\n\nExpanding the right-hand side:\n\\[ a^2 + b^2 = (32 - a - b)(32 - a - b) \\]\n\\[ a^2 + b^2 = 1024 - 64a - 64b + a^2 + b^2 + 2ab \\]\n\nSince \\(a^2 + b^2\\) appears on both sides, we can cancel it out:\n\\[ 0 = 1024 - 64a - 64b + 2ab \\]"
+  },
+  {
+    "year": 2011,
+    "contest": "A",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to use the given information about the sequence and the conditions it satisfies. The sequence is \\(A, B, C, D, E, F, G, H\\) and we know that \\(C = 5\\). Additionally, the sum of any three consecutive terms is 30.\n\nLet's write down the equations based on the given condition:\n1. \\(A + B + C = 30\\)\n2. \\(B + C + D = 30\\)\n3. \\(C + D + E = 30\\)\n4. \\(D + E + F = 30\\)\n5. \\(E + F + G = 30\\)\n6. \\(F + G + H = 30\\)\n\nWe can use these equations to find relationships between the terms. First, let's subtract the first equation from the second:\n\\[ (B + C + D) - (A + B + C) = 30 - 30 \\]\n\\[ D - A = 0 \\]\n\\[ D = A \\]\n\nNext, let's subtract the second equation from the third:\n\\[ (C + D + E) - (B + C + D) = 30 - 30 \\]\n\\[ E - B = 0 \\]\n\\[ E = B \\]\n\nWe can continue this process for the remaining equations. From the third equation minus the fourth:\n\\[ (D + E + F) - (C + D + E) = 30 - 30 \\]\n\\[ F - C = 0 \\]\n\\[ F = C \\]\n\nFrom the fourth equation minus the fifth:\n\\[ (E + F + G) - (D + E + F) = 30 - 30 \\]\n\\[ G -"
+  },
+  {
+    "year": 2005,
+    "contest": "A",
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the value of \\( b \\) such that both equations have the same solution for \\( x \\).\n\nFirst, let's solve the equation \\( 2x + 7 = 3 \\):\n\n1. Subtract 7 from both sides:\n   \\[\n   2x + 7 - 7 = 3 - 7\n   \\]\n   Simplifying this, we get:\n   \\[\n   2x = -4\n   \\]\n\n2. Divide both sides by 2:\n   \\[\n   x = \\frac{-4}{2}\n   \\]\n   Simplifying this, we get:\n   \\[\n   x = -2\n   \\]\n\nNow that we have \\( x = -2 \\), we substitute this value into the second equation \\( bx - 10 = -2 \\) to find \\( b \\):\n\n1. Substitute \\( x = -2 \\) into the equation:\n   \\[\n   b(-2) - 10 = -2\n   \\]\n\n2. Simplify the left-hand side:\n   \\[\n   -2b - 10 = -2\n   \\]\n\n3. Add 10 to both sides to isolate the term with \\( b \\):\n   \\[\n   -2b - 10 + 10 = -2 + 10\n   \\]\n   Simplifying this, we get:\n   \\[\n   -2b = 8\n   \\]\n\n4. Divide both sides by -2 to solve for \\( b \\):\n   \\[\n   b = \\frac{8}{-2}\n   \\]\n   Simplifying this, we get:\n   \\[\n   b = -4\n   \\]\n\nTherefore, the value of \\( b \\) is \\(\\boxed{\\text{B}}\\)."
+  },
+  {
+    "year": 2008,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of valid seating arrangements for five married couples around a round table with ten chairs, where men and women alternate, and no one sits next to or across from their spouse.\n\n### Step-by-Step Solution:\n\n1. **Fixing One Person to Break Symmetry:**\n   Since the table is round, we can fix one person's position to avoid counting rotations as different arrangements. Let's fix one man in a specific chair (say, chair 1). This will help us count the arrangements relative to this fixed position.\n\n2. **Alternating Men and Women:**\n   With one man fixed in chair 1, the next chair must be occupied by a woman. The remaining men and women need to alternate around the table.\n\n3. **Arranging Remaining Couples:**\n   After fixing one man, we have 4 men and 5 women left. We need to arrange these 4 men and 5 women in alternating positions.\n\n4. **Permutations of Men and Women:**\n   - The 4 remaining men can be arranged in the 4 remaining man chairs in \\(4!\\) ways.\n   - Th"
+  },
+  {
+    "year": 2020,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the length \\(FI^2\\) given the areas of various regions in the square \\(ABCD\\).\n\nFirst, let's denote the side length of the square \\(ABCD\\) as \\(s\\). Since \\(AE = AH\\), point \\(E\\) divides \\(AB\\) into two equal segments, and point \\(H\\) divides \\(DA\\) into two equal segments. Therefore, \\(AE = AH = \\frac{s}{2}\\).\n\nThe area of triangle \\(AEH\\) is given as 1. The area of a right triangle is given by \\(\\frac{1}{2} \\times \\text{base} \\times \\text{height}\\). Here, the base and height are both \\(\\frac{s}{2}\\), so we have:\n\\[\n\\frac{1}{2} \\times \\frac{s}{2} \\times \\frac{s}{2} = 1 \\implies \\frac{s^2}{8} = 1 \\implies s^2 = 8 \\implies s = 2\\sqrt{2}\n\\]\n\nNext, we need to find the coordinates of points \\(F\\) and \\(G\\). Since \\(FI \\perp EH\\) and \\(GJ \\perp EH\\), we can use the fact that the area of quadrilateral \\(BFIE\\) is 1. The area of a quadrilateral can be calculated as the sum of the areas of two triangles if it can be divided into two triangles by a diagonal.\n\nThe coordinat"
+  },
+  {
+    "year": 2009,
+    "contest": "A",
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the sum of the numbers on the top faces of two cubes is 7. Let's break down the solution step by step.\n\n### Step 1: Total Number of Outcomes\nEach cube has 6 faces, and there are 2 dice. Therefore, the total number of possible outcomes when rolling two dice is:\n\\[ 6 \\times 6 = 36 \\]\n\n### Step 2: Identify Favorable Outcomes\nWe need to find the pairs of numbers that add up to 7. The possible pairs are:\n- (1, 6)\n- (2, 5)\n- (3, 4)\n\nEach pair can appear in two different orders (e.g., (1, 6) and (6, 1)). Therefore, there are 3 pairs, each with 2 permutations:\n\\[ 3 \\times 2 = 6 \\]\n\n### Step 3: Calculate the Probability\nThe probability of getting a sum of 7 is the number of favorable outcomes divided by the total number of possible outcomes:\n\\[ \\text{Probability} = \\frac{\\text{Number of favorable outcomes}}{\\text{Total number of outcomes}} = \\frac{6}{36} = \\frac{1}{6} \\]\n\nThus, the probability that the sum is 7 is:\n\\[\n\\boxed{\\frac{1}{6}}\n\\]\n\nThe correct"
+  },
+  {
+    "year": 2019,
+    "contest": "A",
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the greatest three-digit positive integer \\( n \\) for which the sum of the first \\( n \\) positive integers is not a divisor of the product of the first \\( n \\) positive integers.\n\nFirst, let's find the sum of the first \\( n \\) positive integers. The formula for the sum of the first \\( n \\) positive integers is:\n\n\\[ S = \\frac{n(n+1)}{2} \\]\n\nNext, we need to consider the product of the first \\( n \\) positive integers, which is the factorial of \\( n \\), denoted as \\( n! \\).\n\nWe need to check if \\( S = \\frac{n(n+1)}{2} \\) is a divisor of \\( n! \\). For \\( S \\) to be a divisor of \\( n! \\), \\( \\frac{n(n+1)}{2} \\) must divide \\( n! \\).\n\nLet's analyze the conditions under which \\( \\frac{n(n+1)}{2} \\) divides \\( n! \\):\n\n1. **Case 1: \\( n \\) is even**\n   - If \\( n \\) is even, then \\( n+1 \\) is odd.\n   - For \\( \\frac{n(n+1)}{2} \\) to divide \\( n! \\), \\( n+1 \\) must be a product of some of the factors in \\( n! \\).\n   - This is generally true for even \\( n \\).\n\n2. **Case 2: \\( n "
+  },
+  {
+    "year": 2018,
+    "contest": "A",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the distance \\( AB \\) between the points of tangency on two smaller circles that are externally tangent to each other and internally tangent to a larger circle.\n\nFirst, let's visualize the setup:\n- We have a large circle with radius \\( R = 13 \\).\n- Two smaller circles, each with radius \\( r = 5 \\), are externally tangent to each other and internally tangent to the larger circle.\n- The points of tangency on the smaller circles are denoted as \\( A \\) and \\( B \\).\n\nNext, we need to find the distance between these two points of tangency. To do this, we will use the geometric properties of the circles.\n\n1. **Calculate the distance from the center of the large circle to the center of one small circle:**\n   - The radius of the large circle is \\( 13 \\).\n   - The radius of each small circle is \\( 5 \\).\n\n   The distance between the center of the large circle and the center of one small circle is:\n   \\[\n   R - r = 13 - 5 = 8\n   \\]\n\n2. **Calculate the distance between the cente"
+  },
+  {
+    "year": 2009,
+    "contest": "A",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the ratio of the sum of the areas of the four smaller circles to the area of the larger circle. Let's denote the radius of each smaller circle as \\( r \\).\n\nFirst, let's determine the radius of the larger circle. The centers of the four smaller circles form a square, and the diagonal of this square is equal to the diameter of the larger circle. The side length of the square formed by the centers of the smaller circles is \\( 2r \\) (since each side is the distance between the centers of two adjacent smaller circles, which is twice the radius of one smaller circle).\n\nThe diagonal of a square with side length \\( s \\) is given by \\( s\\sqrt{2} \\). Therefore, the diagonal of our square is \\( 2r\\sqrt{2} \\), which is also the diameter of the larger circle. Thus, the radius of the larger circle is \\( r\\sqrt{2} \\).\n\nNow, let's calculate the area of one smaller circle. The area of a circle is given by \\( \\pi r^2 \\). Therefore, the sum of the areas of the four smaller circles is:\n\\[ "
+  },
+  {
+    "year": 2021,
+    "contest": "B",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine how many pairs of students are wearing yellow shirts. Let's break down the information given and use it to find the solution step by step.\n\n1. **Total number of students**: There are 57 students in blue shirts and 75 students in yellow shirts, making a total of:\n   \\[\n   57 + 75 = 132 \\text{ students}\n   \\]\n\n2. **Total number of pairs**: The students are paired up into 66 pairs.\n\n3. **Pairs with both students in blue shirts**: There are 23 such pairs.\n\n4. **Pairs with both students in yellow shirts**: Let's denote the number of such pairs as \\( x \\).\n\n5. **Pairs with one student in blue and the other in yellow**: Since there are 66 pairs in total, and 23 of them have both students in blue shirts, the remaining pairs must have one student in blue and the other in yellow:\n   \\[\n   66 - 23 = 43 \\text{ pairs}\n   \\]\n\n6. **Total number of blue shirt students in pairs with one in blue and the other in yellow**: Each of these 43 pairs has one student in blue, so there are "
+  },
+  {
+    "year": 2012,
+    "contest": "B",
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to analyze the given conditions step by step and determine the minimum number of odd integers among the six integers.\n\n1. **First Condition:**\n   Two integers have a sum of 26.\n   Let these two integers be \\(a\\) and \\(b\\). Therefore,\n   \\[\n   a + b = 26\n   \\]\n\n2. **Second Condition:**\n   When two more integers are added to the first two integers, the sum is 41.\n   Let these two additional integers be \\(c\\) and \\(d\\). Therefore,\n   \\[\n   (a + b) + (c + d) = 41\n   \\]\n   Since \\(a + b = 26\\), we can substitute this into the equation:\n   \\[\n   26 + (c + d) = 41\n   \\]\n   Solving for \\(c + d\\):\n   \\[\n   c + d = 41 - 26 = 15\n   \\]\n\n3. **Third Condition:**\n   When two more integers are added to the sum of the previous four integers, the sum is 57.\n   Let these two additional integers be \\(e\\) and \\(f\\). Therefore,\n   \\[\n   (a + b + c + d) + (e + f) = 57\n   \\]\n   Since \\(a + b + c + d = 26 + 15 = 41\\), we can substitute this into the equation:\n   \\[\n   41 + (e + f) = 57\n   \\]\n   Solving"
+  },
+  {
+    "year": 2007,
+    "contest": "B",
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the structure of the checkerboard and how the remainders from dividing the numbers by 4 and 5 determine the positions of the squares.\n\nFirst, let's assume the wheel is divided into 4 sections (like a quarter circle) and each section has 2 numbers. This means there are 8 possible outcomes for each spin. The first number is divided by 4 to get the row, and the second number is divided by 5 to get the column.\n\nThe checkerboard will have 4 rows and 4 columns, making a total of 16 squares. Half of these squares are shaded, so there are 8 shaded squares out of 16, giving us a probability of \\(\\frac{1}{2}\\).\n\nLet's verify this with an example. Suppose the wheel is divided into 4 sections and each section has 2 numbers. The possible outcomes for each spin are (1, 2), (1, 3), (1, 4), (1, 5), (2, 1), (2, 2), (2, 3), (2, 4), (2, 5), and so on. If we divide the numbers by 4 to get the row and by 5 to get the column, we can see that half of the possible outcomes will result in"
+  },
+  {
+    "year": 2013,
+    "contest": "A",
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of ways to schedule the matches for a backgammon tournament where each player from Central High School (CHS) plays two games against each player from Northern High School (NHS). Let's denote the players of CHS as \\(A_1, A_2, A_3\\) and those of NHS as \\(B_1, B_2, B_3\\).\n\n### Step-by-Step Solution:\n\n1. **Total Matches to be Played:**\n   Each player from CHS must play 6 games against each player from NHS (since each plays two games against eachHS player). Therefore, the total number of matches is:\n   \\[\n   3 \\text{ players from CHS} \\times 2 \\text{ games per player vs. each of the 3 players from NHS} = 18 \\text{ matches}\n   \\]\n\n2. **Round-robin Scheduling:**\n   There are six rounds, with three games played simultaneously in each round. We need to distribute these 18 matches across the six rounds.\n\n3. **Choosing Games for Each Round:**\n   For each round, we need to choose 3 out of the 6 players to play a game. The number of ways to choose 3 players out of 6 "
+  },
+  {
+    "year": 2018,
+    "contest": "B",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine which of the given expressions is never a prime number when \\( p \\) is a prime number, we need to analyze each expression modulo 3. This is because any prime number \\( p \\) (except for 3 itself) can be expressed in one of three forms: \\( p = 3k + r \\), where \\( r \\in \\{1, 2\\} \\). We will check the expressions for these cases.\n\n### Expression Analysis\n\n#### Expression A: \\( p^2 + 16 \\)\n- If \\( p = 3k + 1 \\):\n  \\[\n  p^2 = (3k+1)^2 = 9k^2 + 6k + 1\n  \\]\n  \\[\n  p^2 + 16 = 9k^2 + 6k + 1 + 16 = 9k^2 + 6k + 17\n  \\]\n  Since \\( 17 \\equiv 2 \\pmod{3} \\), we have:\n  \\[\n  p^2 + 16 \\equiv 0 + 1 + 2 \\equiv 0 \\pmod{3}\n  \\]\n  Therefore, \\( p^2 + 16 \\) is divisible by 3 and cannot be a prime number unless it is 3 itself. However, \\( p^2 + 16 > 3 \\) for any prime \\( p \\neq 3 \\).\n\n- If \\( p = 3k + 2 \\):\n  \\[\n  p^2 = (3k+2)^2 = 9k^2 + 12k + 4\n  \\]\n  \\[\n  p^2 + 16 = 9k^2 + 12k + 4 + 16 = 9k^2 + 12k + 20\n  \\]\n  Since \\( 20 \\equiv 2 \\pmod{3} \\), we have:\n  \\[\n  p^2 + 16 \\equiv 0 + 0 + 2 \\equiv 2 \\pmod{3}\n  \\]\n  Therefor"
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo determine the day of the week Zoey finished her 15th book, we need to calculate the total number of days she spent reading all 15 books and then find the corresponding day of the week.\n\nFirst, let's calculate the total number of days Zoey spent reading. The time taken to read each book forms an arithmetic series where the first term \\(a_1 = 1\\) and the common difference \\(d = 1\\). The number of terms \\(n = 15\\).\n\nThe sum \\(S_n\\) of the first \\(n\\) terms of an arithmetic series is given by:\n\\[ S_n = \\frac{n}{2} (2a + (n-1)d) \\]\n\nSubstituting the values:\n\\[ S_{15} = \\frac{15}{2} (2 \\cdot 1 + (15-1) \\cdot 1) \\]\n\\[ S_{15} = \\frac{15}{2} (2 + 14) \\]\n\\[ S_{15} = \\frac{15}{2} \\cdot 16 \\]\n\\[ S_{15} = 15 \\cdot 8 \\]\n\\[ S_{15} = 120 \\]\n\nSo, Zoey spent a total of 120 days reading all 15 books.\n\nNext, we need to determine the day of the week after 120 days, starting from Monday. We know that a week has 7 days, so we can find the remainder when 120 is divided by 7 to determine the number of days beyond complete weeks.\n"
+  },
+  {
+    "year": 2019,
+    "contest": "B",
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to analyze the properties of the right triangles \\(T_1\\) and \\(T_2\\) given that they share one pair of congruent sides and have different third sides. Let's denote the sides of \\(T_1\\) as \\(a_1\\), \\(b_1\\), and \\(c_1\\) (where \\(c_1\\) is the hypotenuse), and the sides of \\(T_2\\) as \\(a_2\\), \\(b_2\\), and \\(c_2\\) (where \\(c_2\\) is the hypotenuse).\n\nGiven:\n- The area of \\(T_1\\) is 1.\n- The area of \\(T_2\\) is 2.\n- One side of \\(T_1\\) is congruent to a side of \\(T_2\\).\n- A different side of \\(T_1\\) is congruent to a different side of \\(T_2\\).\n\nLet's assume \\(a_1 = a_2\\) and \\(b_1 = b_2\\). This means the triangles are similar by the Side-Angle-Side (SAS) similarity criterion. Therefore, the ratio of the areas of the triangles is equal to the square of the ratio of their corresponding sides.\n\nThe ratio of the areas of \\(T_1\\) and \\(T_2\\) is:\n\\[ \\frac{\\text{Area of } T_1}{\\text{Area of } T_2} = \\frac{1}{2} \\]\n\nSince the triangles are similar, the ratio of their corresponding sides is the"
+  },
+  {
+    "year": 2006,
+    "contest": "A",
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the area of quadrilateral \\(WXYZ\\) in rectangle \\(ADEH\\). Let's start by identifying the coordinates of the points and then find the area of the quadrilateral.\n\nGiven:\n- \\(AH = 2\\)\n- \\(AD = 3\\)\n- Points \\(B\\) and \\(C\\) trisect \\(\\overline{AD}\\), so \\(AB = BC = CD = 1\\).\n- Points \\(G\\) and \\(F\\) trisect \\(\\overline{HE}\\), so \\(HG = GF = FE = 1\\).\n\nLet's place the rectangle in the coordinate plane with \\(A\\) at \\((0, 2)\\), \\(D\\) at \\((3, 2)\\), \\(H\\) at \\((0, 0)\\), and \\(E\\) at \\((3, 0)\\).\n\nThe coordinates of points \\(B\\), \\(C\\), \\(G\\), and \\(F\\) are:\n- \\(B = (1, 2)\\)\n- \\(C = (2, 2)\\)\n- \\(G = (1, 0)\\)\n- \\(F = (2, 0)\\)\n\nThe quadrilateral \\(WXYZ\\) is formed by the intersection of lines connecting these points. Specifically, it is a parallelogram with vertices at \\((1, 1)\\), \\((2, 1)\\), \\((1, 0)\\), and \\((2, 0)\\).\n\nTo find the area of this parallelogram, we can use the formula for the area of a parallelogram given its base and height. The base \\(WXYZ\\) is the horizontal d"
+  },
+  {
+    "year": 2024,
+    "contest": "A",
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the least possible positive sum of three integers whose product is 60, we need to consider all possible sets of factors that multiply to 60 and then find the sum of each set. We will then identify the set with the smallest sum.\n\nFirst, let's list the factorizations of 60:\n\\[ 60 = 1 \\times 60 \\]\n\\[ 60 = 2 \\times 30 \\]\n\\[ 60 = 3 \\times 20 \\]\n\\[ 60 = 4 \\times 15 \\]\n\\[ 60 = 5 \\times 12 \\]\n\\[ 60 = 6 \\times 10 \\]\n\nWe also need to consider the possibility of using three factors. The factorization into three factors is:\n\\[ 60 = 1 \\times 3 \\times 20 \\]\n\\[ 60 = 1 \\times 4 \\times 15 \\]\n\\[ 60 = 1 \\times 5 \\times 12 \\]\n\\[ 60 = 1 \\times 6 \\times 10 \\]\n\\[ 60 = 2 \\times 3 \\times 10 \\]\n\\[ 60 = 2 \\times 5 \\times 6 \\]\n\nNow, let's calculate the sum of each set of factors:\n1. For \\(1 \\times 60\\): The sum is \\(1 + 60 = 61\\).\n2. For \\(2 \\times 30\\): The sum is \\(2 + 30 = 32\\).\n3. For \\(3 \\times 20\\): The sum is \\(3 + 20 = 23\\).\n4. For \\(4 \\times 15\\): The sum is \\(4 + 15 = 19\\).\n5. For \\(5 \\times 12"
+  },
+  {
+    "year": 2017,
+    "contest": "A",
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many integers between 100 and 999 have the property that some permutation of their digits is a multiple of 11. We will use the divisibility rule for 11, which states that a number is divisible by 11 if the difference between the sum of the digits in the odd positions and the sum of the digits in the even positions is a multiple of 11 (including 0).\n\nLet's denote a three-digit number as \\( \\overline{abc} \\), where \\( a, b, \\) and \\( c \\) are its digits. The rule for divisibility by 11 states that \\( a - b + c \\) must be a multiple of 11.\n\nWe will count the total number of three-digit numbers and subtract the number of three-digit numbers that do not satisfy this condition.\n\nFirst, let's calculate the total number of three-digit numbers. The range is from 100 to 999, so there are \\( 999 - 100 + 1 = 900 \\) three-digit numbers.\n\nNext, we need to count the number of three-digit numbers for which \\( a - b + c \\) is not a multiple of 11. We will consider all possible "
+  },
+  {
+    "year": 2025,
+    "contest": "B",
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many numbers appear in the same square when both Horace and Vera fill the grid. Let's analyze the filling patterns of both Horace and Vera.\n\n### Horace's Filling Pattern:\nHorace fills the grid horizontally. The first row contains numbers from 1 to 91, the second row from 92 to 182, and so on. In general, the \\(k\\)-th row contains the numbers from \\((k-1) \\cdot 91 + 1\\) to \\(k \\cdot 91\\).\n\n### Vera's Filling Pattern:\nVera fills the grid vertically. The first column contains numbers from 1 to 141, the second column from 142 to 282, and so on. In general, the \\(j\\)-th column contains the numbers from \\((j-1) \\cdot 141 + 1\\) to \\(j \\cdot 141\\).\n\n### Finding Common Numbers:\nA number will appear in the same square if it appears both in Horace's and Vera's sequences. Let's denote the number by \\(n\\). We need to find pairs \\((i, j)\\) such that:\n\\[ (i-1) \\cdot 91 + 1 \\leq n \\leq i \\cdot 91 \\]\nand\n\\[ (j-1) \\cdot 141 + 1 \\leq n \\leq j \\cdot 141. \\]\n\nThis means \\(n\\) must "
+  },
+  {
+    "year": 2016,
+    "contest": "B",
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to analyze the function \\( f(x) = \\sum_{k=2}^{10} (\\lfloor kx \\rfloor - k \\lfloor x \\rfloor) \\).\n\nFirst, let's understand the behavior of each term in the sum. For a given \\( k \\), the term \\( \\lfloor kx \\rfloor - k \\lfloor x \\rfloor \\) can be analyzed by considering the fractional part of \\( x \\). Let \\( x = n + f \\) where \\( n = \\lfloor x \\rfloor \\) is an integer and \\( 0 \\leq f < 1 \\) is the fractional part of \\( x \\).\n\nThen, we have:\n\\[ kx = kn + kf \\]\nand\n\\[ \\lfloor kx \\rfloor = \\lfloor kn + kf \\rfloor. \\]\n\nSince \\( kn \\) is an integer, we can write:\n\\[ \\lfloor kx \\rfloor = kn + \\lfloor kf \\rfloor. \\]\n\nThus, the term becomes:\n\\[ \\lfloor kx \\rfloor - k \\lfloor x \\rfloor = \\lfloor kf \\rfloor. \\]\n\nNow, let's consider the range of \\( f(x) \\). Since \\( 0 \\leq f < 1 \\), the value of \\( \\lfloor kf \\rfloor \\) can be 0 or 1 depending on whether \\( f < 1 \\) or \\( f = 1 \\).\n\nFor each \\( k \\), \\( \\lfloor kf \\rfloor \\) can take two values: 0 or 1. Therefore, for each \\( k \\), there are "
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to understand what it means for \\(x\\%\\) of \\(x\\) to be equal to 4. The expression \\(x\\%\\) of \\(x\\) can be written mathematically as:\n\n\\[ \\frac{x}{100} \\cdot x = 4 \\]\n\nThis simplifies to:\n\n\\[ \\frac{x^2}{100} = 4 \\]\n\nTo eliminate the fraction, we multiply both sides of the equation by 100:\n\n\\[ x^2 = 400 \\]\n\nNext, we solve for \\(x\\) by taking the square root of both sides:\n\n\\[ x = \\sqrt{400} \\]\n\nSince \\(x\\) is a positive number, we have:\n\n\\[ x = 20 \\]\n\nTherefore, the correct option is \\(\\boxed{\\text{D}}\\)."
+  },
+  {
+    "year": 2005,
+    "contest": "B",
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nThe final answer is $\\boxed{E}$."
+  },
+  {
+    "year": 2025,
+    "contest": "B",
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to consider the constraints and the symmetries of the $3 \\times 3$ grid. We are given that each red square must share an edge with at least one blue square, each blue square must share an edge with at least one yellow square, and each yellow square must share an edge with at least one red square. Additionally, colorings that can be obtained from one another by rotations and/or reflections are considered the same.\n\nFirst, let's analyze the possible configurations of the grid. We need to ensure that no two adjacent squares (sharing an edge) are all the same color. This means we need a checkerboard-like pattern with three colors, where each color appears in a repeating 2x2 block.\n\nOne possible configuration is:\n\\[\n\\begin{array}{|c|c|c|}\n\\hline\nR & B & Y \\\\\n\\hline\nY & R & B \\\\\n\\hline\nB & Y & R \\\\\n\\hline\n\\end{array}\n\\]\nThis configuration satisfies the condition that each red square shares an edge with at least one blue square, each blue square shares an edge with at least one yellow"
+  },
+  {
+    "year": 2008,
+    "contest": "A",
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the given expression and determine under what conditions it results in an integer.\n\nGiven:\n\\[ \\frac{x^3 - 8x}{x^2 - 4x} \\]\n\nFirst, let's simplify the expression:\n\n1. Factor the numerator and the denominator:\n   \\[ x^3 - 8x = x(x^2 - 8) \\]\n   \\[ x^2 - 4x = x(x - 4) \\]\n\n2. Rewrite the expression using these factorizations:\n   \\[ \\frac{x(x^2 - 8)}{x(x - 4)} \\]\n\n3. Cancel out the common factor \\( x \\) (assuming \\( x \\neq 0 \\)):\n   \\[ \\frac{x^2 - 8}{x - 4} \\]\n\nNext, we need to determine when this simplified expression is an integer. To do this, let's perform polynomial long division on \\( \\frac{x^2 - 8}{x - 4} \\):\n\n1. Divide the leading term of the numerator by the leading term of the denominator:\n   \\[ \\frac{x^2}{x} = x \\]\n\n2. Multiply \\( x \\) by the entire divisor \\( (x - 4) \\):\n   \\[ x(x - 4) = x^2 - 4x \\]\n\n3. Subtract this result from the original numerator:\n   \\[ (x^2 - 8) - (x^2 - 4x) = 4x - 8 \\]\n\n4. Divide the new leading term by the leading term of the divisor:\n  "
+  },
+  {
+    "year": 2025,
+    "contest": "A",
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we will use the Remainder Theorem. The Remainder Theorem states that if a polynomial \\( f(x) \\) is divided by \\( x - c \\), the remainder is \\( f(c) \\).\n\nGiven the polynomial \\( f(x) = x^3 + x^2 + ax + b \\), we know:\n\n1. When \\( f(x) \\) is divided by \\( x-1 \\), the remainder is 4.\n2. When \\( f(x) \\) is divided by \\( x-2 \\), the remainder is 6.\n\nUsing the Remainder Theorem, we can write these conditions as:\n\\[ f(1) = 4 \\]\n\\[ f(2) = 6 \\]\n\nFirst, let's evaluate \\( f(1) \\):\n\\[ f(1) = 1^3 + 1^2 + a \\cdot 1 + b = 1 + 1 + a + b = 2 + a + b \\]\nSince the remainder is 4:\n\\[ 2 + a + b = 4 \\]\n\\[ a + b = 2 \\quad \\text{(Equation 1)} \\]\n\nNext, let's evaluate \\( f(2) \\):\n\\[ f(2) = 2^3 + 2^2 + a \\cdot 2 + b = 8 + 4 + 2a + b = 12 + 2a + b \\]\nSince the remainder is 6:\n\\[ 12 + 2a + b = 6 \\]\n\\[ 2a + b = -6 \\quad \\text{(Equation 2)} \\]\n\nNow we have a system of linear equations:\n1. \\( a + b = 2 \\)\n2. \\( 2a + b = -6 \\)\n\nWe can solve this system by elimination or substitution. Let's use the elimination method. S"
+  },
+  {
+    "year": 2009,
+    "contest": "A",
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to express \\(12^{mn}\\) in terms of \\(P\\) and \\(Q\\), where \\(P = 2^m\\) and \\(Q = 3^n\\).\n\nFirst, let's rewrite \\(12^{mn}\\) using its prime factorization. The number 12 can be factored into primes as follows:\n\\[12 = 2^2 \\cdot 3.\\]\nTherefore,\n\\[12^{mn} = (2^2 \\cdot 3)^{mn} = (2^2)^{mn} \\cdot 3^{mn} = 2^{2mn} \\cdot 3^{mn}.\\]\n\nNow, we need to express this in terms of \\(P\\) and \\(Q\\). Recall that \\(P = 2^m\\) and \\(Q = 3^n\\). Therefore,\n\\[2^{2mn} = (2^m)^{2n} = P^{2n},\\]\nand\n\\[3^{mn} = (3^n)^m = Q^m.\\]\n\nCombining these, we get:\n\\[12^{mn} = 2^{2mn} \\cdot 3^{mn} = P^{2n} \\cdot Q^m.\\]\n\nThus, the expression \\(12^{mn}\\) is equal to \\(P^{2n}Q^m\\).\n\nThe correct option is \\(\\boxed{\\text{E}}\\)."
+  },
+  {
+    "year": 2020,
+    "contest": "A",
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine the median of a list of \\(4040\\) numbers, we need to follow these steps:\n\n1. **Order the Numbers**: Arrange all the numbers in ascending order.\n2. **Identify the Median**: Since there are \\(4040\\) numbers, which is an even number, the median will be the average of the two middle numbers.\n\nFor an even number of elements, the median can be calculated as follows:\n- The positions of the two middle numbers in a list of \\(4040\\) numbers are given by \\(\\frac{4040}{2} = 2020\\) and \\(\\frac{4040}{2} + 1 = 2021\\).\n- Therefore, the two middle numbers are at positions \\(2020\\) and \\(2021\\).\n\nThe median is then the average of these two middle numbers:\n\\[ \\text{Median} = \\frac{\\text{Number at position } 2020 + \\text{Number at position } 2021}{2} \\]\n\nGiven that we do not have the actual list of numbers, we cannot compute the exact values of the numbers at positions \\(2020\\) and \\(2021\\). However, the problem provides us with the options for the median, and we need to determine which one is correct.\n\nSince the p"
+  },
+  {
+    "year": 2007,
+    "contest": "B",
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the condition that defines the set \\( S \\). The area of a triangle is given by the formula:\n\n\\[ \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\]\n\nIn this problem, the base can be considered as the distance between points \\( B \\) and \\( C \\), which we will call \\( BC \\). Let's denote the height from point \\( A \\) to the line containing \\( BC \\) as \\( h \\). The area of triangle \\( ABC \\) is given to be 1, so we have:\n\n\\[ 1 = \\frac{1}{2} \\times BC \\times h \\]\n\nSolving for \\( h \\), we get:\n\n\\[ h = \\frac{2}{BC} \\]\n\nThis means that the height from point \\( A \\) to the line containing \\( BC \\) is a constant value, specifically \\( \\frac{2}{BC} \\). Therefore, the set of all points \\( A \\) that satisfy this condition lies on two parallel lines, one above the line containing \\( BC \\) and one below it, each at a distance of \\( \\frac{2}{BC} \\) from the line.\n\nThus, the set \\( S \\) is described by two parallel lines. The correct option is:\n\n\\(\\boxed{\\text{A}"
+  }
+]
