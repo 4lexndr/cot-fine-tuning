@@ -1,0 +1,2468 @@
+[
+  {
+    "year": 2015,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the expression \\((2^0 - 1 + 5^2 + 0)^{-1} \\times 5\\), we will break it down step by step.\n\nFirst, evaluate each part of the expression inside the parentheses:\n\n1. \\(2^0\\):\n   \\[\n   2^0 = 1\n "
+  },
+  {
+    "year": 2015,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to set up a system of equations based on the information given. Let's define the variables first:\n\n- Let \\( t \\) be the number of triangular tiles.\n- Let \\( s \\) be the"
+  },
+  {
+    "year": 2015,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of toothpicks required for a 5-step staircase and then find out how many additional toothpicks are needed compared to a 3-step staircase.\n\nFirst"
+  },
+  {
+    "year": 2015,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, let's define the number of candy eggs each person initially has in terms of a variable. Let \\( M \\) be the number of eggs Mia has. According to the problem, Sofia has twice as "
+  },
+  {
+    "year": 2015,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine Payton's score on the test, we need to follow these steps:\n\n1. **Calculate the total score of the 14 students (excluding Payton):**\n   The average grade of the 14 students is 80. Therefo"
+  },
+  {
+    "year": 2015,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, let's denote the two positive numbers as \\( x \\) and \\( y \\), where \\( x > y \\). According to the problem, the sum of these two numbers is 5 times their difference. We can write"
+  },
+  {
+    "year": 2015,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo determine the number of terms in the arithmetic sequence \\(13, 16, 19, \\ldots, 70, 73\\), we need to use the formula for the \\(n\\)-th term of an arithmetic sequence. The formula is given by:\n\n\\[a_n"
+  },
+  {
+    "year": 2015,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to set up equations based on the information given and then solve for the point in time when Pete's age will be twice Claire's age.\n\nLet's denote:\n- \\( P \\) as Pete's c"
+  },
+  {
+    "year": 2015,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to use the formula for the volume of a right circular cylinder, which is given by:\n\n\\[ V = \\pi r^2 h \\]\n\nwhere \\( r \\) is the radius and \\( h \\) is the height of the cy"
+  },
+  {
+    "year": 2015,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the number of rearrangements of \\(abcd\\) where no two adjacent letters are also adjacent in the alphabet, we need to consider all possible permutations of the letters "
+  },
+  {
+    "year": 2015,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to express the area of the rectangle in terms of its diagonal length \\(d\\). Let's start by defining the dimensions of the rectangle.\n\nGiven that the ratio of the length "
+  },
+  {
+    "year": 2015,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the values of \\(a\\) and \\(b\\) by substituting the point \\((\\sqrt{\\pi}, a)\\) and \\((\\sqrt{\\pi}, b)\\) into the given equation \\(y^2 + x^4 = 2x^2y + 1\\).\n\nFirs"
+  },
+  {
+    "year": 2015,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many 10-cent coins Claudia has given that she has 12 coins in total and there are exactly 17 different values that can be obtained as combinations of o"
+  },
+  {
+    "year": 2015,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the movement of the smaller disk as it rolls around the larger clock face. The key is to determine how far the smaller disk travels along the circumferenc"
+  },
+  {
+    "year": 2015,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the number of fractions \\(\\frac{x}{y}\\) such that if both the numerator and the denominator are increased by 1, the value of the fraction is increased by 10%. Th"
+  },
+  {
+    "year": 2015,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the given system of equations \\( y + 4 = (x - 2)^2 \\) and \\( x + 4 = (y - 2)^2 \\), we start by expressing each equation in a form that allows us to analyze their solutions.\n\nFirst, let's rew"
+  },
+  {
+    "year": 2015,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the perimeter of the equilateral triangle formed by the lines passing through the origin and intersecting the given lines \\(x=1\\) and \\(y=1+\\frac{\\sqrt{3}}{3}x\\"
+  },
+  {
+    "year": 2015,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many of the first 1000 positive integers have hexadecimal representations that contain only numeric digits (i.e., no letters A through F).\n\nFirst, let's"
+  },
+  {
+    "year": 2015,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of triangle \\( \\triangle CDE \\) in the given isosceles right triangle \\( \\triangle ABC \\).\n\nFirst, let's determine the side lengths of \\( \\triangle ABC "
+  },
+  {
+    "year": 2015,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to express the area \\(A\\) and the perimeter \\(P\\) of a rectangle in terms of its side lengths. Let the side lengths of the rectangle be \\(l\\) (length) and \\(w\\) (width)"
+  },
+  {
+    "year": 2015,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo find the volume of the tetrahedron \\(ABCD\\) with given edge lengths, we can use the Cayley-Menger determinant. The volume \\(V\\) of a tetrahedron with vertices \\(A, B, C, D\\) and edge lengths \\(AB "
+  },
+  {
+    "year": 2015,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the probability that no two adjacent people will stand after flipping their coins, we need to consider the constraints and use combinatorial methods.\n\nFirst, let's def"
+  },
+  {
+    "year": 2015,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the possible values of \\(a\\) such that the quadratic function \\(f(x) = x^2 - ax + 2a\\) has integer roots. Let's denote the roots by \\(p\\) and \\(q\\). By Viet"
+  },
+  {
+    "year": 2015,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the given conditions and derive a formula for the perimeter \\( p \\) of the quadrilateral \\( ABCD \\).\n\nGiven:\n- \\( AB = 2 \\)\n- Right angles at \\( B \\) and \\( "
+  },
+  {
+    "year": 2016,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem \\(\\dfrac{11! - 10!}{9!}\\), we start by expressing the factorials in a more manageable form.\n\nFirst, recall that \\(11! = 11 \\times 10!\\) and \\(10! = 10 \\times 9!\\). Therefore, we "
+  },
+  {
+    "year": 2016,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the equation \\(10^x \\cdot 100^{2x} = 1000^5\\), we start by expressing all terms with the same base. Notice that each term is a power of 10:\n\n1. Rewrite \\(100\\) and \\(1000\\) in terms of base "
+  },
+  {
+    "year": 2016,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, let's define the variables and set up the equations based on the given information.\n\nLet \\( B \\) be the amount of money Ben spent in dollars.\nLet \\( D \\) be the amount of money"
+  },
+  {
+    "year": 2016,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem of finding the remainder when \\(\\frac{3}{8}\\) is divided by \\(-\\frac{2}{5}\\), we need to understand how remainders are defined for real numbers. The remainder \\(r\\) when dividing"
+  },
+  {
+    "year": 2016,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the volume of a rectangular box with integer side lengths in the ratio \\(1:3:4\\). Let's denote the side lengths as \\(x\\), \\(3x\\), and \\(4x\\) where \\(x\\) is"
+  },
+  {
+    "year": 2016,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to compare the sum of the numbers from 1 to 30 as listed by Ximena with the sum of the same numbers as Emilio has, where each digit '2' in Ximena's list is replaced by '"
+  },
+  {
+    "year": 2016,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the value of \\( x \\) such that the mean, median, and mode of the data set \\( \\{60, 100, x, 40, 50, 200, 90\\} \\) are all equal to \\( x \\).\n\n### Step 1: Calculate "
+  },
+  {
+    "year": 2016,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to work backwards from the point where Fox has no money left after crossing the bridge three times. Let's denote the initial amount of money Fox had as \\( x \\).\n\n1. **A"
+  },
+  {
+    "year": 2016,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo determine the value of \\( N \\) in the triangular array of coins, we need to find the largest integer \\( N \\) such that the sum of the first \\( N \\) positive integers is less than or equal to 2016."
+  },
+  {
+    "year": 2016,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the length of the inner rectangle given that the areas of the three differently colored regions form an arithmetic progression. Let's denote the dimensions"
+  },
+  {
+    "year": 2016,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem of finding the area of the shaded region, we need to know the specific details of the geometric figure and the shaded region. Since the problem does not provide a diagram or spec"
+  },
+  {
+    "year": 2016,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo determine the probability that the product of three distinct integers selected at random between 1 and 2016 is odd, we need to consider the properties of odd and even numbers. The product of three"
+  },
+  {
+    "year": 2016,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the initial seat number of Ada before she got up from the movie theater. We know that Bea moved two seats to the right, Ceci moved one seat to the left, an"
+  },
+  {
+    "year": 2016,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem of finding how many ways there are to write \\(2016\\) as the sum of twos and threes, we need to determine the number of non-negative integer solutions to the equation:\n\n\\[2a + 3b "
+  },
+  {
+    "year": 2016,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the radius of the scrap cookie formed from the leftover dough after cutting out seven cookies of radius 1 inch each.\n\nFirst, let's calculate the area of on"
+  },
+  {
+    "year": 2016,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to follow the sequence of transformations applied to the triangle and determine which transformation will return it to its original position.\n\n1. **Initial Triangle Ver"
+  },
+  {
+    "year": 2016,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the least value of \\( N \\) such that the probability \\( P(N) < \\frac{321}{400} \\). We start by understanding the conditions under which at least \\(\\frac{3}"
+  },
+  {
+    "year": 2016,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of distinct ways to label the vertices of a cube with the integers 1 through 8 such that the sum of the numbers on each face is the same. We wil"
+  },
+  {
+    "year": 2016,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we start by placing the rectangle \\(ABCD\\) on a coordinate plane with \\(A = (0, 3)\\), \\(B = (6, 3)\\), \\(C = (6, 0)\\), and \\(D = (0, 0)\\). Point \\(E\\) is between \\(B\\) and \\(C\\),"
+  },
+  {
+    "year": 2016,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the value of \\( N \\) such that the expansion of \\((a+b+c+d+1)^N\\) contains exactly 1001 terms that include all four variables \\( a, b, c, \\) and \\( d \\), e"
+  },
+  {
+    "year": 2016,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the area of triangle \\(PQR\\) given the conditions about the circles and their tangency.\n\nFirst, let's understand the geometric configuration:\n- The circle w"
+  },
+  {
+    "year": 2016,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the number of positive integer divisors of \\(81n^4\\) given that \\(110n^3\\) has 110 positive integer divisors.\n\nFirst, let's factorize 110:\n\\[ 110 = 2 \\times"
+  },
+  {
+    "year": 2016,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the given problem, we need to understand the properties of the binary operation \\(\\diamondsuit\\) and use them to find the value of \\(x\\) in the equation \\(2016 \\,\\diamondsuit\\, (6\\,\\diamonds"
+  },
+  {
+    "year": 2016,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to use the properties of a cyclic quadrilateral (a quadrilateral inscribed in a circle). One important property is that the opposite angles of a cyclic quadrilateral su"
+  },
+  {
+    "year": 2016,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the number of ordered triples \\((x, y, z)\\) of positive integers that satisfy the conditions \\(\\text{lcm}(x,y) = 72\\), \\(\\text{lcm}(x,z) = 600\\), and \\(\\text{lcm"
+  },
+  {
+    "year": 2017,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the expression \\( (2(2(2(2(2(2+1)+1)+1)+1)+1)+1) \\), we will evaluate it step by step from the innermost parentheses outward.\n\nFirst, evaluate the innermost expression:\n\\[ 2 + 1 = 3 \\]\n\nNext"
+  },
+  {
+    "year": 2017,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo determine the greatest number of popsicles Pablo can buy with $8, we need to consider the different options available and calculate the maximum number of popsicles he can get for each combination "
+  },
+  {
+    "year": 2017,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to calculate the total area of the walkways surrounding the flower beds. Let's break it down step by step.\n\n1. **Calculate the dimensions of the entire area including th"
+  },
+  {
+    "year": 2017,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how long it will take for Mia and her mom to put all 30 toys into the toy box, given their respective actions over a period of 30 seconds.\n\nLet's break dow"
+  },
+  {
+    "year": 2017,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, let's denote the two nonzero real numbers by \\(a\\) and \\(b\\). According to the problem, the sum of these two numbers is 4 times their product. This can be written as:\n\n\\[ a + b "
+  },
+  {
+    "year": 2017,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the logical implication given by Ms. Carroll's promise. The statement is:\n\n\"If someone got all the multiple choice questions right on the upcoming exam, t"
+  },
+  {
+    "year": 2017,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to compare the distances traveled by Jerry and Silvia. Let's assume the side length of the square field is \\( s \\).\n\n### Step 1: Calculate Jerry's Distance\nJerry walked"
+  },
+  {
+    "year": 2017,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of handshakes that occur at the gathering. Let's break down the problem step by step.\n\n1. **Identify the groups and their interactions:**\n   - T"
+  },
+  {
+    "year": 2017,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to calculate the total time it takes for Minnie and Penny to complete their respective rides and then find the difference in time.\n\nFirst, let's calculate the time it t"
+  },
+  {
+    "year": 2017,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo determine how many of the remaining rods Joy can choose as the fourth rod to form a quadrilateral with positive area, we need to use the quadrilateral inequality theorem. This theorem states that "
+  },
+  {
+    "year": 2017,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the geometry of the region described. The region consists of all points in three-dimensional space within 3 units of the line segment \\(\\overline{AB}\\). T"
+  },
+  {
+    "year": 2017,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to analyze the conditions given for the set \\( S \\) of points \\((x,y)\\) in the coordinate plane. The conditions are that two of the three quantities \\(3\\), \\(x+2\\), and"
+  },
+  {
+    "year": 2017,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to understand the behavior of the sequence \\( F_n \\) defined by the recurrence relation \\( F_{n} = (F_{n-1} + F_{n-2}) \\mod 3 \\). Let's compute the first few terms of th"
+  },
+  {
+    "year": 2017,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nLet's denote the cost of Roger's movie ticket by \\( T \\) and the cost of his soda by \\( S \\). According to the problem, we have the following relationships:\n\n1. The cost of the movie ticket is 20% of"
+  },
+  {
+    "year": 2017,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the probability that Laurent's number is greater than Chlo\u00e9's number when both choose their numbers independently from their respective intervals.\n\nLet's d"
+  },
+  {
+    "year": 2017,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the least time \\( T > 0 \\) such that at least 5 of the 10 horses are again at the starting point. The key is to find the least common multiple (LCM) of the"
+  },
+  {
+    "year": 2017,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find distinct points \\(P\\), \\(Q\\), \\(R\\), and \\(S\\) on the circle \\(x^2 + y^2 = 25\\) with integer coordinates such that the distances \\(PQ\\) and \\(RS\\) are irrationa"
+  },
+  {
+    "year": 2017,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the probability that Amelia wins the game. Let's denote the probability that Amelia wins as \\( P \\).\n\nFirst, let's consider the possible scenarios for the "
+  },
+  {
+    "year": 2017,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to count the number of ways to arrange five people (Alice, Bob, Carla, Derek, and Eric) in a row of 5 chairs such that Alice does not sit next to either Bob or Carla, a"
+  },
+  {
+    "year": 2017,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to understand how the sum of the digits of a number changes when we increment the number by 1. Let's consider the number \\( n \\) and its digit sum \\( S(n) = 1274 \\).\n\nWh"
+  },
+  {
+    "year": 2017,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the side lengths \\(x\\) and \\(y\\) of the squares inscribed in the right triangle with sides 3, 4, and 5, and then compute the ratio \\(\\frac{x}{y}\\).\n\n### Step 1: "
+  },
+  {
+    "year": 2017,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the fraction of the area of equilateral triangle \\(ABC\\) that lies outside a circle tangent to sides \\(\\overline{AB}\\) and \\(\\overline{AC}\\).\n\nFirst, let's"
+  },
+  {
+    "year": 2017,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo determine the number of triangles with positive area that have all their vertices at points \\((i,j)\\) in the coordinate plane, where \\(i\\) and \\(j\\) are integers between 1 and 5, inclusive, we nee"
+  },
+  {
+    "year": 2017,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to understand the relationship between the polynomial \\( f(x) \\) and the polynomial \\( g(x) \\). The problem states that each root of \\( g(x) \\) is also a root of \\( f(x)"
+  },
+  {
+    "year": 2017,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine how many integers between 100 and 999 have the property that some permutation of their digits is a multiple of 11. A number is a multiple of 11 if the diff"
+  },
+  {
+    "year": 2018,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the given problem, we need to determine the value of the expression \\(\\frac{5}{4} - \\frac{3}{4}\\).\n\nLet's break it down step by step:\n\n1. **Identify the fractions involved:**\n   The given fr"
+  },
+  {
+    "year": 2018,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, let's denote the amount of soda that Jacqueline has as \\( J \\).\n\nFirst, we need to determine how much soda Liliane and Alice have in terms of \\( J \\).\n\n1. **Liliane's Soda:**\n  "
+  },
+  {
+    "year": 2018,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine the day on which Yasin's unit of blood expires, we need to calculate the total number of seconds in \\(10!\\) (10 factorial) and then convert that into days.\n\nFirst, let's calculate \\(10!\\"
+  },
+  {
+    "year": 2018,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem of scheduling 3 mathematics courses (algebra, geometry, and number theory) in a 6-period day such that no two mathematics courses are taken in consecutive periods, we can use com"
+  },
+  {
+    "year": 2018,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to analyze the statements made by Alice, Bob, and Charlie, and determine the set of all possible values for the distance \\(d\\) to the nearest town.\n\n1. **Alice's Statem"
+  },
+  {
+    "year": 2018,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the total number of votes cast on Sangho's video when the video had a score of 90 and 65% of the votes were like votes.\n\nLet's denote:\n- \\( L \\) as the num"
+  },
+  {
+    "year": 2018,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine for how many integer values of \\( n \\) the expression \\( 4000 \\cdot \\left( \\frac{2}{5} \\right)^n \\) is an integer, we need to analyze the factors involved.\n\nFirst, let's rewrite the expr"
+  },
+  {
+    "year": 2018,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to set up a system of equations based on the information given. Let's define the variables as follows:\n\n- Let \\( x \\) be the number of 5-cent coins.\n- Let \\( y \\) be th"
+  },
+  {
+    "year": 2018,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the area of trapezoid \\(DBCE\\) in the given diagram. We know that all the triangles are similar to an isosceles triangle \\(ABC\\) where \\(AB = AC\\). The are"
+  },
+  {
+    "year": 2018,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the value of \\(\\sqrt{49-x^2} + \\sqrt{25-x^2}\\).\n\nFirst, let's analyze the expressions inside the square roots. We know that \\(x\\) is a real number, so \\(x^2\\) mu"
+  },
+  {
+    "year": 2018,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the probability that the sum of the numbers on the top faces of 7 fair standard 6-sided dice is 10, we need to determine the number of ways to achieve this sum and the"
+  },
+  {
+    "year": 2018,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the system of equations and determine how many ordered pairs of real numbers \\((x, y)\\) satisfy it, we need to analyze the given equations. However, the problem statement does not provide sp"
+  },
+  {
+    "year": 2018,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the length of the crease when a paper triangle with sides of lengths \\(3\\), \\(4\\), and \\(5\\) inches is folded such that point \\(A\\) falls on point \\(B\\).\n\n"
+  },
+  {
+    "year": 2018,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the greatest integer less than or equal to a given expression. However, the problem statement does not provide an expression to evaluate. Since the referenc"
+  },
+  {
+    "year": 2018,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the distance \\(AB\\) between the points of tangency on two smaller circles that are externally tangent to each other and internally tangent to a larger circl"
+  },
+  {
+    "year": 2018,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many line segments with integer lengths can be drawn from vertex \\( B \\) to a point on the hypotenuse \\( \\overline{AC} \\) in the right triangle \\( ABC \\"
+  },
+  {
+    "year": 2018,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find a set \\( S \\) of 6 integers taken from \\(\\{1,2,\\dots,12\\}\\) such that if \\( a \\) and \\( b \\) are elements of \\( S \\) with \\( a < b \\), then \\( b \\) is not a mul"
+  },
+  {
+    "year": 2018,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo determine how many nonnegative integers can be written in the form \n\nwhere \\(a_i \\in \\{-1, 0, 1\\}\\) for \\(0 \\le i \\le 7\\), we need to analyze the possible values of the expression.\n\nEach coefficie"
+  },
+  {
+    "year": 2018,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the units digit of \\( m^n \\) is 1, where \\( m \\) is randomly selected from the set \\(\\{11, 13, 15, 17, 19\\}\\) and \\( n \\) is randomly "
+  },
+  {
+    "year": 2018,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the constraints of a symmetric scanning code. A symmetric scanning code must remain unchanged under rotations by multiples of \\(90^\\circ\\) and reflections"
+  },
+  {
+    "year": 2018,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo determine the set of values of \\( a \\) for which the curves \\( x^2 + y^2 = a^2 \\) and \\( y = x^2 - a \\) intersect at exactly 3 points, we need to analyze the conditions under which these two equat"
+  },
+  {
+    "year": 2018,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the given conditions and determine which of the options must be a divisor of \\(a\\).\n\nGiven:\n- \\(\\gcd(a, b) = 24\\)\n- \\(\\gcd(b, c) = 36\\)\n- \\(\\gcd(c, d) = 54\\)"
+  },
+  {
+    "year": 2018,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the fraction of the field that is planted. We start by finding the area of the right triangle and then calculate the area of the unplanted square \\( S \\).\n"
+  },
+  {
+    "year": 2018,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the area of quadrilateral \\(FDBG\\) in triangle \\(ABC\\). Let's break down the solution step by step.\n\n1. **Identify Key Points and Relationships:**\n   - \\(D\\) is "
+  },
+  {
+    "year": 2018,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to express \\(A_n\\), \\(B_n\\), and \\(C_n\\) in terms of \\(a\\), \\(b\\), and \\(c\\). The number \\(A_n\\) is an \\(n\\)-digit integer where each digit is \\(a\\), so it can be writte"
+  },
+  {
+    "year": 2019,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the given problem, we need to determine the value of a specific expression. However, the problem statement does not provide an explicit expression to evaluate. Since the reference solution i"
+  },
+  {
+    "year": 2019,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo determine the hundreds digit of \\(20! - 15!\\), we need to find the last three digits of this expression. Let's start by expressing \\(20!\\) and \\(15!\\) in a form that makes it easier to compute the"
+  },
+  {
+    "year": 2019,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to set up equations based on the information given and then solve for \\( n \\).\n\nLet's denote Bonita's age last year as \\( b \\). Therefore, Ana's age last year was \\( 5b"
+  },
+  {
+    "year": 2019,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the minimum number of balls that must be drawn from the box without replacement to guarantee that at least 15 balls of a single color will be drawn. We wil"
+  },
+  {
+    "year": 2019,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine the greatest number of consecutive integers whose sum is 45, we need to consider the properties of the sum of consecutive integers. Let's denote the number of consecutive integers by \\( "
+  },
+  {
+    "year": 2019,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine for which types of quadrilaterals there exists a point in the plane that is equidistant from all four vertices. This point would be the center of a circle "
+  },
+  {
+    "year": 2019,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the equations of the two lines and then determine the area of the triangle formed by these lines and the line \\(x + y = 10\\).\n\nFirst, let's find the equation of "
+  },
+  {
+    "year": 2019,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the given figure and determine which rigid motion transformations will transform the figure into itself. The key is to identify the symmetry of the figure.\n\n"
+  },
+  {
+    "year": 2019,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the greatest three-digit positive integer \\( n \\) for which the sum of the first \\( n \\) positive integers is not a divisor of the product of the first \\( n"
+  },
+  {
+    "year": 2019,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo determine how many tiles the bug visits as it walks from one corner to the opposite corner of a rectangular floor that is 10 feet wide and 17 feet long, we can use a general result from combinator"
+  },
+  {
+    "year": 2019,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding how many positive integer divisors of \\(201^9\\) are perfect squares or perfect cubes (or both), we start by expressing \\(201\\) in its prime factors. We have:\n\n\\[201 = "
+  },
+  {
+    "year": 2019,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the mean (\\(\\mu\\)), median (\\(M\\)), and modes of the given data set, and then compare them.\n\nFirst, let's list the data set:\n- There are 12 values for each"
+  },
+  {
+    "year": 2019,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to analyze the given geometric configuration step by step.\n\n1. **Identify the properties of the isosceles triangle and the circle:**\n   - Since \\( \\triangle ABC \\) is is"
+  },
+  {
+    "year": 2019,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of distinct points that lie on two or more of the four distinct lines in a plane. We will consider different cases based on the number of lines "
+  },
+  {
+    "year": 2019,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to understand the pattern in the sequence defined by \\(a_1 = 1\\), \\(a_2 = \\frac{3}{7}\\), and for all \\(n \\geq 3\\), the recurrence relation is given by:\n\n\\[ a_n = \\frac{a"
+  },
+  {
+    "year": 2019,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the area of the region inside the larger circle but outside all the smaller circles of radius 1. Let's break down the solution step by step.\n\n### Step 1: D"
+  },
+  {
+    "year": 2019,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding how many different towers with a height of 8 cubes can be built using 2 red cubes, 3 blue cubes, and 4 green cubes (with one cube left out), we need to determine the n"
+  },
+  {
+    "year": 2019,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to understand the repeating base-$k$ representation of the fraction $\\frac{7}{51}$. The given repeating base-$k$ representation is $0.\\overline{23}_k$, which means:\n\n\\[ "
+  },
+  {
+    "year": 2019,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the least possible value of the expression \\(x + \\frac{1}{x}\\) for a real number \\(x\\).\n\nFirst, let's consider the function \\(f(x) = x + \\frac{1}{x}\\). To find t"
+  },
+  {
+    "year": 2019,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the sum of the numbers in each row and each column of a \\(3 \\times 3\\) grid is odd when the numbers \\(1, 2, \\ldots, 9\\) are randomly p"
+  },
+  {
+    "year": 2019,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the distance between the center of the sphere \\(O\\) and the plane determined by the triangle. Let's break down the solution step-by-step.\n\n1. **Identify the typ"
+  },
+  {
+    "year": 2019,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the distribution of the numbers \\(x\\) and \\(y\\) chosen according to the given rules. Let's break it down step by step.\n\n### Step 1: Determine the Distributio"
+  },
+  {
+    "year": 2019,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the pattern in which the numbers are being said. Let's break it down step by step.\n\n1. **Identify the sequence of numbers each child says:**\n   - Tadd say"
+  },
+  {
+    "year": 2019,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we start by using Vieta's formulas for the polynomial \\(x^3 - 22x^2 + 80x - 67 = 0\\). According to Vieta's formulas, the roots \\(p\\), \\(q\\), and \\(r\\) satisfy the following rela"
+  },
+  {
+    "year": 2019,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo determine how many integers \\( n \\) between 1 and 50, inclusive, make \\( \\frac{n!}{(n-4)!} \\) an integer, we need to analyze the expression \\( \\frac{n!}{(n-4)!} \\).\n\nFirst, let's rewrite the expre"
+  },
+  {
+    "year": 2020,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the value of \\( x \\) that satisfies the given equation. However, the problem statement does not provide an equation or any additional context. Since the ref"
+  },
+  {
+    "year": 2020,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the average of \\(a\\) and \\(b\\) given that the numbers \\(3, 5, 7, a,\\) and \\(b\\) have an average of 15.\n\nFirst, let's use the formula for the average (arithmetic "
+  },
+  {
+    "year": 2020,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the given problem, we need to simplify the expression:\n\n\\[\n\\frac{1}{a} + \\frac{1}{b} + \\frac{1}{c}\n\\]\n\nGiven that \\(a \\neq 3\\), \\(b \\neq 4\\), and \\(c \\neq 5\\), we can assume that \\(a\\), \\(b\\"
+  },
+  {
+    "year": 2020,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to calculate the net rate of pay for the driver after accounting for the cost of gasoline. Let's break it down step by step.\n\n1. **Calculate the total distance traveled"
+  },
+  {
+    "year": 2020,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem \\( |x^2 - 12x + 34| = 2 \\), we need to consider the two cases for the absolute value equation:\n\n\\[ x^2 - 12x + 34 = 2 \\]\nand\n\\[ x^2 - 12x + 34 = -2. \\]\n\n### Case 1: \\( x^2 - 12x "
+  },
+  {
+    "year": 2020,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many 4-digit positive integers have only even digits and are divisible by 5. Let's break this down step by step.\n\n1. **Identify the possible digits**: T"
+  },
+  {
+    "year": 2020,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find the common sum of the numbers in each row, column, and diagonal of a \\(5 \\times 5\\) square arrangement of the integers from \\(-10\\) to \\(14\\).\n\nFirst, let's det"
+  },
+  {
+    "year": 2020,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the value of \\( (99 + 98 + 97 + \\cdots + 3 + 2 + 1) + (99 + 98 + 97 + \\cdots + 4 + 3 + 2) \\).\n\nFirst, let's consider the sum of the series \\( 99 + 98 + 97 +"
+  },
+  {
+    "year": 2020,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find the least possible positive integer value of \\( N \\) such that an equal number of adults and children can be seated in a single bench section. Each bench sectio"
+  },
+  {
+    "year": 2020,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to calculate the total surface area of the tower formed by stacking the cubes with volumes \\(1\\), \\(8\\), \\(27\\), \\(64\\), \\(125\\), \\(216\\), and \\(343\\) cubic units. The "
+  },
+  {
+    "year": 2020,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine the median of a list of \\(4040\\) numbers, we need to follow these steps:\n\n1. **Order the Numbers**: Arrange all the numbers in ascending order.\n2. **Identify the Median**: Since there ar"
+  },
+  {
+    "year": 2020,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of triangle \\(AMC\\). Given that \\(AMC\\) is an isosceles triangle with \\(AM = AC\\), and the medians \\(MV\\) and \\(CU\\) are perpendicular to each other wit"
+  },
+  {
+    "year": 2020,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that the frog reaches a vertical side of the square (i.e., \\(x = 0\\) or \\(x = 4\\)) before reaching a horizontal side (i.e., \\(y = 0\\) or \\("
+  },
+  {
+    "year": 2020,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the value of \\(x^2 + y^2\\) given the equations \\(x + y = 4\\) and \\(x \\cdot y = -2\\).\n\nFirst, recall the identity for the square of a sum:\n\\[\n(x + y)^2 = x^2 + y^"
+  },
+  {
+    "year": 2020,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we first need to determine the prime factorization of \\(12!\\). The factorial \\(12!\\) is given by:\n\n\\[12! = 12 \\times 11 \\times 10 \\times 9 \\times 8 \\times 7 \\times 6 \\times 5 \\t"
+  },
+  {
+    "year": 2020,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the value of \\(d\\) such that the probability that a randomly chosen point within the square is within \\(d\\) units of a lattice point is \\(\\frac{1}{2}\\).\n\nF"
+  },
+  {
+    "year": 2020,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many integers \\( n \\) satisfy the inequality \\( P(n) \\leq 0 \\), where \\( P(x) = x^2 - 100x + 901 \\).\n\nFirst, let's find the roots of the quadratic equat"
+  },
+  {
+    "year": 2020,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many ordered quadruples \\((a, b, c, d)\\) of integers from the set \\(\\{0, 1, 2, 3\\}\\) satisfy the condition that \\(a \\cdot d - b \\cdot c\\) is odd. Let's "
+  },
+  {
+    "year": 2020,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of ways to move from the top face to the bottom face of a regular dodecahedron by moving through adjacent faces, with each face visited at most "
+  },
+  {
+    "year": 2020,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of quadrilateral \\(ABCD\\) given the conditions. Let's break it down step by step.\n\n1. **Identify the coordinates and lengths:**\n   - Since \\(\\angle ABC "
+  },
+  {
+    "year": 2020,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the number of terms in the sequence of nonnegative integers \\(a_1 < a_2 < \\ldots < a_k\\) that satisfy the given condition. The condition is not explicitly stated"
+  },
+  {
+    "year": 2020,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine how many positive integers \\( n \\leq 1000 \\) are not divisible by 3. We will use the floor function and properties of divisibility.\n\nFirst, let's find the t"
+  },
+  {
+    "year": 2020,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "D",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many sequences of three isometries (rotations and reflections) will return the triangle \\(T\\) with vertices \\((0,0)\\), \\((4,0)\\), and \\((0,3)\\) to its "
+  },
+  {
+    "year": 2020,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "D",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the least positive integer \\( n \\) greater than 1000 for which the sum of its digits is 24. We will start by considering the maximum possible digit sums for numb"
+  },
+  {
+    "year": 2020,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the optimal strategy for Jason to maximize his chances of winning. Specifically, we need to find the probability that he chooses to reroll exactly two of t"
+  },
+  {
+    "year": 2021,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the value of the expression given in the problem. However, since the problem statement does not provide a specific expression, I will assume that the proble"
+  },
+  {
+    "year": 2021,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the number of students in Portia's high school given that it has 3 times as many students as Lara's high school and that the total number of students in bot"
+  },
+  {
+    "year": 2021,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, let's denote the two natural numbers as \\( x \\) and \\( y \\). We know that:\n\n1. The sum of the two numbers is \\( 17{,}402 \\):\n   \\[\n   x + y = 17{,}402\n   \\]\n\n2. One of the numb"
+  },
+  {
+    "year": 2021,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the total distance traveled by the cart over 30 seconds, given that it travels 5 inches in the first second and accelerates such that it travels 7 inches m"
+  },
+  {
+    "year": 2021,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find the mean of the remaining quiz scores after removing 12 scores from the total set. Let's break it down step by step.\n\n1. **Calculate the total sum of all quiz s"
+  },
+  {
+    "year": 2021,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine Jean's average speed until he meets Chantal. Let's denote the total distance from the trailhead to the fire tower as \\( D \\) miles.\n\nFirst, let's analyze C"
+  },
+  {
+    "year": 2021,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, let's analyze the given information step by step:\n\n1. **Total number of snakes**: Tom has a collection of 13 snakes.\n2. **Number of purple snakes**: 4 out of the 13 snakes are "
+  },
+  {
+    "year": 2021,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the difference between multiplying \\(66\\) by the repeating decimal \\(1.\\underline{a}\\underline{b}\\) and the correct value of \\(66 \\times 0.\\overline{\\unde"
+  },
+  {
+    "year": 2021,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo find the least possible value of \\((xy-1)^2 + (x+y)^2\\) for real numbers \\(x\\) and \\(y\\), we start by defining a function \\(f(x, y) = (xy - 1)^2 + (x + y)^2\\).\n\nFirst, let's expand the expression:"
+  },
+  {
+    "year": 2021,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the given problem, we need to determine which of the provided options is equivalent to \\(3^{127} + 2^{127}\\).\n\nLet's analyze each option step by step:\n\n### Option (A): \\(3^{127} + 2^{127}\\)\n"
+  },
+  {
+    "year": 2021,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine for which integer \\( b \\) the base-\\( b \\) number \\( 2021_b - 221_b \\) is not divisible by 3. Let's start by converting these base-\\( b \\) numbers into base"
+  },
+  {
+    "year": 2021,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the ratio of the rise in the liquid level for two right circular cones with different radii when a spherical marble is submerged into each. Let's break dow"
+  },
+  {
+    "year": 2021,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo find the volume of tetrahedron \\(ABCD\\) with given edge lengths, we can use the Cayley-Menger determinant. The volume \\(V\\) of a tetrahedron with vertices \\(A, B, C, D\\) and edge lengths \\(AB = a\\"
+  },
+  {
+    "year": 2021,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the value of \\( B \\) in the polynomial \\( z^6 - 10z^5 + Az^4 + Bz^3 + Cz^2 + Dz + 16 \\) given that all its roots are positive integers, possibly repeated.\n\n"
+  },
+  {
+    "year": 2021,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine the number of ways to choose values for \\(A, B, C,\\) and \\(D\\) from the set \\(\\{1, 2, 3, 4, 5, 6\\}\\) such that the two curves \\(y = Ax^2 + B\\) and \\(y = Cx^2 + D\\) intersect, we need to "
+  },
+  {
+    "year": 2021,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo determine the median of the numbers in the given list, we need to understand the structure of the list and how the median is calculated.\n\nThe list is constructed such that the integer \\( n \\) appe"
+  },
+  {
+    "year": 2021,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the length of \\(AD\\) in the trapezoid \\(ABCD\\) with given conditions. Let's start by analyzing the geometry and using the properties of the trapezoid and the rig"
+  },
+  {
+    "year": 2021,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to understand the properties of the function \\( f \\). The function \\( f \\) is defined such that \\( f(a \\cdot b) = f(a) + f(b) \\) for all positive rational numbers \\( a \\"
+  },
+  {
+    "year": 2021,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the area of the region bounded by the graph of \\( y = x^2 - 4x + 7 \\). This is a parabola that opens upwards. We will first rewrite the equation in vertex form t"
+  },
+  {
+    "year": 2021,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to count the number of ways to rearrange the sequence \\(1, 2, 3, 4, 5\\) such that no three consecutive terms are increasing or decreasing. We will use a combinatorial a"
+  },
+  {
+    "year": 2021,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the properties of an equiangular hexagon and how its sides relate to each other. An equiangular hexagon has internal angles of 120 degrees between consecu"
+  },
+  {
+    "year": 2021,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many sheets of paper were borrowed by Hiram's roommate. Let's break down the steps:\n\n1. **Understanding the Problem:**\n   - The notes are 50 pages long"
+  },
+  {
+    "year": 2021,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the possible paths Frieda the frog can take on a \\(3 \\times 3\\) grid and determine the probability that she lands on a corner square within four hops.\n\nFirst"
+  },
+  {
+    "year": 2021,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to analyze the given equations and determine the shape of the quadrilateral formed by them. The equations are:\n\n1. \\((x + ay)^2 = 4a^2\\)\n2. \\((ax - y)^2 = a^2\\)\n\nFirst, "
+  },
+  {
+    "year": 2021,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to place 3 indistinguishable red chips, 3 indistinguishable blue chips, and 3 indistinguishable green chips in a \\(3 \\times 3\\) grid such that no two chips of the same "
+  },
+  {
+    "year": 2022,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine which of the given fractions is equal to \\(2 - \\frac{1}{3}\\).\n\nFirst, let's simplify the expression \\(2 - \\frac{1}{3}\\):\n\n\\[ 2 - \\frac{1}{3} = \\frac{6}{3} -"
+  },
+  {
+    "year": 2022,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo determine how many laps Mike completed in the first 27 minutes, we need to find his cycling speed and then use that to calculate the number of laps he would complete in 27 minutes.\n\nFirst, let's f"
+  },
+  {
+    "year": 2022,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, let's define the three numbers as follows:\n- Let \\( x \\) be the first number.\n- Let \\( y \\) be the second number.\n- Let \\( z \\) be the third number.\n\nWe are given the following "
+  },
+  {
+    "year": 2022,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to convert the fuel efficiency from miles per gallon (mpg) to liters per 100 kilometers (L/100 km). Let's break down the conversion step by step.\n\n1. **Understand the g"
+  },
+  {
+    "year": 2022,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the side length \\( s \\) of the equilateral convex hexagon \\( APQCRS \\) inscribed in square \\( ABCD \\) with side length 1.\n\nFirst, let's place the square \\( "
+  },
+  {
+    "year": 2022,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine which expression is equal to \\(a^2 + 2a + 1\\) for \\(a < 0\\).\n\nFirst, let's simplify the given expression:\n\n\\[ a^2 + 2a + 1 \\]\n\nNotice that this expression c"
+  },
+  {
+    "year": 2022,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the positive integer \\( n \\) that satisfies two conditions:\n1. The least common multiple (LCM) of \\( n \\) and 18 is 180.\n2. The greatest common divisor (GCD) of "
+  },
+  {
+    "year": 2022,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the value of \\(X\\) such that the average of the six numbers equals one of these numbers. The given numbers are \\(1\\), \\(7\\), \\(5\\), \\(2\\), \\(5\\), and \\(X\\).\n\nFir"
+  },
+  {
+    "year": 2022,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of different ways to color the regions of the rectangle such that no two adjacent regions share the same color. The regions are arranged in a sp"
+  },
+  {
+    "year": 2022,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the dimensions of the original rectangular index card. Let's denote the length and width of the index card as \\( l \\) and \\( w \\), respectively.\n\nFirst, we"
+  },
+  {
+    "year": 2022,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to determine the values of \\( m \\) for which the expressions \\( 2^m \\cdot \\sqrt{\\frac{1}{4096}} \\) and \\( 2 \\cdot \\sqrt[m]{\\frac{1}{4096}} \\) are equal.\n\nFirst, let's si"
+  },
+  {
+    "year": 2022,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the responses of the children based on their types (truth-tellers, liars, and alternators) and the rules given in the problem.\n\nLet's denote:\n- \\( T \\) as a "
+  },
+  {
+    "year": 2022,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the length of \\(AD\\) in the given geometric configuration. Let's break down the solution step by step.\n\n1. **Identify Key Points and Relationships:**\n   - Point "
+  },
+  {
+    "year": 2022,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem of splitting the integers \\(1\\) through \\(14\\) into \\(7\\) pairs such that in each pair, the greater number is at least \\(2\\) times the lesser number, we need to carefully analyze"
+  },
+  {
+    "year": 2022,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the area of the quadrilateral \\(ABCD\\) and then use it to determine the area of the circle minus the area of the quadrilateral. Finally, we will express this are"
+  },
+  {
+    "year": 2022,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the volume of the new rectangular box formed by lengthening each edge of the original box by 2 units. Let's start by finding the roots of the polynomial \\(10x^3 "
+  },
+  {
+    "year": 2022,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many three-digit positive integers \\( \\underline{a} \\ \\underline{b} \\ \\underline{c} \\) satisfy the condition that their nonzero digits \\( a, b, \\) and \\"
+  },
+  {
+    "year": 2022,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the effect of the transformation \\( T_k \\) on a point in the coordinate plane. The transformation \\( T_k \\) consists of two steps:\n1. Rotate the plane cou"
+  },
+  {
+    "year": 2022,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the unique integer \\( h \\) such that the least common multiple (LCM) of all integers from 1 to \\( n \\) is equal to \\( h \\times 17 \\). We are asked to find the re"
+  },
+  {
+    "year": 2022,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the fourth term of a sequence formed by adding each term of a four-term arithmetic sequence to the corresponding term of a four-term geometric sequence. The fir"
+  },
+  {
+    "year": 2022,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the area of the octagon formed by joining the top eight vertices of four regular hexagons, each with a side length of 1, that are attached to a square of si"
+  },
+  {
+    "year": 2022,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the conditions under which the cards will be picked up in exactly two passes. The key is that the first pass must pick up all odd-numbered cards (1, 3, 5,"
+  },
+  {
+    "year": 2022,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to use the properties of an isosceles trapezoid and the given distances from a point \\(P\\) to the vertices of the trapezoid. Let's denote the lengths of the sides as fo"
+  },
+  {
+    "year": 2022,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to count the number of 5-digit strings formed from the digits \\(0, 1, 2, 3, 4\\) such that for each \\(j \\in \\{1, 2, 3, 4\\}\\), at least \\(j\\) of the digits are less than "
+  },
+  {
+    "year": 2022,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the given conditions and determine the edge lengths of squares \\(R\\), \\(S\\), and \\(T\\) that satisfy all the constraints. Let's break down the problem step by"
+  },
+  {
+    "year": 2023,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the point at which Alicia and Beth meet. Let's denote the distance from city \\( A \\) where they meet as \\( x \\) miles.\n\nFirst, let's calculate the time it "
+  },
+  {
+    "year": 2023,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to set up an equation based on the given information and solve for the weight of a large pizza. Let's denote the weight of a large pizza as \\( P \\) pounds.\n\nThe problem"
+  },
+  {
+    "year": 2023,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo determine how many positive perfect squares less than \\(2023\\) are divisible by \\(5\\), we need to follow these steps:\n\n1. **Identify the range of perfect squares less than \\(2023\\):**\n   - The lar"
+  },
+  {
+    "year": 2023,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the greatest possible length of one side of a quadrilateral with integer side lengths, a perimeter of 26, and one side of length 4. Let's denote the sides "
+  },
+  {
+    "year": 2023,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine the number of digits in the base-ten representation of \\(8^5 \\cdot 5^{10} \\cdot 15^5\\), we start by simplifying the expression.\n\nFirst, let's rewrite each term using their prime factoriz"
+  },
+  {
+    "year": 2023,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the relationships between the values assigned to the vertices, edges, and faces of the cube.\n\nLet's denote the values assigned to the vertices of the cube"
+  },
+  {
+    "year": 2023,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that Janet's running total of the numbers she rolls on a standard 6-sided die will equal 3 at some point during her four rolls.\n\nFirst, let"
+  },
+  {
+    "year": 2023,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the relationship between the Fahrenheit scale and the Breadus scale. We know that the Breadus scale is a linear function of the Fahrenheit scale. Let's den"
+  },
+  {
+    "year": 2023,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine how many dates in the year 2023 have the property that each digit appears an even number of times in the 8-digit display format \\(2023XY\\), where \\(X\\) is "
+  },
+  {
+    "year": 2023,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nLet's denote the current mean of Maureen's quiz scores by \\( m \\). Let's also denote the number of quizzes she has taken so far by \\( n \\).\n\nThe total score of her current quizzes is \\( mn \\).\n\nIf Ma"
+  },
+  {
+    "year": 2023,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the ratio of the shorter leg to the longer leg in one of the congruent right triangles formed when a square of area 2 is inscribed in a square of area 3.\n\n"
+  },
+  {
+    "year": 2023,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find all three-digit positive integers \\( N \\) that satisfy two conditions:\n1. The number \\( N \\) is divisible by 7.\n2. The number formed by reversing the digits of "
+  },
+  {
+    "year": 2023,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to use trigonometry and the properties of triangles. Let's denote the positions of Abdul, Chiang, and Bharat as points \\(A\\), \\(C\\), and \\(B\\) respectively. We know tha"
+  },
+  {
+    "year": 2023,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that a randomly chosen divisor of a randomly chosen number from the first 100 positive integers is divisible by 11.\n\nFirst, let's identify "
+  },
+  {
+    "year": 2023,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to calculate the area of the shaded regions formed between every other circle in a sequence of nested circles. The radius of each circle increases by 1 starting from 1."
+  },
+  {
+    "year": 2023,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the total number of games played in a table tennis tournament where every participant played every other participant exactly once. We are given that there "
+  },
+  {
+    "year": 2023,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to find the perimeter of triangle \\( \\triangle APQ \\). We start by identifying the coordinates of points \\( P \\) and \\( Q \\) on the rectangle \\( ABCD \\).\n\nGiven:\n- \\( A"
+  },
+  {
+    "year": 2023,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the structure of a rhombic dodecahedron. A rhombic dodecahedron is a polyhedron with 12 congruent rhombus faces, 8 vertices, and 24 edges. Each vertex of "
+  },
+  {
+    "year": 2023,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the coordinates of the point \\( P(r, s) \\) about which the line segment formed by points \\( A(1, 2) \\) and \\( B(3, 3) \\) is rotated to form the line segmen"
+  },
+  {
+    "year": 2023,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of different ways to color a \\(3 \\times 3\\) grid such that every \\(2 \\times 2\\) square contains one square of each color (red, white, blue, and "
+  },
+  {
+    "year": 2023,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the polynomial \\( P(x) \\) that satisfies all the given conditions. Let's analyze each condition step by step.\n\n1. **Leading coefficient is 1**: This means \\"
+  },
+  {
+    "year": 2023,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the radius of circle \\(C_4\\), which is internally tangent to both circles \\(C_1\\) and \\(C_2\\) and externally tangent to circle \\(C_3\\).\n\nFirst, let's find "
+  },
+  {
+    "year": 2023,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the properties of complementary divisors. If \\(a\\) and \\(b\\) are complementary divisors of \\(N\\) such that \\(c = ab\\) and \\(b = a + 20\\) or \\(b = a - 20\\)"
+  },
+  {
+    "year": 2023,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the area of the region inside the hexagonal frame that is not occupied by the six regular hexagonal blocks.\n\nFirst, let's find the side length of the hexag"
+  },
+  {
+    "year": 2023,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to understand the structure of a regular icosahedron and how the vertices are connected by edges. A regular icosahedron has 12 vertices, 30 edges, and 20 faces, each of"
+  },
+  {
+    "year": 2024,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the expression \\(9,901 \\cdot 101 - 99 \\cdot 10,101\\), we can use algebraic manipulation to simplify the calculation. Let's start by expressing the numbers in a more convenient form.\n\nNotice "
+  },
+  {
+    "year": 2024,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the constants \\(a\\) and \\(b\\) in the model \\(T = aL + bG\\). We are given two scenarios:\n\n1. A trail that is 1.5 miles long and ascends 800 feet takes 69 mi"
+  },
+  {
+    "year": 2024,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the least prime number \\( n \\) that can be written as the sum of 5 distinct prime numbers. Let's start by considering the smallest prime numbers and see if they "
+  },
+  {
+    "year": 2024,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the least number of two-digit numbers needed to write the sum \\(2024\\) as a sum of not necessarily distinct two-digit numbers, we need to consider the properties of tw"
+  },
+  {
+    "year": 2024,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo determine the least value of \\( n \\) such that \\( n! \\) is a multiple of 2024, we first need to factorize 2024 into its prime factors. We start by dividing 2024 by the smallest prime number, which"
+  },
+  {
+    "year": 2024,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the minimum number of successive swaps of adjacent letters needed to change the string \\(ABCDEF\\) to \\(FEDCBA\\), we can use the concept of inversions in permutations. "
+  },
+  {
+    "year": 2024,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "D",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the least possible positive sum of three integers whose product is 60, we need to consider all possible sets of factors of 60 and calculate their sums. The prime facto"
+  },
+  {
+    "year": 2024,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the time at which Daria joined the group. Let's break down the information given and calculate step by step.\n\n1. **Calculate the total number of packages p"
+  },
+  {
+    "year": 2024,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of ways to form 3 disjoint teams of 4 people each, where each team consists of 2 juniors and 2 seniors. Let's break down the problem step by ste"
+  },
+  {
+    "year": 2024,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the behavior of the operation on the number \\( n \\). The operation is defined as follows:\n- If \\( n \\) is a multiple of 3, replace \\( n \\) by \\( \\frac{n}{"
+  },
+  {
+    "year": 2024,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we start with the given equation:\n\n\\[\n\\sqrt{n^2 - 49} = m\n\\]\n\nFirst, we square both sides of the equation to eliminate the square root:\n\n\\[\nn^2 - 49 = m^2\n\\]\n\nNext, we rearrange"
+  },
+  {
+    "year": 2024,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo determine Zelda's average score over the 6 days, we need to calculate her total score and then divide it by the number of days she played.\n\nFirst, let's list her daily scores based on the changes "
+  },
+  {
+    "year": 2024,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo determine how many pairs of distinct transformations commute, we need to check each pair individually. Two transformations \\(T_1\\) and \\(T_2\\) commute if applying \\(T_1\\) followed by \\(T_2\\) gives"
+  },
+  {
+    "year": 2024,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the area of the region exterior to the triangle and the circle but bounded by the triangle, the circle, and the line \\(\\ell\\). Let's break down the problem step"
+  },
+  {
+    "year": 2024,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the greatest integer \\( M \\) such that both \\( M + 1213 \\) and \\( M + 3773 \\) are perfect squares. Let's denote these perfect squares as follows:\n\n\\[ M + 1213 = "
+  },
+  {
+    "year": 2024,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the length \\( AB \\) in the given figure. The key is to use the properties of similar rectangles and the areas provided.\n\nFirst, let's identify the dimensio"
+  },
+  {
+    "year": 2024,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to calculate the probability that Team A wins the playoff and then use that information to find the value of \\( p \\).\n\nThe possible scenarios for Team A winning the pla"
+  },
+  {
+    "year": 2024,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many positive integers \\( b \\) in the range \\( 5 \\leq b \\leq 2024 \\) make the base-\\( b \\) integer \\( 2024_b \\) divisible by 16 (where 16 is in base ten"
+  },
+  {
+    "year": 2024,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the first three terms of a geometric sequence where \\(a\\), 720, and \\(b\\) are part of the sequence. In a geometric sequence, each term after the first is fo"
+  },
+  {
+    "year": 2024,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to carefully analyze the conditions given for the subset \\( S \\) of the set \\(\\{1, 2, 3, \\dots, 2024\\}\\).\n\n### Condition 1: If \\( x \\) and \\( y \\) are distinct elements"
+  },
+  {
+    "year": 2024,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the structure of the arithmetic progressions in both rows and columns of the $5 \\times 5$ array. Let's denote the first row by \\(a_1, a_2, a_3, a_4, a_5\\)"
+  },
+  {
+    "year": 2024,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the area of triangle \\( \\Delta ABC \\) formed by joining eight copies of kite \\( \\mathcal{K} \\).\n\nFirst, let's analyze the kite \\( \\mathcal{K} \\). A kite is"
+  },
+  {
+    "year": 2024,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the given system of equations, we start with the equations:\n\n1. \\(ab + c = 100\\)\n2. \\(bc + a = 87\\)\n3. \\(ca + b = 60\\)\n\nWe need to find the value of \\(ab + bc + ca\\). Let's denote \\(x = ab\\)"
+  },
+  {
+    "year": 2024,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the movement of the bee and the conditions under which it traverses four distinct edges of a unit cube. A unit cube has 8 vertices and 12 edges. The bee s"
+  },
+  {
+    "year": 2024,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "C",
+    "correct": "C",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the number of ways Carl can place toothpicks along some of the sides of the squares in an \\(8 \\times 3\\) grid such that a closed loop is formed and no self"
+  },
+  {
+    "year": 2025,
+    "problem_num": 1,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the time at which Andy and Betsy will be the same distance from their common starting point in Mathville. Let's denote the time after 2:30 PM when they are"
+  },
+  {
+    "year": 2025,
+    "problem_num": 2,
+    "class": "1-10",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the amount of cashews in the new nut mix after adding the second nut mix to the box.\n\nFirst, let's analyze the initial nut mix:\n- The original nut mix is 1"
+  },
+  {
+    "year": 2025,
+    "problem_num": 3,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding how many isosceles triangles with positive integer side lengths and a longest side of length \\(2025\\) exist, we need to consider the properties of isosceles triangles."
+  },
+  {
+    "year": 2025,
+    "problem_num": 4,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine Ash's age based on the given information about the average ages of the teams.\n\nLet's denote:\n- \\( n_s \\) as the number of students.\n- \\( n_t \\) as the numb"
+  },
+  {
+    "year": 2025,
+    "problem_num": 5,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to understand the pattern of the sequence. The sequence is given by the sum of the first \\( n \\) positive integers, which can be expressed using the formula for the sum "
+  },
+  {
+    "year": 2025,
+    "problem_num": 6,
+    "class": "1-10",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to understand the geometry of the equilateral triangle and the angles formed by trisecting each interior angle.\n\nFirst, let's determine the measure of each interior ang"
+  },
+  {
+    "year": 2025,
+    "problem_num": 7,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to use the Remainder Theorem. The Remainder Theorem states that if a polynomial \\( f(x) \\) is divided by \\( x - c \\), the remainder is \\( f(c) \\).\n\nGiven the polynomial "
+  },
+  {
+    "year": 2025,
+    "problem_num": 8,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to analyze the statements one by one and determine their consistency. Let's denote the four statements as follows:\n\n1. Statement A: \"At least one of these statements is"
+  },
+  {
+    "year": 2025,
+    "problem_num": 9,
+    "class": "1-10",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine how many real numbers \\(a\\) satisfy the condition that the graph of \\(y = f(x - a)\\) passes through the point \\((1, 25)\\). This means that when \\(x = 1\\), \\"
+  },
+  {
+    "year": 2025,
+    "problem_num": 10,
+    "class": "1-10",
+    "predicted": "E",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the area of the shaded region after a smaller semicircle is cut from a larger semicircle. Let's break down the problem step by step.\n\n1. **Identify the radii an"
+  },
+  {
+    "year": 2025,
+    "problem_num": 11,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "E",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to analyze both the arithmetic and geometric sequences given in the problem.\n\n### Step 1: Arithmetic Sequence\nThe sequence \\(1, x, y, z\\) is arithmetic. This means that "
+  },
+  {
+    "year": 2025,
+    "problem_num": 12,
+    "class": "11-20",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the number of 4-digit passcodes that satisfy the given conditions. The conditions are:\n1. Exactly one digit is even.\n2. Exactly one digit is prime.\n3. No d"
+  },
+  {
+    "year": 2025,
+    "problem_num": 13,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "D",
+    "is_correct": true,
+    "response": "\nTo solve this problem, we need to determine the value of \\( k \\) such that the area of the shaded portion of the figure is 64% of the area of the original square.\n\nLet's denote the side length of the"
+  },
+  {
+    "year": 2025,
+    "problem_num": 14,
+    "class": "11-20",
+    "predicted": "C",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the probability that two students and two teachers will sit in two adjacent chairs each. Let's break down the problem step by step.\n\n### Step 1: Total Numb"
+  },
+  {
+    "year": 2025,
+    "problem_num": 15,
+    "class": "11-20",
+    "predicted": "A",
+    "correct": "A",
+    "is_correct": true,
+    "response": "\nTo solve the problem, we need to find the area of triangle \\(ABC\\) in the given figure. Let's break down the steps:\n\n1. **Identify the coordinates of points \\(A\\), \\(B\\), and \\(C\\):**\n   - Since \\(AB"
+  },
+  {
+    "year": 2025,
+    "problem_num": 16,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the expected number of coins in a jar with the most coins when three coins are randomly placed into three jars.\n\nFirst, let's define the random variables f"
+  },
+  {
+    "year": 2025,
+    "problem_num": 17,
+    "class": "11-20",
+    "predicted": "D",
+    "correct": "E",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the unique positive integer \\( N \\) such that dividing \\( 273436 \\) by \\( N \\) leaves a remainder of \\( 16 \\), and dividing \\( 272760 \\) by \\( N \\) leaves a rema"
+  },
+  {
+    "year": 2025,
+    "problem_num": 18,
+    "class": "11-20",
+    "predicted": "E",
+    "correct": "B",
+    "is_correct": false,
+    "response": "\nTo find the harmonic mean of all the real roots of the 4050th degree polynomial, we need to understand the properties of the roots and the definition of the harmonic mean.\n\nThe harmonic mean \\( H \\) "
+  },
+  {
+    "year": 2025,
+    "problem_num": 19,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "error": "<urlopen error [Errno 60] Operation timed out>"
+  },
+  {
+    "year": 2025,
+    "problem_num": 20,
+    "class": "11-20",
+    "predicted": null,
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to determine the value of \\( g \\) such that the line of sight between MacDonald and McGregor is tangent to the silo. Let's start by setting up the coordinates and the g"
+  },
+  {
+    "year": 2025,
+    "problem_num": 21,
+    "class": "21-25",
+    "predicted": "A",
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve this problem, we need to find the greatest possible number of elements in a sum-free subset of the set \\(\\{1, 2, 3, \\ldots, 20\\}\\). A set is called sum-free if the sum of any two elements (n"
+  },
+  {
+    "year": 2025,
+    "problem_num": 22,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "B",
+    "is_correct": true,
+    "response": "\nTo solve for the radius \\( r \\) of the inner circle, we need to consider the geometric configuration of the circles. The inner circle is surrounded by three smaller circles with radii 1, 2, and 3, al"
+  },
+  {
+    "year": 2025,
+    "problem_num": 23,
+    "class": "21-25",
+    "predicted": "B",
+    "correct": "D",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to find the length of \\( BP \\), where \\( P \\) is the intersection of the angle bisector of \\( \\angle B \\) and the altitude from \\( C \\) to \\( AB \\).\n\nFirst, let's use th"
+  },
+  {
+    "year": 2025,
+    "problem_num": 24,
+    "class": "21-25",
+    "predicted": null,
+    "correct": "C",
+    "is_correct": false,
+    "response": "\nTo solve the problem of finding the number of fair positive integers, we need to understand the constraints given:\n\n1. No digit is used more than once.\n2. There are no 0s in the number.\n3. No digit i"
+  },
+  {
+    "year": 2025,
+    "problem_num": 25,
+    "class": "21-25",
+    "predicted": "E",
+    "correct": "A",
+    "is_correct": false,
+    "response": "\nTo solve the problem, we need to determine the probability that a randomly chosen point \\( P \\) inside square \\( ABCD \\) forms a triangle \\( \\triangle APB \\) where \\( \\overline{AP} \\) is neither the "
+  }
+]
