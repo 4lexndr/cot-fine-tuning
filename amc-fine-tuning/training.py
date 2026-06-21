@@ -1,19 +1,13 @@
 #!/usr/bin/env python3
 """Fine-tune Qwen2-Math-1.5B-Instruct with QLoRA on the AMC reasoning dataset.
 
-After training the adapter is saved to OUTPUT_DIR.  If the remote Ollama host
-is reachable the script prints exact steps to deploy and benchmark.  You can
-also call run_benchmark() directly once the fine-tuned model is loaded into
-Ollama.
+After training the adapter is saved to OUTPUT_DIR.
 
 Usage:
   python training.py
 """
 
 import json
-import re
-import urllib.request
-import urllib.error
 
 import torch
 from datasets import Dataset
@@ -25,9 +19,6 @@ from transformers import (
 )
 from trl import SFTConfig, SFTTrainer
 from peft import LoraConfig
-
-# ─── Remote Ollama host (same as benchmark.py) ─────────────────────────────────
-HOST = "http://10.0.4.34:11434"
 
 # ─── Paths ─────────────────────────────────────────────────────────────────────
 MODEL_ID = "Qwen/Qwen2-Math-1.5B-Instruct"
@@ -72,14 +63,6 @@ def _build_messages(problem: dict) -> list[dict]:
     ]
 
 
-def _build_inference_prompt(problem_text: str) -> str:
-    return (
-        "Solve this AMC multiple choice problem. "
-        "Give your final answer as a single letter (A, B, C, D, or E).\n\n"
-        f"{problem_text}\n\nFinal answer:"
-    )
-
-
 # ─── Dataset ───────────────────────────────────────────────────────────────────
 
 def _load_split(path: str, tokenizer) -> Dataset:
@@ -109,99 +92,6 @@ def load_train_eval(train_path: str, eval_path: str, tokenizer) -> tuple[Dataset
     return train_ds, eval_ds
 
 
-# ─── Ollama connection (mirrors benchmark.py) ──────────────────────────────────
-
-def check_connection() -> bool:
-    try:
-        req = urllib.request.Request(f"{HOST}/api/tags")
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())
-        models = [m["name"] for m in data.get("models", [])]
-        print(f"Connected to Ollama at {HOST}")
-        print(f"Available models: {models}")
-        return True
-    except urllib.error.URLError as e:
-        print(f"WARNING: Cannot reach Ollama at {HOST}: {e}")
-        return False
-
-
-def _ollama_chat(model: str, messages: list[dict]) -> str:
-    url = f"{HOST}/api/chat"
-    payload = json.dumps({
-        "model": model,
-        "messages": messages,
-        "stream": False,
-        "options": {"temperature": 0, "num_predict": 1024},
-    }).encode()
-    req = urllib.request.Request(
-        url, data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        body = json.loads(resp.read())
-    return body["message"]["content"]
-
-
-def _extract_answer(text: str) -> str | None:
-    for pattern in [
-        r"(?:final answer|answer)[:\s]*\(?([A-E])\)?",
-        r"\\boxed\{([A-E])\}",
-        r"\b([A-E])\b\s*$",
-        r"\(([A-E])\)",
-        r"textbf\{?\(?([A-E])\)?",
-        r"\b([A-E])\b",
-    ]:
-        m = re.search(pattern, text, re.IGNORECASE)
-        if m:
-            return m.group(1).upper()
-    return None
-
-
-def run_benchmark(model: str, test_file: str = TEST_FILE) -> dict:
-    """Benchmark a model on the test set via remote Ollama — mirrors benchmark.py."""
-    with open(test_file) as f:
-        problems = [json.loads(line) for line in f if line.strip()]
-
-    CLASSES = ["1-10", "11-20", "21-25"]
-    results = {c: {"correct": 0, "total": 0} for c in CLASSES}
-
-    for i, problem in enumerate(problems):
-        cls = problem["class"]
-        correct = problem["answer"]
-        tag = f"{problem['year']} AMC 10{problem.get('contest', 'A')} P{problem['problem_num']}"
-        print(f"[{i+1}/{len(problems)}] {tag}...", end=" ", flush=True)
-        try:
-            messages = [
-                {"role": "system", "content": "You are a math competition expert."},
-                {"role": "user", "content": _build_inference_prompt(problem["problem"])},
-            ]
-            response = _ollama_chat(model, messages)
-            predicted = _extract_answer(response)
-            is_correct = predicted == correct
-            results[cls]["total"] += 1
-            if is_correct:
-                results[cls]["correct"] += 1
-            print(f"pred={predicted} correct={correct} {'✓' if is_correct else '✗'}")
-        except Exception as e:
-            print(f"ERROR: {e}")
-            results[cls]["total"] += 1
-
-    print("\n=== Post-training Benchmark ===")
-    summary = {}
-    for cls in CLASSES:
-        t = results[cls]["total"]
-        c = results[cls]["correct"]
-        pct = round(c / t * 100, 1) if t > 0 else 0.0
-        summary[cls] = pct
-        print(f"Class {cls}: {c}/{t} = {pct}%")
-    total = sum(v["total"] for v in results.values())
-    correct_total = sum(v["correct"] for v in results.values())
-    overall = round(correct_total / total * 100, 1) if total > 0 else 0.0
-    print(f"Overall: {correct_total}/{total} = {overall}%")
-    return summary
-
-
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -211,8 +101,6 @@ def main():
         import bitsandbytes  
     except ImportError:
         raise SystemExit("ERROR: bitsandbytes not installed. Run: pip install bitsandbytes")
-
-    remote_available = check_connection()
 
     print(f"\nLoading tokenizer: {MODEL_ID}")
     tokenizer = AutoTokenizer.from_pretrained(MODEL_ID, trust_remote_code=True)
@@ -290,16 +178,6 @@ def main():
     print(f"\nSaving adapter to {OUTPUT_DIR}/")
     trainer.save_model(OUTPUT_DIR)
     tokenizer.save_pretrained(OUTPUT_DIR)
-
-    if remote_available:
-        print(
-            f"\nOllama at {HOST} is reachable. Once the fine-tuned adapter is "
-            "loaded into Ollama, benchmark it with:\n"
-            "  python benchmark.py <your-model-name>\n"
-            "Or call run_benchmark('<your-model-name>') from this script."
-        )
-    else:
-        print(f"\nOllama at {HOST} was unreachable. Start it and run benchmark.py when ready.")
 
 
 if __name__ == "__main__":
