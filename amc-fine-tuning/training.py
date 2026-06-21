@@ -50,12 +50,12 @@ LORA_TARGET_MODULES = [
 
 # ─── Prompt helpers ────────────────────────────────────────────────────────────
 
-SYSTEM_MSG = "You are a math competition expert. Solve the following AMC problem step by step."
+SYSTEM_MSG = "You are a math competition expert. Solve the following problem step by step."
 
 
 
 def _build_messages(problem: dict) -> list[dict]:
-    reasoning = problem.get("reasoning") or problem.get("solution", "")
+    reasoning = problem["reasoning"]
     return [
         {"role": "system", "content": SYSTEM_MSG},
         {"role": "user", "content": f"Problem:\n{problem['problem']}"},
@@ -70,8 +70,7 @@ def _load_split(path: str, tokenizer) -> Dataset:
         raw = [json.loads(line) for line in f if line.strip()]
     usable = [
         r for r in raw
-        if r.get("problem") and r.get("answer")
-        and (r.get("reasoning") or r.get("solution"))
+        if r.get("problem") and r.get("answer") and r.get("reasoning")
     ]
     texts = [
         {

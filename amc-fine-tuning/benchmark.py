@@ -127,7 +127,7 @@ if __name__ == "__main__":
         print(f"[{i+1}/{len(problems)}] {year} AMC 10{contest} P{num} (class {cls})...", end=" ", flush=True)
 
         messages = [
-            {"role": "system", "content": "You are a math competition expert."},
+            {"role": "system", "content": "You are a math competition expert. Solve the following problem step by step."},
             {"role": "user", "content": _build_prompt(problem["problem"])},
         ]
 
