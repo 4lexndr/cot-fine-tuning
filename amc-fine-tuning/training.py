@@ -31,8 +31,8 @@ OUTPUT_DIR = "./training-output"
 # Reduce MAX_SEQ_LENGTH (e.g. to 512) or BATCH_SIZE (to 1) if you hit OOM.
 # Gradient checkpointing is already on; that's the next lever after those two.
 MAX_SEQ_LENGTH = 1024
-BATCH_SIZE = 2
-GRAD_ACCUM = 4          # effective batch = BATCH_SIZE × GRAD_ACCUM = 8
+BATCH_SIZE = 1
+GRAD_ACCUM = 8          # effective batch = BATCH_SIZE × GRAD_ACCUM = 8
 NUM_EPOCHS = 5          # EarlyStoppingCallback will stop before this if needed
 LEARNING_RATE = 2e-4
 WEIGHT_DECAY = 0.01     # AdamW L2 regularisation; increase if model overfits
@@ -112,6 +112,7 @@ def main():
         load_in_4bit=True,
         bnb_4bit_quant_type="nf4",
         bnb_4bit_compute_dtype=torch.bfloat16,
+        bnb_4bit_use_double_quant=True,
     )
 
     print(f"\nLoading model: {MODEL_ID}")
@@ -145,8 +146,8 @@ def main():
         bf16=True,
         gradient_checkpointing=True,
         gradient_checkpointing_kwargs={"use_reentrant": False},
-        optim="adamw_torch_fused",
-        dataloader_num_workers=2,
+        optim="paged_adamw_8bit",
+        dataloader_num_workers=0,
         dataloader_pin_memory=False,
         eval_strategy="epoch",
         save_strategy="epoch",
