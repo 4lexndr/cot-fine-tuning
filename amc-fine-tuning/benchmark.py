@@ -1,20 +1,26 @@
 #!/usr/bin/env python3
-"""Benchmark a model via Ollama on all problems in test.jsonl.
+"""Benchmark a HuggingFace model locally (CUDA) on all problems in test.jsonl.
 
 Usage:
-  python benchmark.py <model>
-  python benchmark.py qwen2-math:1.5b
+  python benchmark.py <model_id_or_path> [output_dir]
+  python benchmark.py Qwen/Qwen2-Math-1.5B-Instruct
+  python benchmark.py Qwen/Qwen2.5-1.5B-Instruct ./initial_benchmarks/qwen2.5-1.5b
+  python benchmark.py ./training-output ./results
 """
 
 import json
+import os
 import re
 import sys
-import urllib.request
-import urllib.error
+import traceback
 
-HOST = "http://10.0.4.34:11434"
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
 PROBLEMS_FILE = "test.jsonl"
 CLASSES = ["1-10", "11-20", "21-25"]
+SYSTEM_MSG = "You are a math competition expert. Solve the following problem step by step."
+MAX_NEW_TOKENS = 1024
 
 
 def _load_problems(path):
@@ -67,52 +73,65 @@ def _extract_answer(response_text):
     return None
 
 
-def _ollama_chat(model, messages):
-    url = f"{HOST}/api/chat"
-    payload = json.dumps({
-        "model": model,
-        "messages": messages,
-        "stream": False,
-        "options": {"temperature": 0, "num_predict": 1024},
-    }).encode()
-    req = urllib.request.Request(
-        url, data=payload,
-        headers={"Content-Type": "application/json"},
-        method="POST",
+def _load_model(model_id):
+    print(f"Loading tokenizer: {model_id}")
+    tokenizer = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    if tokenizer.pad_token is None:
+        tokenizer.pad_token = tokenizer.eos_token
+
+    print(f"Loading model: {model_id}")
+    model = AutoModelForCausalLM.from_pretrained(
+        model_id,
+        dtype=torch.bfloat16,
+        device_map="cuda",
+        trust_remote_code=True,
     )
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        body = json.loads(resp.read())
-    return body["message"]["content"]
+    model.eval()
+    return tokenizer, model
 
 
-def _check_connection(model):
-    try:
-        req = urllib.request.Request(f"{HOST}/api/tags")
-        with urllib.request.urlopen(req, timeout=10) as resp:
-            data = json.loads(resp.read())
-        available = [m["name"] for m in data.get("models", [])]
-        print(f"Connected to Ollama at {HOST}")
-        print(f"Available models: {available}")
-        if not any(model in m for m in available):
-            print(f"WARNING: '{model}' not found. Run: ollama pull {model}")
-        return True
-    except urllib.error.URLError as e:
-        print(f"ERROR: Cannot reach Ollama at {HOST}: {e}")
-        return False
+def _generate(tokenizer, model, messages):
+    encoded = tokenizer.apply_chat_template(
+        messages,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_tensors="pt",
+    )
+    input_ids = encoded["input_ids"].to(model.device)
+    attention_mask = encoded["attention_mask"].to(model.device)
+    prompt_len = input_ids.shape[-1]
+
+    with torch.inference_mode():
+        output_ids = model.generate(
+            input_ids,
+            attention_mask=attention_mask,
+            max_new_tokens=MAX_NEW_TOKENS,
+            do_sample=False,
+            temperature=None,
+            top_p=None,
+            pad_token_id=tokenizer.pad_token_id,
+        )
+
+    new_tokens = output_ids[0][prompt_len:]
+    return tokenizer.decode(new_tokens, skip_special_tokens=True)
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Usage: python benchmark.py <model>")
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python benchmark.py <model_id_or_path> [output_dir]")
         sys.exit(1)
 
-    model = sys.argv[1]
-
-    if not _check_connection(model):
+    if not torch.cuda.is_available():
+        print("ERROR: No CUDA GPU found.")
         sys.exit(1)
+
+    model_id = sys.argv[1]
+    output_dir = sys.argv[2] if len(sys.argv) == 3 else "."
+    os.makedirs(output_dir, exist_ok=True)
+    tokenizer, model = _load_model(model_id)
 
     problems = _load_problems(PROBLEMS_FILE)
-    print(f"Loaded {len(problems)} problems from {PROBLEMS_FILE}")
+    print(f"Loaded {len(problems)} problems from {PROBLEMS_FILE}\n")
 
     results_by_class = {c: {"correct": 0, "total": 0} for c in CLASSES}
     detail_log = []
@@ -127,12 +146,12 @@ if __name__ == "__main__":
         print(f"[{i+1}/{len(problems)}] {year} AMC 10{contest} P{num} (class {cls})...", end=" ", flush=True)
 
         messages = [
-            {"role": "system", "content": "You are a math competition expert. Solve the following problem step by step."},
+            {"role": "system", "content": SYSTEM_MSG},
             {"role": "user", "content": _build_prompt(problem["problem"])},
         ]
 
         try:
-            generated = _ollama_chat(model, messages)
+            generated = _generate(tokenizer, model, messages)
             predicted = _extract_answer(generated)
             is_correct = predicted == correct_answer
 
@@ -140,7 +159,7 @@ if __name__ == "__main__":
             if is_correct:
                 results_by_class[cls]["correct"] += 1
 
-            print(f"pred={predicted} correct={correct_answer} {'✓' if is_correct else '✗'}")
+            print(f"pred={predicted} correct={correct_answer} {'OK' if is_correct else 'WRONG'}")
             detail_log.append({
                 "year": year,
                 "contest": contest,
@@ -154,6 +173,7 @@ if __name__ == "__main__":
 
         except Exception as e:
             print(f"ERROR: {e}")
+            traceback.print_exc()
             results_by_class[cls]["total"] += 1
             detail_log.append({
                 "year": year,
@@ -180,9 +200,9 @@ if __name__ == "__main__":
     overall = round(correct_all / total_all * 100, 1) if total_all > 0 else 0.0
     print(f"Overall: {correct_all}/{total_all} = {overall}%")
 
-    model_slug = model.replace(":", "-").replace("/", "-")
-    results_file = f"results_{model_slug}.json"
-    detail_file = f"results_{model_slug}_detail.json"
+    model_slug = model_id.replace(":", "-").replace("/", "-").replace("\\", "-").replace(".", "-")
+    results_file = os.path.join(output_dir, f"results_{model_slug}.json")
+    detail_file = os.path.join(output_dir, f"results_{model_slug}_detail.json")
 
     with open(results_file, "w") as f:
         json.dump(summary, f, indent=2)

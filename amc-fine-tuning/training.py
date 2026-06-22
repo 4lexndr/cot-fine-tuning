@@ -21,7 +21,7 @@ from trl import SFTConfig, SFTTrainer
 from peft import LoraConfig
 
 # ─── Paths ─────────────────────────────────────────────────────────────────────
-MODEL_ID = "Qwen/Qwen2-Math-1.5B-Instruct"
+MODEL_ID = "Qwen/Qwen2.5-1.5B-Instruct"
 TRAIN_FILE = "train.jsonl"
 EVAL_FILE = "eval.jsonl"
 TEST_FILE = "test.jsonl"
