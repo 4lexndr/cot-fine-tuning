@@ -1,0 +1,91 @@
+Benchmark Results Summary
+
+ââââââââââââââââââââââââââââââââ¬âââââââââââââââââââ¬âââââââââ
+â            Model             â Overall Accuracy â None % â
+ââââââââââââââââââââââââââââââââ¼âââââââââââââââââââ¼âââââââââ¤
+â Base (Qwen2.5-1.5B-Instruct) â 36.1%            â 20.3%  â
+ââââââââââââââââââââââââââââââââ¼âââââââââââââââââââ¼âââââââââ¤
+â Finetuned                    â 25.9%            â 27.8%  â
+ââââââââââââââââââââââââââââââââ´âââââââââââââââââââ´âââââââââ
+
+The finetuned model is ~10 points worse than the base and fails to extract a valid letter answer 7.5 points more often. This is a regression, not an improvement.
+
+---
+Root Cause Analysis
+
+Issue 1 â Double "Final answer:" collision (the biggest problem)
+
+The benchmark prompt (benchmark.py:52-57) ends the user message with "Final answer:", intending to prime the model to output just a letter. But during training, the assistant response was formatted as:
+
+[full step-by-step reasoning from GPT-4o-mini]
+...Final answer: 24          â from the reasoning field (a number)
+
+Final answer: B              â appended by _build_messages() (the letter)
+
+So the finetuned model learned a two-part completion pattern: reason at length, output a numerical "Final answer:", then output a letter "Final answer:". When the benchmark primes with "Final answer:" already in the user turn, the model still generates a full reasoning chain as the assistant, producing confusing output with doubled "Final answer:" lines (e.g. "Final answer: E\n\nFinal answer: E"). Worse, when the sequence is truncated (see Issue 2), the letter at the end is missing and the judge sees only the numerical value, returning null.
+
+Where to look: training.py:62, api.py:19, benchmark.py:52-57.
+
+Issue 2 â MAX_SEQ_LENGTH = 1024 truncates the answer letter
+
+AMC reasoning chains are typically 1500â4000+ tokens. With MAX_SEQ_LENGTH = 1024 (training.py:34), most training examples are truncated mid-response. The critical "\n\nFinal answer: B" that _build_messages appends at the end is almost always in the truncated tail â so the model rarely sees the ground-truth letter answer during training. It only learns the intermediate numerical "Final answer: 24" format from the reasoning body.
+
+This directly explains the increased none_pct: 7.5% more responses end with a number or a \boxed{...} expression the judge can't map to a letter.
+
+Issue 3 â Training reasoning quality is inconsistent
+
+The GPT-4o-mini reasoning chains in train.jsonl sometimes contain errors or arrive at the correct numerical answer through bad logic (visible in several training examples). The model is being trained by SFT to imitate those chains â including the mistakes. On problems like 2024 AMC B #24, the finetuned model hallucinates the problem's function entirely (P(n) = nÂ²-n+1 instead of the actual one), which is a sign the model is pattern-matching reasoning structure rather than reading the problem.
+
+Issue 4 â api.py reasoning format instruction is ambiguous
+
+The generation prompt in api.py:19 says:
+
+â "End with: Final answer: (X)"
+
+GPT-4o-mini interpreted (X) as a placeholder for the numerical value (e.g., Final answer: (4), Final answer: \\(\\frac{9}{2}\\)), not as a letter. This inconsistency pollutes the training targets.
+
+---
+Possible Fixes
+
+Fix 1 â Strip the trailing "Final answer: ..." from the reasoning before training
+
+Why: The reasoning field already ends with Final answer: [number] (from GPT-4o-mini). Then _build_messages appends \n\nFinal answer: {problem['answer']} (a letter). This creates a doubled format the model can't consistently reproduce. Strip the last "Final answer:" line from the reasoning so the training target becomes one clean: [reasoning] â Final answer: B.
+
+import re
+def _build_messages(problem):
+    reasoning = re.sub(r'\n*Final answer:.*$', '', problem["reasoning"], flags=re.IGNORECASE | re.DOTALL).rstrip()
+    return [
+        {"role": "system", "content": SYSTEM_MSG},
+        {"role": "user", "content": f"Problem:\n{problem['problem']}"},
+        {"role": "assistant", "content": f"{reasoning}\n\nFinal answer: {problem['answer']}"},
+    ]
+
+Fix 2 â Increase MAX_SEQ_LENGTH to at least 2048â4096
+
+Why: At 1024 tokens, the letter answer that _build_messages appends is almost always in the truncated tail, so the model never learns to associate the correct letter with the end of a reasoning chain. Doubling or quadrupling this ensures the full training target survives. The tradeoff is GPU VRAM â lower BATCH_SIZE to 1 and increase GRAD_ACCUM to compensate.
+
+Fix 3 â Remove "Final answer:" from the benchmark's user prompt
+
+Why: The benchmark user prompt ends with "Final answer:" (benchmark.py:57), but the training examples were structured with the assistant producing the full "Final answer: B". Having it in the user turn confuses the finetuned model's learned output structure. Remove it from the user prompt and let the model complete the assistant turn naturally:
+
+def _build_prompt(problem_text):
+    return (
+        f"Solve this AMC multiple choice problem. "
+        f"Give your final answer as a single letter (A, B, C, D, or E).\n\n"
+        f"{problem_text}"
+    )
+
+Fix 4 â Fix the api.py reasoning generation prompt to always end with a letter
+
+Why: Replace "End with: Final answer: (X)" with "End with exactly: Final answer: A" (or B/C/D/E), using the actual correct letter. This makes the training data targets consistent â every reasoning chain ends with Final answer: [letter] â so _build_messages doesn't need to double-up at all.
+
+Fix 5 â Filter out training examples where the generated reasoning leads to a wrong answer
+
+Why: Currently there's no quality check on the GPT-4o-mini reasoning. Training on chains that reason incorrectly teaches the model bad habits. Add a validation step in reasoning.py that checks the "Final answer" in the generated reasoning matches problem['answer'] before including the example in train.jsonl. This reduces dataset size but increases signal quality.
+
+Fix 6 â Switch from SFT to GRPO/RLHF with a correctness reward
+
+Why (longer term): The fundamental weakness of the current approach is that SFT on chain-of-thought data forces the model to imitate reasoning steps, even wrong ones. Reinforcement learning with a binary reward (correct letter = +1, wrong = 0) lets the model develop its own reasoning strategy and self-correct. Libraries like trl already have GRPOTrainer. This is the approach used to train models like DeepSeek-R1.
+
+---
+The quickest wins are Fixes 1, 2, and 3 together â they address the format mismatch and truncation without changing the training pipeline fundamentally, and would likely recover most of the performance gap.
