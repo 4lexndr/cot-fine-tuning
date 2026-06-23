@@ -35,7 +35,7 @@ LORA_DROPOUT = 0.05
 LORA_TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
 
 # system message -------
-SYSTEM_MESSAGE = "You are a math competition expert. Read the problem closely, then solve it step by step."
+SYSTEM_MESSAGE = "You are a math competition expert. Read the given problem closely, then solve it step by step."
 
 # helpers --------------
 def build_message(problem: str, reasoning: str):
