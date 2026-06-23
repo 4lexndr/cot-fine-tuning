@@ -53,7 +53,6 @@ def _build_prompt(problem_text):
         f"Solve this AMC multiple choice problem. "
         f"Give your final answer as a single letter (A, B, C, D, or E).\n\n"
         f"{problem_text}\n\n"
-        f"Final answer:"
     )
 
 
