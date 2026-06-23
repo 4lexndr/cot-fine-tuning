@@ -196,78 +196,61 @@ if __name__ == "__main__":
             print(f"  Overall: {correct_so_far}/{total_so_far} = {round(correct_so_far/total_so_far*100,1)}%")
         print()
 
-    batch_size = args.batch_size
-    print(f"Batch size: {batch_size}\n")
+    for i, problem in enumerate(problems):
+        year = problem["year"]
+        num = problem["problem_num"]
+        cls = problem["class"]
+        contest = problem.get("contest", "A")
+        correct_answer = problem["answer"]
 
-    completed = 0
-    for batch_start in range(0, len(problems), batch_size):
-        batch = problems[batch_start:batch_start + batch_size]
-        messages_list = [
-            [
-                {"role": "system", "content": SYSTEM_MSG},
-                {"role": "user", "content": _build_prompt(p["problem"])},
-            ]
-            for p in batch
+        print(f"[{i+1}/{len(problems)}] {year} AMC 10{contest} P{num} (class {cls})...", end=" ", flush=True)
+
+        messages = [
+            {"role": "system", "content": SYSTEM_MSG},
+            {"role": "user", "content": _build_prompt(problem["problem"])},
         ]
 
         try:
-            generated_list = _generate_batch(tokenizer, model, messages_list)
+            generated = _generate(tokenizer, model, messages)
+            predicted = _judge_answer(problem["problem"], generated)
+            is_correct = predicted == correct_answer
+
+            results_by_class[cls]["total"] += 1
+            if is_correct:
+                results_by_class[cls]["correct"] += 1
+            if predicted is None:
+                results_by_class[cls]["none"] += 1
+
+            print(f"pred={predicted} correct={correct_answer} {'OK' if is_correct else 'WRONG'}")
+            detail_log.append({
+                "year": year,
+                "contest": contest,
+                "problem_num": num,
+                "class": cls,
+                "predicted": predicted,
+                "correct": correct_answer,
+                "is_correct": is_correct,
+                "response": generated,
+            })
+
         except Exception as e:
-            print(f"Batch generation ERROR: {e}")
+            print(f"ERROR: {e}")
             traceback.print_exc()
-            generated_list = [None] * len(batch)
+            results_by_class[cls]["total"] += 1
+            results_by_class[cls]["none"] += 1
+            detail_log.append({
+                "year": year,
+                "contest": contest,
+                "problem_num": num,
+                "class": cls,
+                "predicted": None,
+                "correct": correct_answer,
+                "is_correct": False,
+                "error": str(e),
+            })
 
-        for problem, generated in zip(batch, generated_list):
-            year = problem["year"]
-            num = problem["problem_num"]
-            cls = problem["class"]
-            contest = problem.get("contest", "A")
-            correct_answer = problem["answer"]
-            completed += 1
-
-            print(f"[{completed}/{len(problems)}] {year} AMC 10{contest} P{num} (class {cls})...", end=" ", flush=True)
-
-            if generated is None:
-                print("ERROR (batch failed)")
-                results_by_class[cls]["total"] += 1
-                results_by_class[cls]["none"] += 1
-                detail_log.append({
-                    "year": year, "contest": contest, "problem_num": num, "class": cls,
-                    "predicted": None, "correct": correct_answer, "is_correct": False,
-                    "error": "batch generation failed",
-                })
-                continue
-
-            try:
-                predicted = _judge_answer(problem["problem"], generated)
-                is_correct = predicted == correct_answer
-
-                results_by_class[cls]["total"] += 1
-                if is_correct:
-                    results_by_class[cls]["correct"] += 1
-                if predicted is None:
-                    results_by_class[cls]["none"] += 1
-
-                print(f"pred={predicted} correct={correct_answer} {'OK' if is_correct else 'WRONG'}")
-                detail_log.append({
-                    "year": year, "contest": contest, "problem_num": num, "class": cls,
-                    "predicted": predicted, "correct": correct_answer,
-                    "is_correct": is_correct, "response": generated,
-                })
-
-            except Exception as e:
-                print(f"ERROR: {e}")
-                traceback.print_exc()
-                results_by_class[cls]["total"] += 1
-                results_by_class[cls]["none"] += 1
-                detail_log.append({
-                    "year": year, "contest": contest, "problem_num": num, "class": cls,
-                    "predicted": None, "correct": correct_answer, "is_correct": False,
-                    "error": str(e),
-                })
-
-            if completed % 5 == 0:
-                _print_progress(f"Progress [{completed}/{len(problems)}]")
+        if (i + 1) % 5 == 0:
+            _print_progress(f"Progress [{i+1}/{len(problems)}]")
 
     print("\n=== Results ===")
     summary = {}
