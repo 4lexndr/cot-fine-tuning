@@ -1,15 +1,14 @@
 import sys
 import json
 import time
-from concurrent.futures import ThreadPoolExecutor
 from openai import OpenAI
 
 DATA = "./problems.jsonl"
 MAX_RETRIES = 6
-MAX_WORKERS = 30 # number of rows cleaned in parallel
 DELETE = "DELETE" # sentinel the model returns for incomplete rows
 
 client = OpenAI()
+API_MODEL = "gpt-4o-mini"
 
 # Evaluates only the problem field. Never sees the solution.
 PROBLEM_SYSTEM_MESSAGE = \
@@ -55,12 +54,13 @@ SOLUTION_SYSTEM_MESSAGE = \
     "If deleting: reply with exactly DELETE and nothing else.\n" \
     "Otherwise: reply with exactly OK and nothing else."
 
+# helpers --------------
 def _call(system: str, user: str) -> str | None:
     delay = 1
     for attempt in range(MAX_RETRIES):
         try:
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model=API_MODEL,
                 messages=[
                     {"role": "system", "content": system},
                     {"role": "user", "content": user},
@@ -86,9 +86,10 @@ def clean_row(num: int, row: dict):
     if solution_result == DELETE:
         return num, DELETE
 
-    return num, problem_result  # None means API error; cleaned text otherwise
+    return num, problem_result
 
 # main code ------------
+# load and validate problems
 with open(DATA, encoding="utf-8") as f:
     rows = [json.loads(line) for line in f if line.strip()]
 
@@ -98,17 +99,19 @@ for num, row in enumerate(rows):
     if not (row.get("problem") and row.get("solution")):
         sys.exit(f"Row {num} is missing a problem or solution")
 
+# clean rows sequentially
 results = {}
-with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-    for num, result in pool.map(lambda args: clean_row(*args), enumerate(rows)):
-        results[num] = result
-        if result is None:
-            print(f"Row {num} could not be cleaned; keeping original")
-        elif result == DELETE:
-            print(f"Row {num} is incomplete; deleting")
-        else:
-            print(f"Row {num} cleaned")
+for num, row in enumerate(rows):
+    num, result = clean_row(num, row)
+    results[num] = result
+    if result is None:
+        print(f"Row {num} could not be cleaned; keeping original")
+    elif result == DELETE:
+        print(f"Row {num} is incomplete; deleting")
+    else:
+        print(f"Row {num} cleaned")
 
+# write kept rows back to file
 kept = []
 for num, row in enumerate(rows):
     result = results[num]
