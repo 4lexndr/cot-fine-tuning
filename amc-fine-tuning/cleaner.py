@@ -1,67 +1,69 @@
-#!/usr/bin/env python3
-"""Clean and validate problem text in JSONL dataset files via OpenAI API.
-
-For each problem, the model either:
-  - Returns cleaned problem text (replaces the existing field), or
-  - Returns the sentinel DELETE if the problem is incomplete (missing its
-    core mathematical expression), in which case the row is dropped.
-
-Usage:
-  python cleaner.py                              # process test.jsonl and train.jsonl
-  python cleaner.py --db test.jsonl              # process one file
-  python cleaner.py --db test.jsonl train.jsonl  # process specific files
-"""
-
-import argparse
+import sys
 import json
 import time
-import threading
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 from openai import OpenAI
 
-DEFAULT_FILES = ["test.jsonl", "train.jsonl"]
-CHECKPOINT_EVERY = 30
-MAX_WORKERS = 30
-DELETE = "DELETE"
+DATA = "./problems.jsonl"
 MAX_RETRIES = 6
+MAX_WORKERS = 30 # number of rows cleaned in parallel
+DELETE = "DELETE" # sentinel the model returns for incomplete rows
 
 client = OpenAI()
 
-PROBLEM_SYSTEM = """You are a dataset validator and cleaner for AMC math competition problems.
-You will receive the raw problem text for a single AMC problem.
+# Evaluates only the problem field. Never sees the solution.
+PROBLEM_SYSTEM_MESSAGE = \
+    "You are a dataset cleaner for AMC math competition problems.\n\n" \
+    "You will receive only the problem text. Evaluate it purely on structure — do NOT\n" \
+    "attempt to solve it, evaluate expressions, or check answer-choice correctness.\n\n" \
+    "--- DELETE if ANY of these structural defects is present ---\n\n" \
+    "1. NO answer choices: Every valid AMC problem ends with answer choices (A) through (E),\n" \
+    "   formatted with \\textbf{(A)}, \\mathrm{(A)}, or similar. If the problem has NO such\n" \
+    "   answer-choice line at all, DELETE — it is not a complete AMC problem.\n\n" \
+    "2. Cut-off: The problem text ends mid-sentence with no question and no answer choices\n" \
+    "   (e.g. 'How many integers satisfy the condition:' followed by nothing).\n\n" \
+    "3. HTML / wiki artifacts: Raw HTML tags (<ref>, <br/>, <math>, etc.) or unclosed wiki\n" \
+    "   markup ([[, ==, {{) appear anywhere in the problem text.\n\n" \
+    "4. Post-choice leak: Any prose or derivation text appears AFTER the last answer-choice\n" \
+    "   line — a valid problem ends right after choice (E).\n\n" \
+    "--- NEVER DELETE for these reasons ---\n\n" \
+    "- The problem says 'in the figure', 'as shown', or references a diagram — keep it.\n" \
+    "- Answer choices use \\textbf{}, \\text{}, \\mathrm{}, or any LaTeX text command.\n" \
+    "- The problem defines an operation, gives a condition, or states equations — these\n" \
+    "  are part of the question, not a defect.\n" \
+    "- When in doubt: KEEP.\n\n" \
+    "If deleting: reply with exactly DELETE and nothing else.\n" \
+    "Otherwise: output only the cleaned problem text. Strip any wiki/navigation headings\n" \
+    "(Solution, See Also, Video Solution, etc.) that trail after the answer choices.\n" \
+    "Keep all LaTeX exactly as-is. Do not rephrase, rewrite, or add anything."
 
-FIRST, check whether the problem is COMPLETE. A complete problem must have:
-- A self-contained question whose mathematical content is fully present in the text.
-- All expressions, variables, and context needed to solve it.
+# Evaluates only the solution field. Never sees the problem.
+SOLUTION_SYSTEM_MESSAGE = \
+    "You are a dataset validator for AMC math competition solutions.\n\n" \
+    "You will receive only the solution text.\n\n" \
+    "Rule 1 — explicit answer: if the solution contains a \\boxed{} expression, or explicitly\n" \
+    "names an answer choice (A), (B), (C), (D), or (E), or ends with a clear mathematical\n" \
+    "conclusion (e.g. 'Thus x = 5', 'Therefore the answer is 3', 'the solutions are x=y or y=0'),\n" \
+    "it is complete. Do NOT delete it.\n\n" \
+    "Rule 2 — HTML artifacts: DELETE if the solution contains raw HTML tags\n" \
+    "(<ref>, <br/>, <math>, etc.) or unclosed wiki markup ([[, ==, {{).\n\n" \
+    "Rule 3 — truly cut off: DELETE only if the solution ends mid-sentence or mid-calculation\n" \
+    "with NO conclusion at all — not a stated value, not an answer choice, not a boxed answer.\n" \
+    "Example cut-off endings: 'Add those two together to get', 'Substitute back into s.',\n" \
+    "'Since both expressions represent the same length, you can set them equal to each other.'\n\n" \
+    "When in doubt: reply OK.\n\n" \
+    "If deleting: reply with exactly DELETE and nothing else.\n" \
+    "Otherwise: reply with exactly OK and nothing else."
 
-A problem is INCOMPLETE if the stem is clearly missing its core content, for example:
-- "What is the value of" followed immediately by answer choices with nothing in between.
-- "Which of the following is equivalent to" with no expression given.
-- "What is the area of the region defined by" with no equation or description.
-- "Let" followed immediately by a question with no definition of the variable or function.
-- Any other case where the question cannot be understood or solved from the text alone.
-
-If the problem is INCOMPLETE, respond with exactly the single word: DELETE
-
-Otherwise, clean the problem text so it contains ONLY the problem statement:
-- Remove trailing headings such as "Solution", "Solution 1", "See Also", "Video Solution", etc.
-- Remove stray HTML tags, wiki markup, or navigation artifacts.
-- Remove category labels or any text unrelated to the problem.
-- Keep all answer choices (A) through (E).
-- Keep all LaTeX math notation exactly as-is (dollar signs, backslashes, etc.).
-- Do not rephrase or alter the math content in any way.
-- Output ONLY the cleaned problem text — no commentary, no labels, no preamble."""
-
-
-def clean_or_delete(text: str) -> str:
-    delay = 1.0
+def _call(system: str, user: str) -> str | None:
+    delay = 1
     for attempt in range(MAX_RETRIES):
         try:
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": PROBLEM_SYSTEM},
-                    {"role": "user", "content": text},
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": user},
                 ],
                 temperature=0,
             )
@@ -71,70 +73,53 @@ def clean_or_delete(text: str) -> str:
                 time.sleep(delay)
                 delay *= 2
             else:
-                raise
+                print(f"API error, leaving row unchanged: {e}")
+                return None
+    return None
 
+def clean_row(num: int, row: dict):
+    problem_result = _call(PROBLEM_SYSTEM_MESSAGE, row["problem"])
+    if problem_result == DELETE:
+        return num, DELETE
 
-def process_file(path: str) -> None:
-    with open(path) as f:
-        problems = [json.loads(line) for line in f if line.strip()]
+    solution_result = _call(SOLUTION_SYSTEM_MESSAGE, row["solution"])
+    if solution_result == DELETE:
+        return num, DELETE
 
-    print(f"[{path}] Loaded {len(problems)} problems")
+    return num, problem_result  # None means API error; cleaned text otherwise
 
-    to_process = [(i, p) for i, p in enumerate(problems) if p.get("problem")]
+# main code ------------
+with open(DATA, encoding="utf-8") as f:
+    rows = [json.loads(line) for line in f if line.strip()]
 
-    lock = threading.Lock()
-    completed = 0
-    delete_indices = set()
+print(f"Loaded {len(rows)} problems from {DATA}")
 
-    def worker(i, problem):
-        result = clean_or_delete(problem["problem"])
-        return i, result
+for num, row in enumerate(rows):
+    if not (row.get("problem") and row.get("solution")):
+        sys.exit(f"Row {num} is missing a problem or solution")
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {executor.submit(worker, i, p): i for i, p in to_process}
+results = {}
+with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+    for num, result in pool.map(lambda args: clean_row(*args), enumerate(rows)):
+        results[num] = result
+        if result is None:
+            print(f"Row {num} could not be cleaned; keeping original")
+        elif result == DELETE:
+            print(f"Row {num} is incomplete; deleting")
+        else:
+            print(f"Row {num} cleaned")
 
-        for future in as_completed(futures):
-            try:
-                i, result = future.result()
-                p = problems[i]
-                label = f"{p['year']} AMC 10{p.get('contest','')} P{p['problem_num']}"
+kept = []
+for num, row in enumerate(rows):
+    result = results[num]
+    if result == DELETE:
+        continue
+    if result is not None:
+        row["problem"] = result
+    kept.append(row)
 
-                if result == DELETE:
-                    delete_indices.add(i)
-                    print(f"[{path}] {label} — DELETED (incomplete)")
-                else:
-                    problems[i]["problem"] = result
-                    print(f"[{path}] {label} — cleaned")
+with open(DATA, "w", encoding="utf-8") as f:
+    for row in kept:
+        f.write(json.dumps(row) + "\n")
 
-            except Exception as e:
-                i = futures[future]
-                print(f"[{path}] index {i} — ERROR: {e}")
-
-            with lock:
-                completed += 1
-                if completed % CHECKPOINT_EVERY == 0:
-                    _write(path, problems, delete_indices)
-                    print(f"[{path}] >> Checkpoint at {completed}/{len(to_process)}")
-
-    _write(path, problems, delete_indices)
-    kept = len(problems) - len(delete_indices)
-    print(f"[{path}] Done. {len(delete_indices)} deleted, {kept} kept.")
-
-
-def _write(path: str, problems: list, delete_indices: set) -> None:
-    with open(path, "w") as f:
-        for i, p in enumerate(problems):
-            if i not in delete_indices:
-                f.write(json.dumps(p) + "\n")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--db", nargs="+", default=DEFAULT_FILES, metavar="FILE",
-        help="JSONL file(s) to process (default: test.jsonl train.jsonl)",
-    )
-    args = parser.parse_args()
-
-    for path in args.db:
-        process_file(path)
+print(f"Done! {len(kept)}/{len(rows)} rows kept.")
