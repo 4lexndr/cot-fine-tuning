@@ -1,18 +1,22 @@
+import os
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 import sys
 import json
+
 import matplotlib
 matplotlib.use("Agg")  # non-GUI backend; avoids errors when there is no display during training
+
 import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
+
 import torch
-import bitsandbytes
 from datasets import Dataset
 from transformers import (
     AutoTokenizer, # tokenization
     AutoModelForCausalLM, # loading model
     BitsAndBytesConfig, # quantization
     EarlyStoppingCallback, # overfitting prevention
-    TrainerCallback,
+    TrainerCallback, # logging loss 
 )
 from trl import SFTConfig, SFTTrainer
 from peft import LoraConfig
@@ -21,22 +25,24 @@ from peft import LoraConfig
 MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
 TRAIN_DATA = "./train.jsonl"
 EVAL_DATA = "./eval.jsonl"
-OUTPUT_DIR = "./finetuned"
+OUTPUT_DIR = "./finetuning-results"
 
 # hyperparams ----------
 TRUNCATION_LENGTH = 1500
-BATCH_SIZE = 2
-GRADIENT_ACCUM = 4 # effective batch size: 2 * 4 = 8
+BATCH_SIZE = 1
+GRADIENT_ACCUM = 8 # effective batch size: 2 * 4 = 8
 EPOCHS = 4 # controlled by EarlyStoppingCallback
-ALPHA = 2e-4
+ALPHA = 1e-4
 WEIGHT_DECAY = 0.02 # fights overfitting
 WARMUP_RATIO = 0.05 # gives weights time to adjust
-EARLY_STOPPING_PATIENCE = 2
-EARLY_STOPPING_THRESHOLD = 0.005 # minimum improvement to reset patience counter
+EARLY_STOPPING_PATIENCE = 3
+EARLY_STOPPING_THRESHOLD = 0.0125 # minimum improvement to reset patience counter
 
-LORA_R = 14
-LORA_ALPHA = 28
-LORA_DROPOUT = 0.05
+LORA_R = 16
+LORA_ALPHA = 32
+LORA_DROPOUT = 0.06
+# attention projections AND the MLP block — attention-only LoRA mostly restyles output;
+# adding gate/up/down lets the adapter actually shift the model's computation
 LORA_TARGET_MODULES = ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
 
 # system message -------
@@ -136,10 +142,12 @@ if __name__ == "__main__":
     model = AutoModelForCausalLM.from_pretrained(
         MODEL,
         dtype=torch.bfloat16,
+        attn_implementation="sdpa",
         quantization_config=bnb_config,
         device_map="cuda",
         trust_remote_code=True,
     )
+    model.config.use_cache = False # disable KV cache for training
 
     lora_config = LoraConfig(
         r=LORA_R,
@@ -156,6 +164,8 @@ if __name__ == "__main__":
         output_dir=OUTPUT_DIR,
         num_train_epochs=EPOCHS,
         per_device_train_batch_size=BATCH_SIZE,
+        per_device_eval_batch_size=1,
+        eval_accumulation_steps=1,
         gradient_accumulation_steps=GRADIENT_ACCUM,
         learning_rate=ALPHA,
         weight_decay=WEIGHT_DECAY,
@@ -169,7 +179,7 @@ if __name__ == "__main__":
         dataloader_pin_memory=False,
         save_strategy="steps",
         eval_strategy="steps",
-        save_steps=25,
+        save_steps=50,
         eval_steps=25,
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
