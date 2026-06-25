@@ -1,6 +1,9 @@
 import sys
 import json
+import os
+import re
 import torch
+from datetime import datetime
 
 from openai import OpenAI
 from datasets import Dataset
@@ -8,8 +11,9 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # file constants -------
 TEST_DATA = "./test.jsonl"
+RESULTS_DIR = "./benchmark-results"
 CLASSES = ["1-10", "11-20", "21-25"]
-TRUNCATION_LENGTH = 1750 # allow slightly longer reasoning chains
+TRUNCATION_LENGTH = 2250 # allow slightly longer reasoning chains
 JUDGE_MODEL = "o3-mini"
 
 # system messages ------
@@ -55,6 +59,13 @@ def judge_answer(problem: str, model_response: str):
     thought = lines[0] if len(lines) > 1 else ""
     return predicted, thought
 
+def make_run_dir(model_id: str) -> str:
+    slug = re.sub(r"[^\w\-.]", "_", model_id).strip("._")
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_dir = os.path.join(RESULTS_DIR, f"{slug}_{timestamp}")
+    os.makedirs(run_dir, exist_ok=True)
+    return run_dir
+
 def generate_response(problem: str, tokenizer, model):
     prompt = tokenizer.apply_chat_template(
         build_message(problem),
@@ -93,11 +104,14 @@ model = AutoModelForCausalLM.from_pretrained(
     trust_remote_code=True,
 )
 
-model.eval() # put model into evaluation mode instead of training mode
+# put model into evaluation mode instead of training mode
+model.eval()
 problems = load_problems(TEST_DATA)
+run_dir = make_run_dir(MODEL)
 
 # tally results per difficulty class (none = no answer, corrupt = truncated)
 results = {class_: {"correct": 0, "total": 0, "none": 0, "corrupt": 0} for class_ in CLASSES}
+detailed_log = []
 
 # grade the model's performance on each problem
 for num, problem in enumerate(problems):
@@ -126,12 +140,24 @@ for num, problem in enumerate(problems):
     elif predicted == "CORRUPT":
         results[class_]["corrupt"] += 1
 
+    detailed_log.append({
+        "num": num + 1,
+        "class": class_,
+        "problem": problem["problem"],
+        "correct_answer": correct_answer,
+        "response": response,
+        "predicted_answer": predicted,
+        "judge_thought": thought,
+        "is_correct": predicted == correct_answer,
+    })
+
 # print accuracy per class and overall
 print("\n=== Results ===")
 total_correct = 0
 total_count = 0
 total_none = 0
 total_corrupt = 0
+per_class_summary = {}
 for class_ in CLASSES:
     correct = results[class_]["correct"]
     total = results[class_]["total"]
@@ -145,8 +171,34 @@ for class_ in CLASSES:
     none_pct = round(none / total * 100, 1) if total else 0.0
     corrupt_pct = round(corrupt / total * 100, 1) if total else 0.0
     print(f"Class {class_}: {correct}/{total} = {accuracy}%  (none: {none} = {none_pct}%, corrupt: {corrupt} = {corrupt_pct}%)")
+    per_class_summary[class_] = {
+        "correct": correct, "total": total,
+        "accuracy_pct": accuracy,
+        "none": none, "none_pct": none_pct,
+        "corrupt": corrupt, "corrupt_pct": corrupt_pct,
+    }
 
 overall = round(total_correct / total_count * 100, 1) if total_count else 0.0
 overall_none = round(total_none / total_count * 100, 1) if total_count else 0.0
 overall_corrupt = round(total_corrupt / total_count * 100, 1) if total_count else 0.0
 print(f"Overall: {total_correct}/{total_count} = {overall}%  (none: {total_none} = {overall_none}%, corrupt: {total_corrupt} = {overall_corrupt}%)")
+
+# save results
+with open(os.path.join(run_dir, "detailed_log.json"), "w") as f:
+    json.dump(detailed_log, f, indent=2)
+
+performance = {
+    "model": MODEL,
+    "timestamp": datetime.now().isoformat(),
+    "overall": {
+        "correct": total_correct, "total": total_count,
+        "accuracy_pct": overall,
+        "none": total_none, "none_pct": overall_none,
+        "corrupt": total_corrupt, "corrupt_pct": overall_corrupt,
+    },
+    "per_class": per_class_summary,
+}
+with open(os.path.join(run_dir, "performance.json"), "w") as f:
+    json.dump(performance, f, indent=2)
+
+print(f"\nResults saved to {run_dir}")
