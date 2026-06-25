@@ -1,17 +1,7 @@
-#!/usr/bin/env python3
-"""Split all_problems.jsonl into train / eval / test JSONL files.
-
-Splits (stratified by problem class so difficulty distribution is preserved):
-  train.jsonl  75%  — used for gradient updates
-  eval.jsonl   10%  — used during training for early stopping / best-checkpoint
-                      selection; influences training, so kept separate from test
-  test.jsonl   15%  — held-out benchmark; never seen during training (benchmark.py)
-"""
-
 import json
 import random
 
-DATABASE = "all_problems.jsonl"
+DATABASE = "problems.jsonl"
 TRAIN_FILE = "train.jsonl"
 EVAL_FILE = "eval.jsonl"
 TEST_FILE = "test.jsonl"
@@ -20,9 +10,8 @@ TEST_FRACTION = 0.15
 EVAL_FRACTION = 0.10
 SEED = 42
 
-
 def main():
-    with open(DATABASE) as f:
+    with open(DATABASE, encoding="utf-8") as f:
         problems = [json.loads(line) for line in f if line.strip()]
 
     print(f"Loaded {len(problems)} problems from {DATABASE}")
@@ -48,14 +37,14 @@ def main():
     rng.shuffle(test)
 
     for path, split in [(TRAIN_FILE, train), (EVAL_FILE, eval_), (TEST_FILE, test)]:
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             for p in split:
                 f.write(json.dumps(p) + "\n")
 
     total = len(problems)
-    print(f"Train: {len(train):4d} ({len(train)/total*100:.1f}%) → {TRAIN_FILE}")
-    print(f"Eval:  {len(eval_):4d} ({len(eval_)/total*100:.1f}%) → {EVAL_FILE}")
-    print(f"Test:  {len(test):4d} ({len(test)/total*100:.1f}%) → {TEST_FILE}")
+    print(f"Train: {len(train):4d} ({len(train)/total*100:.1f}%) -> {TRAIN_FILE}")
+    print(f"Eval:  {len(eval_):4d} ({len(eval_)/total*100:.1f}%) -> {EVAL_FILE}")
+    print(f"Test:  {len(test):4d} ({len(test)/total*100:.1f}%) -> {TEST_FILE}")
     print()
 
     for cls in sorted(by_class):
@@ -63,8 +52,7 @@ def main():
         n_tr = sum(1 for p in train if p.get("class") == cls)
         n_ev = sum(1 for p in eval_ if p.get("class") == cls)
         n_te = sum(1 for p in test if p.get("class") == cls)
-        print(f"  Class {cls}: {n} total → {n_tr} train / {n_ev} eval / {n_te} test")
-
+        print(f"  Class {cls}: {n} total -> {n_tr} train / {n_ev} eval / {n_te} test")
 
 if __name__ == "__main__":
     main()

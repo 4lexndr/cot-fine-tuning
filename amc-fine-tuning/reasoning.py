@@ -1,10 +1,12 @@
 import json
 from openai import OpenAI
 
+# constants ------------
 DATA = "./problems.jsonl"
-CHECKPOINT_EVERY = 10
+CHECKPOINT_EVERY = 50
+API_MODEL = "o3-mini"
 
-API_MODEL = "gpt-4o"
+# system message -------
 SYSTEM_PROMPT = """
 You are a math reasoning assistant. Your job is to produce a clear, step-by-step reasoning trace for an AMC competition problem.
 
@@ -52,58 +54,46 @@ Follow these rules strictly:
    - Length should match the complexity of the solution — typically 100–400 words.
 """
 
-# retrieve data from database
-with open(DATA) as f:
-    problems = [json.loads(line) for line in f if line.strip()]
-
-print(f"Loaded {len(problems)} problems from {DATA}")
-already_done = sum(1 for p in problems if p.get("reasoning"))
-print(f"Already have reasoning: {already_done}")
-
-to_process = [(i, p) for i, p in enumerate(problems) if p.get("solution") and not p.get("reasoning")]
-print(f"To process: {len(to_process)}")
-
-client = OpenAI()
-
 # helpers --------------
-def structure_message(problem: str, solution: str):
+def structure_message(problem: str, solution: str) -> list:
     return [
-        {
-            "role": "system",
-            "content": SYSTEM_PROMPT,
-        },
-        {
-            "role": "user",
-            "content": f"PROBLEM: {problem}\nSOLUTION: {solution}"
-        }
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "user", "content": f"PROBLEM: {problem}\nSOLUTION: {solution}"},
     ]
 
-def get_reasoning(content: tuple[str, str]):
+def get_reasoning(client: OpenAI, problem: str, solution: str) -> str:
     response = client.chat.completions.create(
         model=API_MODEL,
-        messages=structure_message(content[0], content[1]),
+        messages=structure_message(problem, solution),
     )
     return response.choices[0].message.content
 
-# main loop ------------
-for completed, (i, line) in enumerate(to_process, 1):
-    print(f"Processing {completed}/{len(to_process)} (index {i})", flush=True)
+def save(path: str, problems: list) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        f.writelines(json.dumps(p) + "\n" for p in problems)
 
-    try:
-        content = (line["problem"], line["solution"])
-        reasoning = get_reasoning(content)
-        problems[i]["reasoning"] = reasoning
-    except Exception as e:
-        print(f"  [index {i}] ERROR: {e}")
-        continue
+# main code ------------
+if __name__ == "__main__":
+    with open(DATA, encoding="utf-8") as f:
+        problems = [json.loads(line) for line in f if line.strip()]
 
-    if completed % CHECKPOINT_EVERY == 0:
-        with open(DATA, "w") as f:
-            f.writelines(json.dumps(p) + "\n" for p in problems)
-        print(f"  >> Checkpoint saved at {completed}")
+    client = OpenAI()
+    indices = [i for i, p in enumerate(problems) if "reasoning" not in p]
 
-with open(DATA, "w") as f:
-    f.writelines(json.dumps(p) + "\n" for p in problems)
+    print(f"Found {len(indices)} problems without reasoning ({len(problems)} total).")
 
-print(f"\nDone! Wrote updated data to {DATA}")
-print(f"Total with reasoning: {sum(1 for p in problems if p.get('reasoning'))}/{len(problems)}")
+    last_checkpoint = 0
+    for completed, i in enumerate(indices, 1):
+        print(f"\rProcessing {completed}/{len(indices)}", flush=True, end="")
+        try:
+            problems[i]["reasoning"] = get_reasoning(client, problems[i]["problem"], problems[i]["solution"])
+        except Exception as e:
+            print(f"\n  [index {i}] ERROR: {e}")
+            continue
+
+        if completed - last_checkpoint >= CHECKPOINT_EVERY:
+            save(DATA, problems)
+            last_checkpoint = completed
+
+    save(DATA, problems)
+    print(f"\nDone! Wrote updated data to {DATA}")

@@ -9,7 +9,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # file constants -------
 TEST_DATA = "./test.jsonl"
 CLASSES = ["1-10", "11-20", "21-25"]
-TRUNCATION_LENGTH = 4096
+TRUNCATION_LENGTH = 1500
 
 # system messages ------
 MODEL_SYSTEM_MESSAGE = "You are a math competition expert. Read the given problem closely, then solve it step by step."
