@@ -9,18 +9,20 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 # file constants -------
 TEST_DATA = "./test.jsonl"
 CLASSES = ["1-10", "11-20", "21-25"]
-TRUNCATION_LENGTH = 1500
+TRUNCATION_LENGTH = 1750 # allow slightly longer reasoning chains
+JUDGE_MODEL = "o3-mini"
 
 # system messages ------
 MODEL_SYSTEM_MESSAGE = "You are a math competition expert. Read the given problem closely, then solve it step by step."
-JUDGE_SYSTEM_MESSAGE = "You are a math competition grader. You are given a problem and a student's response, and you" \
-    "are to identify the letter or mathematical expression that the student chose as its answer." \
-    "Reply with that single uppercase letter, A through E. If the student expressed their answer as a mathematical" \
-    "expression rather than a letter, pair their response with the letter that their answer corresponds to." \
-    "Reply with 'NONE' if the model did not commit to any answer, such as" \
-    "hallucinating the problem statement or diverging off from the original problem." \
-    "If the student's response appears to be truncated or stopped short, where it has no clear answer," \
-    "reply with 'CORRUPT'."
+JUDGE_SYSTEM_MESSAGE = (
+    "You are a math competition grader. You are given a problem and a student's response. "
+    "Identify the letter or mathematical expression the student chose as their final answer. "
+    "First, write one sentence describing what the student committed to (or why you can't identify one). "
+    "Then on the next line write only: the single uppercase letter A–E, "
+    "NONE (if the student didn't commit to any answer), "
+    "or CORRUPT (if the response is truncated with no clear answer). "
+    "If the student used a mathematical expression, map it to the corresponding letter."
+)
 
 openai = OpenAI() # OpenAI client
 
@@ -38,33 +40,38 @@ def build_message(problem: str):
 
 def judge_answer(problem: str, model_response: str):
     completion = openai.chat.completions.create(
-        model="gpt-4o",
+        model=JUDGE_MODEL,
         messages=[
             {"role": "system", "content": JUDGE_SYSTEM_MESSAGE},
             {"role": "user", "content": f"PROBLEM:\n{problem}\n\nSTUDENT RESPONSE:\n{model_response}"},
         ],
-        max_tokens=5,
-        temperature=0,
+        # o3-mini is a reasoning model: hidden reasoning tokens count against max_completion_tokens
+        reasoning_effort="low",
+        max_completion_tokens=2000,
     )
-    return completion.choices[0].message.content.strip().upper()
+    raw = completion.choices[0].message.content.strip()
+    lines = [l.strip() for l in raw.splitlines() if l.strip()]
+    predicted = lines[-1].upper() if lines else "NONE"
+    thought = lines[0] if len(lines) > 1 else ""
+    return predicted, thought
 
 def generate_response(problem: str, tokenizer, model):
-    inputs = tokenizer.apply_chat_template(
+    prompt = tokenizer.apply_chat_template(
         build_message(problem),
-        tokenize=True,
-        add_generation_prompt=True, # let the model produce its OWN solution
-        return_tensors="pt",
-    ).to(model.device)
+        tokenize=False,
+        add_generation_prompt=True,
+    )
+    encoded = tokenizer(prompt, return_tensors="pt").to(model.device)
 
     with torch.inference_mode():
         output = model.generate(
-            inputs,
+            **encoded,
             max_new_tokens=TRUNCATION_LENGTH,
             do_sample=False, # greedy decoding for reproducible benchmarks
             pad_token_id=tokenizer.pad_token_id,
         )
 
-    return tokenizer.decode(output[0][inputs.shape[-1]:], skip_special_tokens=True)
+    return tokenizer.decode(output[0][encoded["input_ids"].shape[-1]:], skip_special_tokens=True)
 
 # main code ------------
 if not torch.cuda.is_available():
@@ -77,6 +84,8 @@ MODEL = sys.argv[1]
 
 # load tokenizer, model, and test data
 tokenizer = AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True)
+if tokenizer.pad_token_id is None:
+    tokenizer.pad_token_id = tokenizer.eos_token_id
 model = AutoModelForCausalLM.from_pretrained(
     MODEL,
     dtype=torch.bfloat16,
@@ -95,9 +104,19 @@ for num, problem in enumerate(problems):
     class_ = problem["class"]
     correct_answer = problem["answer"]
 
-    # generate response and judge
+    print(f"[{num + 1}/{len(problems)}] {class_}", flush=True)
     response = generate_response(problem["problem"], tokenizer, model)
-    predicted = judge_answer(problem["problem"], response) # A-E, NONE, or CORRUPT
+
+    chars = len(response)
+    start = response[:60].replace("\n", " ")
+    end = response[-60:].replace("\n", " ") if chars > 60 else ""
+    print(f"  {chars} chars | \"{start}\" ... \"{end}\"", flush=True)
+
+    predicted, thought = judge_answer(problem["problem"], response)
+    marker = "✓" if predicted == correct_answer else "✗"
+    print(f"  {predicted} / {correct_answer} {marker}", flush=True)
+    if thought:
+        print(f"  judge: {thought}", flush=True)
 
     results[class_]["total"] += 1
     if predicted == correct_answer:
