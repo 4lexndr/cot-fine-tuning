@@ -6,7 +6,7 @@ TRAIN_FILE = "train.jsonl"
 EVAL_FILE = "eval.jsonl"
 TEST_FILE = "test.jsonl"
 
-TEST_FRACTION = 0.15
+TEST_FRACTION = 0.20
 EVAL_FRACTION = 0.10
 SEED = 42
 
